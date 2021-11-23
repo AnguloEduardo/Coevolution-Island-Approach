@@ -163,8 +163,8 @@ def runGA():
             print('\nCurrent generation..: {}'.format(i))
             print('Best solution so far: {}'.format(best_solution.value))
 
-    print(' solution found:')
-    print('\nWeight: {}'.format(best_solution.weight))
+    print('\nSolution found:')
+    print('Weight: {}'.format(best_solution.weight))
     print('Value.: {}'.format(best_solution.value))
     print('\nBackpack configuration: {}'.format(best_solution.chromosome))
 
