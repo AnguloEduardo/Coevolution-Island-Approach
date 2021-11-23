@@ -176,6 +176,10 @@ if __name__ == "__main__":
 
     population_size = randint(50, 200)
     max_generations = randint(100, 1000)
+    if max_generations/100 >= 0.5:
+        max_generations = (int(max_generations/100) + 1) * 100
+    else:
+        max_generations = int(max_generations/100) * 100
     crossover_probability = round(random.uniform(low=0.3, high=1.0), 1)
     mutation_probability = round(random.uniform(low=0.0, high=0.5), 1)
 
