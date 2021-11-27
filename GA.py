@@ -170,10 +170,8 @@ def runGA():
 
 
 if __name__ == "__main__":
-
     # Initialize population size and
     # Crossover and Mutation Probabilities
-
     population_size = randint(50, 200)
     max_generations = randint(100, 1000)
     if max_generations/100 >= 0.5:
@@ -194,11 +192,9 @@ if __name__ == "__main__":
 
     items = []
     for i in range(backpack_capacity):
-        items.append(
-            Item(
-                weight=randint(1, max_item_weight),
-                value=randint(0, max_item_value))
-        )
+        items.append(Item(
+            weight=randint(1, max_item_weight),
+            value=randint(0, max_item_value)))
 
     print('\n\n--- Generated Parameters -----')
     print('Population size......: {}'.format(population_size))
