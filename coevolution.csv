@@ -1,0 +1,148 @@
+Parameters,Data,Current generation,"Best solution
+found so far
+in island 1","Best solution
+found so far
+in island 2","Best solution
+found so far
+in island 3","Best solution
+found so far
+in island 4","Best solution
+in island 1",Results 1,"Best solution
+in island 2",Results 2,"Best solution
+in island 3",Results 3,"Best solution
+in island 4",Results 4
+Population size,500,0,19,19,19,19,Weight,11,Weight,11,Weight,11,Weight,11
+Number of generations,500,100,19,19,19,19,Value,19,Value,19,Value,19,Value,19
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,19,19,19,19,Backpack configuration,[0 0 1 1],Backpack configuration,[0 0 1 1],Backpack configuration,[0 0 1 1],Backpack configuration,[0 0 1 1]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,19,19,19,19,,,,,,,,
+Backpack capacity,4,499,19,19,19,19,,,,,,,,
+Maximum backpack weight,11,,,,,,,,,,,,,
+Instance used,\ks_4_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,12026,11916,12008,12087,Weight,30996,Weight,31122,Weight,31170,Weight,30990
+Number of generations,500,100,12248,12061,12185,12145,Value,12248,Value,12061,Value,12185,Value,12145
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,12248,12061,12185,12145,Backpack configuration,[0 0 1 0 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0],Backpack configuration,[1 1 1 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0],Backpack configuration,[0 0 1 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0],Backpack configuration,[1 1 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,12248,12061,12185,12145,,,,,,,,
+Backpack capacity,19,499,12248,12061,12185,12145,,,,,,,,
+Maximum backpack weight,31181,,,,,,,,,,,,,
+Instance used,\ks_19_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,12030,12161,12018,12040,Weight,31074,Weight,31022,Weight,30876,Weight,31074
+Number of generations,500,100,12187,12161,12188,12187,Value,12187,Value,12161,Value,12188,Value,12187
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,12187,12161,12188,12187,Backpack configuration,[0 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0],Backpack configuration,[1 0 0 1 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0],Backpack configuration,[0 0 1 0 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0],Backpack configuration,[0 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,12187,12161,12188,12187,,,,,,,,
+Backpack capacity,19,499,12187,12161,12188,12187,,,,,,,,
+Maximum backpack weight,31181,,,,,,,,,,,,,
+Instance used,\ks_19_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,12146,11892,11888,11772,Weight,30792,Weight,31154,Weight,31074,Weight,31170
+Number of generations,500,100,12146,12077,12187,12235,Value,12146,Value,12077,Value,12187,Value,12235
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,12146,12077,12187,12235,Backpack configuration,[1 0 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0],Backpack configuration,[1 0 1 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0],Backpack configuration,[0 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0],Backpack configuration,[0 0 1 0 0 0 0 1 0 0 0 1 0 1 0 0 0 1 0]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,12146,12077,12187,12235,,,,,,,,
+Backpack capacity,19,499,12146,12077,12187,12235,,,,,,,,
+Maximum backpack weight,31181,,,,,,,,,,,,,
+Instance used,\ks_19_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,90000,90000,98754,98756,Weight,99777,Weight,99775,Weight,99779,Weight,99777
+Number of generations,500,100,99758,99753,99757,99760,Value,99763,Value,99762,Value,99764,Value,99763
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,99759,99753,99764,99760,Backpack configuration,[0 1 1 1 0 0 0 0 0 1 1 1 0 1 1 0 0 1 1 1 0 1 1 0 0 1 0 1 0 0],Backpack configuration,[1 1 1 1 0 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0 1 1 1 0],Backpack configuration,[0 0 1 1 1 1 0 0 1 0 1 1 1 1 1 1 0 0 0 1 0 1 0 1 0 0 0 0 1 0],Backpack configuration,[0 0 1 0 0 0 1 1 0 1 0 0 1 1 1 1 0 0 0 0 1 1 1 1 1 1 1 1 1 0]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,99759,99760,99764,99760,,,,,,,,
+Backpack capacity,30,499,99763,99762,99764,99763,,,,,,,,
+Maximum backpack weight,100000,,,,,,,,,,,,,
+Instance used,\ks_30_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,99005,99256,99758,99506,Weight,99011,Weight,99263,Weight,99767,Weight,99513
+Number of generations,500,100,99005,99256,99758,99506,Value,99005,Value,99256,Value,99758,Value,99506
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,99005,99256,99758,99506,Backpack configuration,[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0],Backpack configuration,[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0],Backpack configuration,[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0],Backpack configuration,[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,99005,99256,99758,99506,,,,,,,,
+Backpack capacity,30,499,99005,99256,99758,99506,,,,,,,,
+Maximum backpack weight,100000,,,,,,,,,,,,,
+Instance used,\ks_30_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,99009,90001,90001,99007,Weight,99004,Weight,90000,Weight,90000,Weight,99003
+Number of generations,500,100,99009,90001,90001,99007,Value,99009,Value,90001,Value,90001,Value,99007
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,99009,90001,90001,99007,Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]"
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,99009,90001,90001,99007,,,,,,,,
+Backpack capacity,40,499,99009,90001,90001,99007,,,,,,,,
+Maximum backpack weight,100000,,,,,,,,,,,,,
+Instance used,\ks_40_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,90001,90001,97771,90001,Weight,90000,Weight,90000,Weight,97760,Weight,90000
+Number of generations,500,100,90001,90001,97771,90001,Value,90001,Value,90001,Value,97771,Value,90001
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,90001,90001,97771,90001,Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]"
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,90001,90001,97771,90001,,,,,,,,
+Backpack capacity,40,499,90001,90001,97771,90001,,,,,,,,
+Maximum backpack weight,100000,,,,,,,,,,,,,
+Instance used,\ks_40_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,21613,22497,23004,23308,Weight,57940,Weight,57940,Weight,57940,Weight,57940
+Number of generations,500,100,23720,23720,23720,23720,Value,23720,Value,23720,Value,23720,Value,23720
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,23720,23720,23720,23720,Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0]"
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,23720,23720,23720,23720,,,,,,,,
+Backpack capacity,45,499,23720,23720,23720,23720,,,,,,,,
+Maximum backpack weight,58181,,,,,,,,,,,,,
+Instance used,\ks_45_0.txt,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Population size,500,0,22495,18960,21930,22296,Weight,57940,Weight,57940,Weight,57940,Weight,57940
+Number of generations,500,100,23720,23720,23720,23720,Value,23720,Value,23720,Value,23720,Value,23720
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,23720,23720,23720,23720,Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0]"
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,23720,23720,23720,23720,,,,,,,,
+Backpack capacity,45,499,23720,23720,23720,23720,,,,,,,,
+Maximum backpack weight,58181,,,,,,,,,,,,,
+Instance used,\ks_45_0.txt,,,,,,,,,,,,,
+,,,,,,
+Population size,2000,0,9026.0,,,,Weight,25018,Weight,-1,Weight,-1,Weight,-1
+Number of generations,500,100,9959.0,,,,Value,9959.0,Value,-1,Value,-1,Value,-1
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,9959.0,,,,Backpack configuration,[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0],Backpack configuration,[None],Backpack configuration,[None],Backpack configuration,[None]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,9959.0,,,,,,,,,,,
+Backpack capacity,19,499,9959.0,,,,,,,,,,,
+Maximum backpack weight,31181,,,,,,,,,,,,,
+Instance used,\ks_19_0.txt,,,,,,,,,,,,,
+,,,,,,
+Population size,500,0,9026.0,,,,Weight,25018,Weight,-1,Weight,-1,Weight,-1
+Number of generations,500,100,9959.0,,,,Value,9959.0,Value,-1,Value,-1,Value,-1
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,9959.0,,,,Backpack configuration,[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0],Backpack configuration,[None],Backpack configuration,[None],Backpack configuration,[None]
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,9959.0,,,,,,,,,,,
+Backpack capacity,19,499,9959.0,,,,,,,,,,,
+Maximum backpack weight,31181,,,,,,,,,,,,,
+Instance used,\ks_19_0.txt,,,,,,,,,,,,,
+,,,,,,
+Population size,500,0,90001.0,90001.0,99769.0,90001.0,Weight,90000,Weight,90000,Weight,99759,Weight,90000
+Number of generations,500,100,90001.0,90001.0,99769.0,90001.0,Value,90001.0,Value,90001.0,Value,99769.0,Value,90001.0
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,90001.0,90001.0,99769.0,90001.0,Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]",Backpack configuration,"[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0]"
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,90001.0,90001.0,99769.0,90001.0,,,,,,,,
+Backpack capacity,40,499,90001.0,90001.0,99769.0,90001.0,,,,,,,,
+Maximum backpack weight,100000,,,,,,,,,,,,,
+Instance used,\ks_40_0.txt,,,,,,,,,,,,,
+,,,,,,
+Population size,500,0,138476.0,136501.0,137808.0,138746.0,Weight,340882,Weight,340556,Weight,340786,Weight,341010
+Number of generations,500,100,140241.0,139569.0,139930.0,139734.0,Value,140241.0,Value,140078.0,Value,140043.0,Value,140155.0
+Crossover probability,"[0.3, 0.5, 0.7, 1.0]",200,140241.0,139592.0,139930.0,140155.0,Backpack configuration,"[0 1 0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 1 1 1 1 1 0 1 1
+ 1 0 1 0 1 0 0 0 1 0 0 0 0]",Backpack configuration,"[1 0 1 0 1 1 1 0 0 1 1 0 0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 0 1 0 1 1 0 0 1 1 0
+ 0 1 1 1 1 0 1 1 0 1 0 0 0]",Backpack configuration,"[0 0 1 0 1 0 1 0 0 0 0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 1 0 0 0 1 0 1
+ 1 1 1 0 0 0 0 1 0 1 1 1 0]",Backpack configuration,"[1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 0 1 0 0
+ 0 0 0 0 0 0 1 0 1 0 0 0 1]"
+Mutation probability,"[0.05, 0.1, 0.15, 0.2]",300,140241.0,139592.0,140043.0,140155.0,,,,,,,,
+Backpack capacity,50,499,140241.0,140078.0,140043.0,140155.0,,,,,,,,
+Maximum backpack weight,341045,,,,,,,,,,,,,
+Instance used,\ks_50_0.txt,,,,,,,,,,,,,
