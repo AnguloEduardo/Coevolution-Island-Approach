@@ -278,14 +278,14 @@ if __name__ == '__main__':
                        Individual(chromosome=[None], weight=-1, value=-1),
                        None, None, None]
     # Reading files with the instance problem
-    file_name = '\ks_50_0.txt'
+    file_name = '\ks_19_0.txt'
     instance = open('Instances KP' + file_name, 'r')
     itemsCapacity = instance.readline().rstrip("\n")
     itemsCapacity = itemsCapacity.split(", ")
     # Initialization of population size, generations, crossover and mutation probabilities
     # for the four different islands
     population_size = 2000 // 4
-    generations = 500
+    generations = 100
     crossover_probability = [0.3, 0.5, 0.7, 1.0]
     mutation_probability = [0.05, 0.10, 0.15, 0.20]
     # Lists to save data from each run
@@ -310,7 +310,7 @@ if __name__ == '__main__':
         items.append(Item(weight=int(instanceItem[0]),
                           value=float(instanceItem[1])))
     print('\n\n---Generated Parameters---')
-    print('Population size: {}'.format(population_size))
+    print('Population size per island: {}'.format(population_size))
     print('Number of generations: {}'.format(generations))
     print('Crossover probability: {}'.format(crossover_probability))
     print('Mutation probability: {}'.format(mutation_probability))
@@ -322,4 +322,4 @@ if __name__ == '__main__':
                      mutation_probability, backpack_capacity, items)
     # Uncomment this line if the .csv file does not exist
     # generate_csv()
-    write_to_csv()
+    # write_to_csv()

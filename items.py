@@ -1,17 +1,17 @@
 class Items:
-    def __init__(self, ID, profit, weight):
+    def __init__(self, ID, value, weight):
         self.ID = ID
-        self.profit = profit
+        self.value = value
         self.weight = weight
 
     def getID(self):
         return self.ID
 
-    def getProfit(self):
-        return self.profit
+    def getvalue(self):
+        return self.value
 
     def getWeight(self):
         return self.weight
 
-    def getProfitPerWeight(self):
-        return self.profit / self.weight
+    def getvaluePerWeight(self):
+        return self.value / self.weight
