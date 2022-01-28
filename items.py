@@ -1,13 +1,13 @@
 class Items:
     def __init__(self, ID, value, weight):
         self.ID = ID
-        self.value = value
-        self.weight = weight
+        self.value = int(value)
+        self.weight = float(weight)
 
     def getID(self):
         return self.ID
 
-    def getvalue(self):
+    def getValue(self):
         return self.value
 
     def getWeight(self):
