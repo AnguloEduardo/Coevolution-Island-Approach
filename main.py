@@ -1,11 +1,9 @@
 # Libraries
 # =======================
 import random
-import numpy
 from tqdm import tqdm
 from numpy.random import randint
 from numpy import concatenate
-import multiprocessing as mp
 from items import Items
 from knapsack import Knapsack
 
@@ -14,11 +12,10 @@ list_items = []
 # Creates a list of lists to save the different populations from the islands
 population = []
 # Lists to save data from each run
-solution_1 = [None] * 7
-solution_2 = [None] * 7
-solution_3 = [None] * 7
-solution_4 = [None] * 7
-current_generation = [None] * 7
+solutions = []
+# Variables
+num_tournament = 3
+num_parents_to_select = 2
 
 
 # Generate population
@@ -40,63 +37,58 @@ def generate_population(size, capacity, weight):
 # =======================
 def combine(parentA, parentB, cRate):
     if random.random() < cRate:
-        offspring_a = concatenate((parentA[:int(backpack_capacity / 2)], parentB[int(backpack_capacity / 2):]))
-        offspring_b = concatenate((parentA[int(backpack_capacity / 2):], parentB[:int(backpack_capacity / 2)]))
+        offspring_a = concatenate((parentA[:backpack_capacity // 2], parentB[backpack_capacity // 2:])).tolist()
+        offspring_b = concatenate((parentA[backpack_capacity // 2:], parentB[:backpack_capacity // 2])).tolist()
     else:
-        offspring_a = numpy.copy(parentA)
-        offspring_b = numpy.copy(parentB)
+        offspring_a = parentA.copy()
+        offspring_b = parentB.copy()
     return offspring_a, offspring_b
 
 
 # Mutation operator
 # =======================
-def mutate(chromosome, mRate, backpack_capacity):
+def mutate(individual, mRate):
     if random.random() < mRate:
-        i, j = random.sample(range(backpack_capacity - 1), 2)
-        if chromosome[i] == 1:
-            chromosome[i] = 0
-        else:
-            chromosome[i] = 1
-        if chromosome[j] == 1:
-            chromosome[j] = 0
-        else:
-            chromosome[j] = 1
-    return chromosome
+        i, j = random.sample(range(backpack_capacity), 2)
+        individual.chromosome[i] = 0 if individual.chromosome[i] == 0 else 1
+        individual.chromosome[j] = 0 if individual.chromosome[j] == 0 else 1
+        return individual, True
+    return individual, False
 
 
 def calculate_weight_value(chromosome):
-    weight, value = 0, max_weight
+    weight, value = float(max_weight), 0
     for x, gene in enumerate(chromosome):
-        if chromosome.all():
-            weight += list_items[x].weight
-            value += list_items[x].value
-        else:
-            if gene == 1:
-                weight -= list_items[x].weight
-                value += list_items[x].value
-    return weight, value
-
-
-# Evaluation function
-# =======================
-def calculate_fitness(island_population):
-    for i in range(len(island_population)):
-        weight, value = calculate_weight_value(island_population[i].getChromosome())
-        island_population[i].modValWeight(weight, value)
-    return island_population
+        if gene == 1:
+            if list_items[x].getWeight() <= weight:
+                weight -= list_items[x].getWeight()
+                value += list_items[x].getValue()
+            else:
+                chromosome[x] = 0
+    return weight, value, chromosome
 
 
 # Tournament selection
 # =======================
-def select(island, tSize):
-    winner = randint(len(population[island]))
-    rival = randint(len(population[island]))
-    individualWinner = population[island][winner]
-    individualRival = population[island][rival]
-    for i in range(tSize):
-        if individualRival.getValue() > individualWinner.getValue():  # It is searching for the Knapsack
-            winner = rival  # with the highest value
-    return population[island][winner]
+def select(island, tSize, numParents):
+    parent_a = Knapsack(max_weight, backpack_capacity)
+    parent_b = Knapsack(max_weight, backpack_capacity)
+    for x in range(numParents):
+        island_population = population[island].copy()
+        winner = randint(len(island_population)-1)
+        rival = randint(len(island_population)-1)
+        individualWinner = island_population.pop(winner)
+        individualRival = island_population.pop(rival)
+        for i in range(tSize):
+            if individualRival.getValue() > individualWinner.getValue():  # It is searching for the Knapsack
+                winner = rival                                            # with the highest value
+            rival = randint(len(island_population)-1)
+            individualRival = island_population.pop(rival)
+        if x == 0:
+            parent_a = population[island][winner]
+        else:
+            parent_b = population[island][winner]
+    return parent_a, parent_b
 
 
 def migrate(islands):
@@ -120,62 +112,52 @@ def geneticAlgorithm(pSize, gens, cRate, mRate, numberItems, weight):
 
     # Runs the evolutionary process
     for i in tqdm(range(gens)):
-        # Crossover
         for island in range(number_islands):
-            k = 0
+            # Crossover
             new_population = []
-            for j in range(pSize // 2):
-                parent_a = select(island, 3)
-                parent_b = select(island, 3)
-                offspring1, offspring2 = combine(parent_a.getChromosome(), parent_b.getChromosome(), cRate[island])
-                child1 = Knapsack(weight, numberItems)
-                child2 = Knapsack(weight, numberItems)
-                child1.modChromosome(offspring1)
-                child2.modChromosome(offspring2)
-                new_population.append(child1)
-                new_population.append(child2)
-                k = k + 2
+            for _ in range(pSize // 2):
+                parent_a, parent_b = select(island, num_tournament, num_parents_to_select)
+                offspring_a, offspring_b = combine(parent_a.getChromosome(), parent_b.getChromosome(), cRate[island])
+                weight, value, offspring_a = calculate_weight_value(offspring_a)
+                child_a = Knapsack(weight, value, offspring_a)
+                weight, value, offspring_b = calculate_weight_value(offspring_b)
+                child_b = Knapsack(weight, value, offspring_b)
+                new_population.extend([child_a, child_b])
             population[island] = new_population
-        # Mutation
-        for island in range(number_islands):
+
+            # Mutation
             for index in range(pSize):
-                chromosome = mutate(population[island][index].getChromosome(), mRate[island], numberItems)
-                population[island][index].modChromosome(chromosome)
-            population[island] = calculate_fitness(population[island])
-        # Keeps a record of the best Knapsack found so far in each island
-        for x in range(number_islands):
-            for z in range(pSize - 1):
-                if population[x][z].getTotalWeight() <= max_weight:
-                    if population[x][z].getValue() > best_Knapsack[x].getValue():
-                        best_Knapsack[x] = population[x][z]
-        if i % 100 == 0 and number_islands > 1 and i != 0:
-            print('\nMigrating individuals to other islands')
-            migrate(population)
+                individual, boolean = mutate(population[island][index], mRate[island])
+                if boolean:
+                    weight, value, chromosome = calculate_weight_value(individual.chromosome)
+                    population[island][index].chromosome = chromosome
+                    population[island][index].value = value
+                    population[island][index].totalWeight = weight
+
+            # Keeps a record of the best Knapsack found so far in each island
+            for individual in range(pSize):
+                if population[island][individual].getTotalWeight() >= 0:
+                    if population[island][individual].getValue() > best_Knapsack[island].getValue():
+                        best_Knapsack[island] = population[island][individual]
+
         # Printing useful information
         if (i % 100 == 0 or i == gens - 1) and i != 0:
-            print('\nCurrent generation...: {}'.format(i))
-            current_generation[i // 100] = i
+            if number_islands > 1 and i != gens - 1:
+                print('\nMigrating individuals to other islands')
+                migrate(population)
+            print('\nCurrent generation...: {}'.format(i + 1))
             for y in range(number_islands):
-                print('Best solution so far in island {}: {}'.format(y, best_Knapsack[y].getValue()))
-                if y == 0:
-                    solution_1[i // 100] = best_Knapsack[y].getValue()
-                if y == 1:
-                    solution_2[i // 100] = best_Knapsack[y].getValue()
-                if y == 2:
-                    solution_3[i // 100] = best_Knapsack[y].getValue()
-                if y == 3:
-                    solution_4[i // 100] = best_Knapsack[y].getValue()
+                print('Best solution so far in island {}: {}'.format(y + 1, best_Knapsack[y].getValue()))
     best = 0
     for z in range(number_islands):
-        if best_Knapsack[z].getValue() > best_Knapsack[best].getValue():
-            best = z
+        if best_Knapsack[z].getValue() > best_Knapsack[best].getValue(): best = z
         print('\nSolution found in island {}:'.format(z + 1))
-        print('Weight: {}'.format(best_Knapsack[z].getTotalWeight()))
+        print('Weight left: {}'.format(best_Knapsack[z].getTotalWeight()))
         print('Value: {}'.format(best_Knapsack[z].getValue()))
         print('Backpack configuration: {}'.format(best_Knapsack[z].getChromosome()))
 
     print('\nBest general solution:')
-    print('Weight: {}'.format(best_Knapsack[best].getTotalWeight()))
+    print('Weight left: {}'.format(best_Knapsack[best].getTotalWeight()))
     print('Value: {}'.format(best_Knapsack[best].getValue()))
     print('Backpack configuration: {}'.format(best_Knapsack[best].getChromosome()))
 
@@ -185,7 +167,7 @@ if __name__ == '__main__':
     number_islands = 4
 
     # Reading files with the instance problem
-    file_name = '\ks_19_0.txt'
+    file_name = '\ks_10000_0.txt'
     instance = open('Instances KP' + file_name, 'r')
     problemCharacteristics = instance.readline().rstrip("\n")
     problemCharacteristics = problemCharacteristics.split(", ")
@@ -215,8 +197,7 @@ if __name__ == '__main__':
     best_Knapsack = [Knapsack(max_weight, backpack_capacity),
                      Knapsack(max_weight, backpack_capacity),
                      Knapsack(max_weight, backpack_capacity),
-                     Knapsack(max_weight, backpack_capacity),
-                     None, None, None]
+                     Knapsack(max_weight, backpack_capacity)]
 
     print('\n\n---Generated Parameters---')
     print('Population size per island: {}'.format(population_size))

@@ -1,15 +1,20 @@
 class Knapsack:
     # Creates a new instance of Knapsack
-    def __init__(self, totalWeight, len_chromosome):
-        self.value = int(0)
-        self.totalWeight = float(totalWeight)
-        self.chromosome = [0] * len_chromosome
+    def __init__(self, *args): # First argument: Weight. Second argument: Length of chromosome
+        if len(args) == 2:
+            self.totalWeight = float(args[0])
+            self.chromosome = [0] * args[1]
+            self.value = int(0)
+        elif len(args) == 3:    # First argument: Weight. Second argument: Value
+            self.totalWeight = float(args[0])   # Third argument: Chromosome
+            self.value = args[1]
+            self.chromosome = args[2]
 
-    # Creates a new instance of Knapsack from an existing instance
-    def knapsack(self, knapsack):
-        self.totalWeight = knapsack.totalWeight
-        self.value = knapsack.value
-        self.chromosome = knapsack.chromosome
+    # Creates a new instance of Knapsack with predefined parameters
+    def knapsack(self, value, weight, chromosome):
+        self.totalWeight = float(weight)
+        self.value = int(value)
+        self.chromosome = chromosome
 
     # Returns the current totalWeight
     def getTotalWeight(self):
@@ -32,12 +37,3 @@ class Knapsack:
         self.chromosome[item.getID()] = 1
         self.totalWeight -= float(item.getWeight())
         self.value += int(item.getValue())
-
-    # Modifies the chromosome
-    def modChromosome(self, chromosome):
-        self.chromosome = chromosome
-
-    # Modifies value and total weight
-    def modValWeight(self, value, weight):
-        self.value = int(value)
-        self.totalWeight = float(weight)
