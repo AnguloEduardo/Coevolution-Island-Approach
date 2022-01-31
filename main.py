@@ -50,8 +50,8 @@ def combine(parentA, parentB, cRate):
 def mutate(individual, mRate):
     if random.random() < mRate:
         i, j = random.sample(range(backpack_capacity), 2)
-        individual.chromosome[i] = 0 if individual.chromosome[i] == 0 else 1
-        individual.chromosome[j] = 0 if individual.chromosome[j] == 0 else 1
+        individual.chromosome[i] = 0 if individual.chromosome[i] == 1 else 1
+        individual.chromosome[j] = 0 if individual.chromosome[j] == 1 else 1
         return individual, True
     return individual, False
 
@@ -91,16 +91,27 @@ def select(island, tSize, numParents):
     return parent_a, parent_b
 
 
-def migrate(islands):
+def migrate():
     # Sorting Knapsacks by they value
     for i in range(number_islands):
-        islands[i].sort(key=lambda x: x.value, reverse=True)
-    # Exchanging the best four Knapsacks solutions of each island to another
-    Knapsack1, Knapsack2, Knapsack3, Knapsack4 = islands[0][0], islands[0][1], islands[0][2], islands[0][3]
-    islands[0][0], islands[0][1], islands[0][2], islands[0][3] = islands[1][0], islands[1][1], islands[1][2], islands[1][3]
-    islands[1][0], islands[1][1], islands[1][2], islands[1][3] = islands[2][0], islands[2][1], islands[2][2], islands[2][3]
-    islands[2][0], islands[2][1], islands[2][2], islands[2][3] = islands[3][0], islands[3][1], islands[3][2], islands[3][3]
-    islands[3][0], islands[3][1], islands[3][2], islands[3][3] = Knapsack1, Knapsack2, Knapsack3, Knapsack4
+        population[i].sort(key=lambda x: x.value, reverse=True)
+        # Keeping track of the best solution found on each island
+        if population[i][0].getValue() > best_Knapsack[i].getValue():
+            best_Knapsack[i] = population[i][0]
+    # Exchanging the best five Knapsacks solutions of each island to another
+    Knapsack1, Knapsack2, Knapsack3, Knapsack4, Knapsack5 = population[0][0], population[0][1], population[0][2],\
+                                                            population[0][3], population[0][4]
+    population[0][0], population[0][1], population[0][2], population[0][3], population[0][4] = \
+    population[1][0], population[1][1], population[1][2], population[1][3], population[1][4]
+
+    population[1][0], population[1][1], population[1][2], population[1][3], population[1][4] = \
+    population[2][0], population[2][1], population[2][2], population[2][3], population[2][4]
+
+    population[2][0], population[2][1], population[2][2], population[2][3], population[2][4] = \
+    population[3][0], population[3][1], population[3][2], population[3][3], population[3][4]
+
+    population[3][0], population[3][1], population[3][2], population[3][3], population[3][4] = \
+    Knapsack1, Knapsack2, Knapsack3, Knapsack4, Knapsack5
 
 
 # Genetic algorithm
@@ -134,20 +145,15 @@ def geneticAlgorithm(pSize, gens, cRate, mRate, numberItems, weight):
                     population[island][index].value = value
                     population[island][index].totalWeight = weight
 
-            # Keeps a record of the best Knapsack found so far in each island
-            for individual in range(pSize):
-                if population[island][individual].getTotalWeight() >= 0:
-                    if population[island][individual].getValue() > best_Knapsack[island].getValue():
-                        best_Knapsack[island] = population[island][individual]
-
         # Printing useful information
         if (i % 100 == 0 or i == gens - 1) and i != 0:
             if number_islands > 1 and i != gens - 1:
                 print('\nMigrating individuals to other islands')
-                migrate(population)
-            print('\nCurrent generation...: {}'.format(i + 1))
+                migrate()
+            print('\nCurrent generation...: {}'.format(i))
             for y in range(number_islands):
-                print('Best solution so far in island {}: {}'.format(y + 1, best_Knapsack[y].getValue()))
+                print('Best solution so far in island {}: Weight left: {} Value: {}'.format(y + 1,
+                                  best_Knapsack[y].getTotalWeight(), best_Knapsack[y].getValue()))
     best = 0
     for z in range(number_islands):
         if best_Knapsack[z].getValue() > best_Knapsack[best].getValue(): best = z

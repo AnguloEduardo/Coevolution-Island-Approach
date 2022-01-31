@@ -1,0 +1,14 @@
+1ra corrida:
+Best general solution:
+Weight left: 35.0
+Value: 1104919
+
+2da corrida:
+Best general solution:
+Weight left: 17.0
+Value: 1096155
+
+3ra corrida:
+Best general solution:
+Weight left: 85.0
+Value: 1094984
