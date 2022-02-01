@@ -1,0 +1,17 @@
+1ra corrida:
+Best general solution:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+2da corrida:
+Best general solution:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+3ra corrida:
+Best general solution:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]

@@ -1,0 +1,232 @@
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 4
+Max backpack weight: 11
+Instance used: \ks_4_0.txt
+Number of islands: 4
+ 20%|██        | 102/500 [00:02<00:08, 44.23it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 40%|███▉      | 198/500 [00:05<00:07, 42.86it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 60%|██████    | 300/500 [00:07<00:04, 43.75it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 80%|████████  | 401/500 [00:09<00:02, 40.91it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+100%|██████████| 500/500 [00:12<00:00, 40.65it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 4:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Best general solution:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+
+
+
+----------------------------------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 4
+Max backpack weight: 11
+Instance used: \ks_4_0.txt
+Number of islands: 4
+ 19%|█▉        | 97/500 [00:02<00:09, 43.37it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 40%|███▉      | 198/500 [00:04<00:06, 45.90it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 60%|██████    | 300/500 [00:06<00:04, 44.53it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 80%|████████  | 402/500 [00:09<00:02, 43.57it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+100%|██████████| 500/500 [00:11<00:00, 43.82it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 4:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Best general solution:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+
+
+
+
+----------------------------------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 4
+Max backpack weight: 11
+Instance used: \ks_4_0.txt
+Number of islands: 4
+ 20%|██        | 100/500 [00:02<00:08, 47.94it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 40%|███▉      | 199/500 [00:04<00:06, 48.81it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 60%|██████    | 302/500 [00:06<00:04, 48.99it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+ 80%|████████  | 402/500 [00:08<00:02, 46.33it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+100%|██████████| 500/500 [00:10<00:00, 48.02it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 1.0 Value: 5
+Best solution so far in island 2: Weight left: 1.0 Value: 5
+Best solution so far in island 3: Weight left: 1.0 Value: 5
+Best solution so far in island 4: Weight left: 1.0 Value: 5
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Solution found in island 4:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
+
+Best general solution:
+Weight left: 1.0
+Value: 5
+Backpack configuration: [1]
