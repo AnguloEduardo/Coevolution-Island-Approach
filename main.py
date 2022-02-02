@@ -182,10 +182,14 @@ def geneticAlgorithm(pSize, gens, cRate, mRate, numberItems, weight):
             new_population = []
             for _ in range(pSize // 2):
                 parent_a, parent_b = select(island, num_tournament, num_parents_to_select)
-                offspring_a, offspring_b = combine(parent_a.getChromosome(), parent_b.getChromosome(), cRate[island], island)
-                weight, value, offspring_a = calculate_weight_value(offspring_a)
+                offspring_a, offspring_b = combine(parent_a.getChromosome().copy(), parent_b.getChromosome().copy(), cRate[island], island)
+                weight, value, offspring_a = calculate_weight_value(offspring_a.copy())
+                if isinstance(offspring_a[0], float):
+                    offspring_a = [int(x) for x in offspring_a]
                 child_a = Knapsack(weight, value, offspring_a)
-                weight, value, offspring_b = calculate_weight_value(offspring_b)
+                weight, value, offspring_b = calculate_weight_value(offspring_b.copy())
+                if isinstance(offspring_b[0], float):
+                    offspring_b = [int(x) for x in offspring_b]
                 child_b = Knapsack(weight, value, offspring_b)
                 new_population.extend([child_a, child_b])
             population[island] = new_population
@@ -194,7 +198,7 @@ def geneticAlgorithm(pSize, gens, cRate, mRate, numberItems, weight):
             for index in range(pSize):
                 individual, boolean = mutate(population[island][index], mRate[island])
                 if boolean:
-                    weight, value, chromosome = calculate_weight_value(individual.chromosome)
+                    weight, value, chromosome = calculate_weight_value(individual.chromosome.copy())
                     population[island][index].chromosome = chromosome
                     population[island][index].value = value
                     population[island][index].totalWeight = weight
@@ -233,14 +237,14 @@ if __name__ == '__main__':
     number_islands = 4
 
     # Reading files with the instance problem
-    file_name = '\ks_30_0.txt'
+    file_name = '\ks_10000_0.txt'
     instance = open('Instances KP' + file_name, 'r')
     problemCharacteristics = instance.readline().rstrip("\n")
     problemCharacteristics = problemCharacteristics.split(", ")
 
     # Initialization of population size, generations, crossover and mutation probabilities
     # for the four different islands
-    population_size = 800 // 4
+    population_size = 20000 // 4
     generations = 500
     crossover_probability = [0.3, 0.5, 0.7, 1.0]
     mutation_probability = [0.05, 0.10, 0.15, 0.20]

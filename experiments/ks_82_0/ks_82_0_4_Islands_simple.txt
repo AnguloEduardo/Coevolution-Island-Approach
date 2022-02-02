@@ -1,0 +1,35 @@
+1ra corrida:
+Best general solution:
+Weight left: 2936.0
+Value: 104720660
+Backpack configuration: [4, 16, 17, 18, 19, 20, 25, 31, 33, 36, 72]
+
+2da corrida:
+Best general solution:
+Weight left: 2958.0
+Value: 104720638
+Backpack configuration: [10, 21, 22, 23, 26, 27, 29, 33, 35, 36, 49, 53]
+
+3ra corrida:
+Best general solution:
+Weight left: 2660.0
+Value: 104720936
+Backpack configuration: [2, 5, 15, 16, 17, 18, 21, 22, 23, 24, 27, 30, 31, 34, 36]
+
+4ta corrida:
+Best general solution:
+Weight left: 3170.0
+Value: 104720426
+Backpack configuration: [13, 14, 17, 20, 22, 25, 26, 31, 36]
+
+5ta corrida:
+Best general solution:
+Weight left: 1488.0
+Value: 104722108
+Backpack configuration: [7, 16, 17, 18, 19, 21, 22, 23, 27, 29, 31, 33, 34, 35, 36]
+
+6ta corrida con 500 individuos por isla:
+Best general solution:
+Weight left: 1208.0
+Value: 104722388
+Backpack configuration: [3, 6, 15, 16, 19, 22, 23, 28, 29, 30, 37, 38, 50]

@@ -1,0 +1,307 @@
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 40
+Max backpack weight: 100000
+Instance used: \ks_40_0.txt
+Number of islands: 4
+ 20%|█▉        | 99/500 [00:02<00:10, 37.14it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 211.0 Value: 99769
+Best solution so far in island 2: Weight left: 225.0 Value: 99762
+Best solution so far in island 3: Weight left: 233.0 Value: 99758
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 40%|████      | 202/500 [00:06<00:09, 30.76it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 211.0 Value: 99769
+Best solution so far in island 2: Weight left: 225.0 Value: 99762
+Best solution so far in island 3: Weight left: 233.0 Value: 99758
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 60%|█████▉    | 298/500 [00:09<00:06, 32.91it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 211.0 Value: 99769
+Best solution so far in island 2: Weight left: 225.0 Value: 99762
+Best solution so far in island 3: Weight left: 233.0 Value: 99758
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 80%|████████  | 400/500 [00:12<00:02, 33.62it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 211.0 Value: 99769
+Best solution so far in island 2: Weight left: 225.0 Value: 99762
+Best solution so far in island 3: Weight left: 233.0 Value: 99758
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+100%|██████████| 500/500 [00:15<00:00, 31.67it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 211.0 Value: 99769
+Best solution so far in island 2: Weight left: 225.0 Value: 99762
+Best solution so far in island 3: Weight left: 233.0 Value: 99758
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+
+Solution found in island 1:
+Weight left: 211.0
+Value: 99769
+Backpack configuration: [37, 38]
+
+Solution found in island 2:
+Weight left: 225.0
+Value: 99762
+Backpack configuration: [23, 24]
+
+Solution found in island 3:
+Weight left: 233.0
+Value: 99758
+Backpack configuration: [15, 16]
+
+Solution found in island 4:
+Weight left: 9999.0
+Value: 90000
+Backpack configuration: [0]
+
+Best general solution:
+Weight left: 211.0
+Value: 99769
+Backpack configuration: [37, 38]
+
+
+
+--------------------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 40
+Max backpack weight: 100000
+Instance used: \ks_40_0.txt
+Number of islands: 4
+ 20%|█▉        | 99/500 [00:02<00:10, 37.79it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 219.0 Value: 99765
+Best solution so far in island 2: Weight left: 215.0 Value: 99767
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 247.0 Value: 99751
+ 40%|████      | 200/500 [00:05<00:08, 34.96it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 215.0 Value: 99767
+Best solution so far in island 2: Weight left: 215.0 Value: 99767
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 247.0 Value: 99751
+ 60%|█████▉    | 298/500 [00:08<00:05, 36.52it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 215.0 Value: 99767
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 247.0 Value: 99751
+ 80%|███████▉  | 399/500 [00:11<00:02, 36.72it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 215.0 Value: 99767
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 247.0 Value: 99751
+100%|██████████| 500/500 [00:13<00:00, 36.20it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 215.0 Value: 99767
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 247.0 Value: 99751
+
+Solution found in island 1:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Solution found in island 2:
+Weight left: 215.0
+Value: 99767
+Backpack configuration: [33, 34]
+
+Solution found in island 3:
+Weight left: 243.0
+Value: 99753
+Backpack configuration: [5, 6]
+
+Solution found in island 4:
+Weight left: 247.0
+Value: 99751
+Backpack configuration: [1, 2]
+
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+
+
+--------------------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 40
+Max backpack weight: 100000
+Instance used: \ks_40_0.txt
+Number of islands: 4
+ 20%|██        | 101/500 [00:02<00:10, 36.84it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 231.0 Value: 99759
+Best solution so far in island 3: Weight left: 219.0 Value: 99765
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 40%|███▉      | 198/500 [00:05<00:08, 37.49it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 219.0 Value: 99765
+Best solution so far in island 3: Weight left: 219.0 Value: 99765
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 60%|█████▉    | 299/500 [00:08<00:05, 36.76it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 219.0 Value: 99765
+Best solution so far in island 3: Weight left: 219.0 Value: 99765
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 80%|███████▉  | 399/500 [00:10<00:02, 36.66it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 219.0 Value: 99765
+Best solution so far in island 3: Weight left: 219.0 Value: 99765
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+100%|██████████| 500/500 [00:13<00:00, 36.74it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 219.0 Value: 99765
+Best solution so far in island 3: Weight left: 219.0 Value: 99765
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+
+Solution found in island 1:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Solution found in island 2:
+Weight left: 219.0
+Value: 99765
+Backpack configuration: [29, 30]
+
+Solution found in island 3:
+Weight left: 219.0
+Value: 99765
+Backpack configuration: [29, 30]
+
+Solution found in island 4:
+Weight left: 9999.0
+Value: 90000
+Backpack configuration: [0]
+
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+
+
+--------------------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 200
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 40
+Max backpack weight: 100000
+Instance used: \ks_40_0.txt
+Number of islands: 4
+ 20%|██        | 101/500 [00:02<00:10, 37.77it/s]
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution so far in island 1: Weight left: 215.0 Value: 99767
+Best solution so far in island 2: Weight left: 87.0 Value: 99896
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 40%|███▉      | 199/500 [00:05<00:07, 38.26it/s]
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 87.0 Value: 99896
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 60%|█████▉    | 299/500 [00:08<00:05, 36.46it/s]
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 87.0 Value: 99896
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+ 80%|████████  | 400/500 [00:11<00:02, 36.30it/s]
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 87.0 Value: 99896
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+100%|██████████| 500/500 [00:13<00:00, 36.52it/s]
+
+Current generation...: 499
+Best solution so far in island 1: Weight left: 87.0 Value: 99896
+Best solution so far in island 2: Weight left: 87.0 Value: 99896
+Best solution so far in island 3: Weight left: 243.0 Value: 99753
+Best solution so far in island 4: Weight left: 9999.0 Value: 90000
+
+Solution found in island 1:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Solution found in island 2:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Solution found in island 3:
+Weight left: 243.0
+Value: 99753
+Backpack configuration: [5, 6]
+
+Solution found in island 4:
+Weight left: 9999.0
+Value: 90000
+Backpack configuration: [0]
+
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]

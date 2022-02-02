@@ -1,0 +1,29 @@
+1ra corrida:
+Best general solution:
+Weight left: 211.0
+Value: 99769
+Backpack configuration: [37, 38]
+
+2da corrida:
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+3ra corrida:
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+4ta corrida:
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+5ta corrida:
+Best general solution:
+Weight left: 87.0
+Value: 99896
+Backpack configuration: [32, 39]
