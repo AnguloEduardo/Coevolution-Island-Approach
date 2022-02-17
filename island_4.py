@@ -13,7 +13,7 @@ population = []
 # Variables
 num_tournament = 3
 num_parents_to_select = 2
-file_name = 'ks_10000_0'
+file_name = 'ks_500_0'
 run_times = 30
 # Initialization of population size, generations, crossover and mutation probabilities
 # for the four different islands

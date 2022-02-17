@@ -1,0 +1,673 @@
+
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 500
+Number of generations: 500
+Crossover probability: 0.3
+Mutation probability: 0.05
+Backpack capacity: 106
+Max backpack weight: 106925262
+Instance used: ks_106_0
+
+ Run number: 1
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 5669.0 Value: 106919593
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 5669.0 Value: 106919593
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 5669.0 Value: 106919593
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 2028.0 Value: 106923234
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 2028.0 Value: 106923234
+
+Solution found in island:
+Weight left: 2028.0
+Value: 106923234
+Backpack configuration: [1, 8, 11, 17, 57]
+
+ Run number: 2
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 767.0 Value: 106924495
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Solution found in island:
+Weight left: 244.0
+Value: 106925018
+Backpack configuration: [11, 13, 15, 30, 45, 59, 67, 77, 78, 86]
+
+ Run number: 3
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Solution found in island:
+Weight left: 1114.0
+Value: 106924148
+Backpack configuration: [9, 13, 22, 30]
+
+ Run number: 4
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 1054.0 Value: 106924208
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1054.0 Value: 106924208
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1054.0 Value: 106924208
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1054.0 Value: 106924208
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1054.0 Value: 106924208
+
+Solution found in island:
+Weight left: 1054.0
+Value: 106924208
+Backpack configuration: [33, 41, 49, 70, 90]
+
+ Run number: 5
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 52.0 Value: 106925210
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 52.0 Value: 106925210
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 52.0 Value: 106925210
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 52.0 Value: 106925210
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 52.0 Value: 106925210
+
+Solution found in island:
+Weight left: 52.0
+Value: 106925210
+Backpack configuration: [28, 36, 38, 48, 53, 57, 65, 69, 92, 99]
+
+ Run number: 6
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 8922.0 Value: 106916340
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 8922.0 Value: 106916340
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 8922.0 Value: 106916340
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 8922.0 Value: 106916340
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 8922.0 Value: 106916340
+
+Solution found in island:
+Weight left: 8922.0
+Value: 106916340
+Backpack configuration: [4, 13, 17, 19, 22, 31]
+
+ Run number: 7
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 2379.0 Value: 106922883
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 2379.0 Value: 106922883
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 2379.0 Value: 106922883
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 2379.0 Value: 106922883
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 820.0 Value: 106924442
+
+Solution found in island:
+Weight left: 820.0
+Value: 106924442
+Backpack configuration: [0, 1, 5, 6, 9, 10, 14, 16, 19, 24, 31]
+
+ Run number: 8
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 15126.0 Value: 106910136
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 15126.0 Value: 106910136
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 15126.0 Value: 106910136
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 15126.0 Value: 106910136
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 15126.0 Value: 106910136
+
+Solution found in island:
+Weight left: 15126.0
+Value: 106910136
+Backpack configuration: [7, 26, 29, 44]
+
+ Run number: 9
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 5667.0 Value: 106919595
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 5667.0 Value: 106919595
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 5667.0 Value: 106919595
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 5667.0 Value: 106919595
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 5667.0 Value: 106919595
+
+Solution found in island:
+Weight left: 5667.0
+Value: 106919595
+Backpack configuration: [3, 4, 6, 9, 14, 18, 24, 38, 45, 46, 48, 85]
+
+ Run number: 10
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 9362.0 Value: 106915900
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 9362.0 Value: 106915900
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1557.0 Value: 106923705
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1557.0 Value: 106923705
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1557.0 Value: 106923705
+
+Solution found in island:
+Weight left: 1557.0
+Value: 106923705
+Backpack configuration: [15, 26, 33, 47, 63, 96]
+
+ Run number: 11
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 2738.0 Value: 106922524
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1692.0 Value: 106923570
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1692.0 Value: 106923570
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1692.0 Value: 106923570
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1692.0 Value: 106923570
+
+Solution found in island:
+Weight left: 1692.0
+Value: 106923570
+Backpack configuration: [0, 5, 9, 14, 16, 17, 22, 28, 36, 46, 49, 89]
+
+ Run number: 12
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 813.0 Value: 106924449
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 813.0 Value: 106924449
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 813.0 Value: 106924449
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 813.0 Value: 106924449
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 813.0 Value: 106924449
+
+Solution found in island:
+Weight left: 813.0
+Value: 106924449
+Backpack configuration: [14, 40, 47, 55, 66]
+
+ Run number: 13
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 1264.0 Value: 106923998
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1264.0 Value: 106923998
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1264.0 Value: 106923998
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1264.0 Value: 106923998
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1264.0 Value: 106923998
+
+Solution found in island:
+Weight left: 1264.0
+Value: 106923998
+Backpack configuration: [53, 57, 78, 100, 105]
+
+ Run number: 14
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 1393.0 Value: 106923869
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 347.0 Value: 106924915
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 347.0 Value: 106924915
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 347.0 Value: 106924915
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 347.0 Value: 106924915
+
+Solution found in island:
+Weight left: 347.0
+Value: 106924915
+Backpack configuration: [0, 4, 10, 14, 23, 25, 36, 40, 54, 57, 70, 77]
+
+ Run number: 15
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1114.0 Value: 106924148
+
+Solution found in island:
+Weight left: 1114.0
+Value: 106924148
+Backpack configuration: [13, 33, 40, 41]
+
+ Run number: 16
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 1255.0 Value: 106924007
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1255.0 Value: 106924007
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1134.0 Value: 106924128
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1134.0 Value: 106924128
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1134.0 Value: 106924128
+
+Solution found in island:
+Weight left: 1134.0
+Value: 106924128
+Backpack configuration: [8, 26, 33, 79, 81]
+
+ Run number: 17
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 617.0 Value: 106924645
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 617.0 Value: 106924645
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 617.0 Value: 106924645
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 617.0 Value: 106924645
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 617.0 Value: 106924645
+
+Solution found in island:
+Weight left: 617.0
+Value: 106924645
+Backpack configuration: [10, 19, 24, 38, 43, 60, 66, 67]
+
+ Run number: 18
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 7552.0 Value: 106917710
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 5188.0 Value: 106920074
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 2220.0 Value: 106923042
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 2220.0 Value: 106923042
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 2220.0 Value: 106923042
+
+Solution found in island:
+Weight left: 2220.0
+Value: 106923042
+Backpack configuration: [1, 2, 7, 8, 33, 67]
+
+ Run number: 19
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 6998.0 Value: 106918264
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 2834.0 Value: 106922428
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 742.0 Value: 106924520
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 742.0 Value: 106924520
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 742.0 Value: 106924520
+
+Solution found in island:
+Weight left: 742.0
+Value: 106924520
+Backpack configuration: [11, 15, 16, 30, 36, 47, 98]
+
+ Run number: 20
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 68.0 Value: 106925194
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 68.0 Value: 106925194
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 68.0 Value: 106925194
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 68.0 Value: 106925194
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 68.0 Value: 106925194
+
+Solution found in island:
+Weight left: 68.0
+Value: 106925194
+Backpack configuration: [1, 7, 15, 33, 40, 59, 60, 67, 80]
+
+ Run number: 21
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 10062.0 Value: 106915200
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 10062.0 Value: 106915200
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 10062.0 Value: 106915200
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 873.0 Value: 106924389
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 502.0 Value: 106924760
+
+Solution found in island:
+Weight left: 502.0
+Value: 106924760
+Backpack configuration: [13, 16, 35, 44, 60, 72]
+
+ Run number: 22
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 864.0 Value: 106924398
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 864.0 Value: 106924398
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 351.0 Value: 106924911
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 351.0 Value: 106924911
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 351.0 Value: 106924911
+
+Solution found in island:
+Weight left: 351.0
+Value: 106924911
+Backpack configuration: [1, 8, 22, 31, 36, 86]
+
+ Run number: 23
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 3049.0 Value: 106922213
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 3049.0 Value: 106922213
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 3049.0 Value: 106922213
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 3049.0 Value: 106922213
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 3049.0 Value: 106922213
+
+Solution found in island:
+Weight left: 3049.0
+Value: 106922213
+Backpack configuration: [1, 4, 6, 7, 11, 15, 17, 34, 35, 38, 45]
+
+ Run number: 24
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 607.0 Value: 106924655
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 607.0 Value: 106924655
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 607.0 Value: 106924655
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 304.0 Value: 106924958
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 304.0 Value: 106924958
+
+Solution found in island:
+Weight left: 304.0
+Value: 106924958
+Backpack configuration: [11, 56, 72, 91, 96, 98]
+
+ Run number: 25
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 934.0 Value: 106924328
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 934.0 Value: 106924328
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 934.0 Value: 106924328
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 934.0 Value: 106924328
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 934.0 Value: 106924328
+
+Solution found in island:
+Weight left: 934.0
+Value: 106924328
+Backpack configuration: [7, 30, 33, 59]
+
+ Run number: 26
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 244.0 Value: 106925018
+
+Solution found in island:
+Weight left: 244.0
+Value: 106925018
+Backpack configuration: [3, 11, 18, 25, 29, 50, 56, 76]
+
+ Run number: 27
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 593.0 Value: 106924669
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 65.0 Value: 106925197
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 65.0 Value: 106925197
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 65.0 Value: 106925197
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 65.0 Value: 106925197
+
+Solution found in island:
+Weight left: 65.0
+Value: 106925197
+Backpack configuration: [2, 18, 19, 32, 43, 69, 96]
+
+ Run number: 28
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 2546.0 Value: 106922716
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 2546.0 Value: 106922716
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 2546.0 Value: 106922716
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 2546.0 Value: 106922716
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 2546.0 Value: 106922716
+
+Solution found in island:
+Weight left: 2546.0
+Value: 106922716
+Backpack configuration: [0, 8, 11, 12, 13, 16, 24, 25, 26]
+
+ Run number: 29
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 2763.0 Value: 106922499
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 1214.0 Value: 106924048
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 1214.0 Value: 106924048
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 1214.0 Value: 106924048
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1214.0 Value: 106924048
+
+Solution found in island:
+Weight left: 1214.0
+Value: 106924048
+Backpack configuration: [5, 9, 14, 22, 29, 39, 59]
+
+ Run number: 30
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 2854.0 Value: 106922408
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 2854.0 Value: 106922408
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 2854.0 Value: 106922408
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 2854.0 Value: 106922408
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 1833.0 Value: 106923429
+
+Solution found in island:
+Weight left: 1833.0
+Value: 106923429
+Backpack configuration: [4, 6, 11, 19, 27, 56]

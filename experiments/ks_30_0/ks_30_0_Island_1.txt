@@ -1,0 +1,673 @@
+
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 500
+Number of generations: 500
+Crossover probability: 0.3
+Mutation probability: 0.05
+Backpack capacity: 30
+Max backpack weight: 100000
+Instance used: ks_30_0
+
+ Run number: 1
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 2
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Solution found in island:
+Weight left: 237.0
+Value: 99777
+Backpack configuration: [25, 26]
+
+ Run number: 3
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 4
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 5
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 6
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 7
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 8
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 9
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 10
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 11
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Solution found in island:
+Weight left: 237.0
+Value: 99777
+Backpack configuration: [25, 26]
+
+ Run number: 12
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 13
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 14
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 15
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 16
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 17
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 18
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 19
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 20
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 21
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Solution found in island:
+Weight left: 238.0
+Value: 99775
+Backpack configuration: [23, 24]
+
+ Run number: 22
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 238.0 Value: 99775
+
+Solution found in island:
+Weight left: 238.0
+Value: 99775
+Backpack configuration: [23, 24]
+
+ Run number: 23
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 24
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Solution found in island:
+Weight left: 237.0
+Value: 99777
+Backpack configuration: [25, 26]
+
+ Run number: 25
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 26
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 237.0 Value: 99777
+
+Solution found in island:
+Weight left: 237.0
+Value: 99777
+Backpack configuration: [25, 26]
+
+ Run number: 27
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 28
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 29
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]
+
+ Run number: 30
+
+Current generation...: 100
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 200
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 300
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 400
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Current generation...: 499
+Best solution found so far in island: Weight left: 236.0 Value: 99779
+
+Solution found in island:
+Weight left: 236.0
+Value: 99779
+Backpack configuration: [27, 28]

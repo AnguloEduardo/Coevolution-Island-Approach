@@ -1,0 +1,1814 @@
+
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 500
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0]
+Mutation probability: [0.05, 0.1, 0.15, 0.2]
+Backpack capacity: 100
+Max backpack weight: 10000
+Instance used: ks_100_2
+Number of islands: 4
+
+Run number: 1
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 14.0 Value: 10704
+Best solution found so far in island 2: Weight left: 11.0 Value: 10913
+Best solution found so far in island 3: Weight left: 18.0 Value: 10843
+Best solution found so far in island 4: Weight left: 6.0 Value: 10554
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 11.0 Value: 10913
+Best solution found so far in island 2: Weight left: 11.0 Value: 10913
+Best solution found so far in island 3: Weight left: 3.0 Value: 10871
+Best solution found so far in island 4: Weight left: 6.0 Value: 10554
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 11.0 Value: 10913
+Best solution found so far in island 2: Weight left: 11.0 Value: 10913
+Best solution found so far in island 3: Weight left: 21.0 Value: 10893
+Best solution found so far in island 4: Weight left: 16.0 Value: 10564
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 11.0 Value: 10913
+Best solution found so far in island 2: Weight left: 11.0 Value: 10913
+Best solution found so far in island 3: Weight left: 0.0 Value: 10913
+Best solution found so far in island 4: Weight left: 29.0 Value: 10614
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 11.0 Value: 10913
+Best solution found so far in island 2: Weight left: 11.0 Value: 10913
+Best solution found so far in island 3: Weight left: 0.0 Value: 10913
+Best solution found so far in island 4: Weight left: 0.0 Value: 10684
+
+Solution found in island 1:
+Weight left: 11.0
+Value: 10913
+Backpack configuration: [3, 4, 5, 10, 24, 28, 29, 31, 37, 44, 49]
+
+Solution found in island 2:
+Weight left: 11.0
+Value: 10913
+Backpack configuration: [3, 4, 5, 10, 24, 28, 29, 31, 37, 44, 49]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10913
+Backpack configuration: [4, 14, 19, 24, 29, 31, 37, 44, 49]
+
+Solution found in island 4:
+Weight left: 0.0
+Value: 10684
+Backpack configuration: [3, 4, 7, 10, 11, 13, 16, 19, 20, 26]
+
+Run number: 2
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 28.0 Value: 10824
+Best solution found so far in island 2: Weight left: 14.0 Value: 10800
+Best solution found so far in island 3: Weight left: 10.0 Value: 10941
+Best solution found so far in island 4: Weight left: 60.0 Value: 10366
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 9.0 Value: 10838
+Best solution found so far in island 2: Weight left: 5.0 Value: 10944
+Best solution found so far in island 3: Weight left: 10.0 Value: 10941
+Best solution found so far in island 4: Weight left: 3.0 Value: 10460
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 5.0 Value: 10944
+Best solution found so far in island 2: Weight left: 5.0 Value: 10944
+Best solution found so far in island 3: Weight left: 0.0 Value: 10953
+Best solution found so far in island 4: Weight left: 23.0 Value: 10479
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 5.0 Value: 10944
+Best solution found so far in island 2: Weight left: 0.0 Value: 10953
+Best solution found so far in island 3: Weight left: 0.0 Value: 10953
+Best solution found so far in island 4: Weight left: 36.0 Value: 10529
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10953
+Best solution found so far in island 2: Weight left: 0.0 Value: 10953
+Best solution found so far in island 3: Weight left: 0.0 Value: 10953
+Best solution found so far in island 4: Weight left: 36.0 Value: 10529
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10953
+Backpack configuration: [3, 4, 5, 14, 15, 16, 20, 24, 26, 31, 37, 43, 49]
+
+Solution found in island 2:
+Weight left: 0.0
+Value: 10953
+Backpack configuration: [3, 4, 5, 14, 15, 16, 20, 24, 26, 31, 37, 43, 49]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10953
+Backpack configuration: [3, 4, 5, 14, 15, 16, 20, 24, 26, 31, 37, 43, 49]
+
+Solution found in island 4:
+Weight left: 36.0
+Value: 10529
+Backpack configuration: [0, 2, 3, 4, 6, 10, 14, 15, 16, 24, 37, 81]
+
+Run number: 3
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 5.0 Value: 10838
+Best solution found so far in island 2: Weight left: 3.0 Value: 10852
+Best solution found so far in island 3: Weight left: 10.0 Value: 10919
+Best solution found so far in island 4: Weight left: 31.0 Value: 10431
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 3.0 Value: 10852
+Best solution found so far in island 2: Weight left: 10.0 Value: 10919
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 103.0 Value: 10554
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 0.0 Value: 10931
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 48.0 Value: 10688
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 0.0 Value: 10931
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 48.0 Value: 10688
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10931
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 0.0 Value: 10713
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 2:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 4:
+Weight left: 0.0
+Value: 10713
+Backpack configuration: [3, 4, 5, 8, 10, 11, 14, 15, 16, 28, 37]
+
+Run number: 4
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 5.0 Value: 10818
+Best solution found so far in island 2: Weight left: 5.0 Value: 10821
+Best solution found so far in island 3: Weight left: 10.0 Value: 10901
+Best solution found so far in island 4: Weight left: 12.0 Value: 10450
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 5.0 Value: 10821
+Best solution found so far in island 2: Weight left: 10.0 Value: 10908
+Best solution found so far in island 3: Weight left: 3.0 Value: 10914
+Best solution found so far in island 4: Weight left: 77.0 Value: 10526
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 10.0 Value: 10908
+Best solution found so far in island 2: Weight left: 1.0 Value: 10918
+Best solution found so far in island 3: Weight left: 1.0 Value: 10918
+Best solution found so far in island 4: Weight left: 99.0 Value: 10637
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 1.0 Value: 10918
+Best solution found so far in island 2: Weight left: 1.0 Value: 10918
+Best solution found so far in island 3: Weight left: 1.0 Value: 10918
+Best solution found so far in island 4: Weight left: 99.0 Value: 10637
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 1.0 Value: 10918
+Best solution found so far in island 2: Weight left: 1.0 Value: 10918
+Best solution found so far in island 3: Weight left: 1.0 Value: 10918
+Best solution found so far in island 4: Weight left: 21.0 Value: 10645
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 10918
+Backpack configuration: [3, 4, 11, 14, 16, 24, 26, 29, 33, 37, 49]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10918
+Backpack configuration: [3, 4, 11, 14, 16, 24, 26, 29, 33, 37, 49]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 10918
+Backpack configuration: [3, 4, 11, 14, 16, 24, 26, 29, 33, 37, 49]
+
+Solution found in island 4:
+Weight left: 21.0
+Value: 10645
+Backpack configuration: [3, 4, 5, 8, 10, 11, 14, 19, 22, 37]
+
+Run number: 5
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 13.0 Value: 10731
+Best solution found so far in island 2: Weight left: 17.0 Value: 10866
+Best solution found so far in island 3: Weight left: 0.0 Value: 10861
+Best solution found so far in island 4: Weight left: 38.0 Value: 10321
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 17.0 Value: 10866
+Best solution found so far in island 2: Weight left: 17.0 Value: 10866
+Best solution found so far in island 3: Weight left: 12.0 Value: 10902
+Best solution found so far in island 4: Weight left: 2.0 Value: 10404
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 17.0 Value: 10866
+Best solution found so far in island 2: Weight left: 7.0 Value: 10911
+Best solution found so far in island 3: Weight left: 12.0 Value: 10902
+Best solution found so far in island 4: Weight left: 10.0 Value: 10452
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 7.0 Value: 10911
+Best solution found so far in island 2: Weight left: 2.0 Value: 10914
+Best solution found so far in island 3: Weight left: 2.0 Value: 10914
+Best solution found so far in island 4: Weight left: 10.0 Value: 10452
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 2.0 Value: 10914
+Best solution found so far in island 2: Weight left: 2.0 Value: 10914
+Best solution found so far in island 3: Weight left: 2.0 Value: 10914
+Best solution found so far in island 4: Weight left: 95.0 Value: 10537
+
+Solution found in island 1:
+Weight left: 2.0
+Value: 10914
+Backpack configuration: [3, 4, 5, 14, 15, 19, 24, 26, 31, 37, 49, 75]
+
+Solution found in island 2:
+Weight left: 2.0
+Value: 10914
+Backpack configuration: [3, 4, 5, 14, 15, 19, 24, 26, 31, 37, 49, 75]
+
+Solution found in island 3:
+Weight left: 2.0
+Value: 10914
+Backpack configuration: [3, 4, 5, 14, 15, 19, 24, 26, 31, 37, 49, 75]
+
+Solution found in island 4:
+Weight left: 95.0
+Value: 10537
+Backpack configuration: [0, 3, 4, 5, 7, 10, 12, 14, 32, 37, 53]
+
+Run number: 6
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 12.0 Value: 10809
+Best solution found so far in island 2: Weight left: 3.0 Value: 10884
+Best solution found so far in island 3: Weight left: 13.0 Value: 10797
+Best solution found so far in island 4: Weight left: 7.0 Value: 10175
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 3.0 Value: 10884
+Best solution found so far in island 2: Weight left: 11.0 Value: 10923
+Best solution found so far in island 3: Weight left: 13.0 Value: 10797
+Best solution found so far in island 4: Weight left: 24.0 Value: 10576
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 11.0 Value: 10923
+Best solution found so far in island 2: Weight left: 11.0 Value: 10923
+Best solution found so far in island 3: Weight left: 13.0 Value: 10797
+Best solution found so far in island 4: Weight left: 24.0 Value: 10576
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 11.0 Value: 10923
+Best solution found so far in island 2: Weight left: 11.0 Value: 10923
+Best solution found so far in island 3: Weight left: 13.0 Value: 10797
+Best solution found so far in island 4: Weight left: 24.0 Value: 10576
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 11.0 Value: 10923
+Best solution found so far in island 2: Weight left: 11.0 Value: 10923
+Best solution found so far in island 3: Weight left: 5.0 Value: 10895
+Best solution found so far in island 4: Weight left: 24.0 Value: 10576
+
+Solution found in island 1:
+Weight left: 11.0
+Value: 10923
+Backpack configuration: [3, 4, 5, 10, 11, 14, 15, 37, 49, 58, 71]
+
+Solution found in island 2:
+Weight left: 11.0
+Value: 10923
+Backpack configuration: [3, 4, 5, 10, 11, 14, 15, 37, 49, 58, 71]
+
+Solution found in island 3:
+Weight left: 5.0
+Value: 10895
+Backpack configuration: [3, 4, 14, 16, 19, 24, 26, 37, 69, 71]
+
+Solution found in island 4:
+Weight left: 24.0
+Value: 10576
+Backpack configuration: [2, 3, 4, 8, 11, 26, 28, 32, 37]
+
+Run number: 7
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 6.0 Value: 10766
+Best solution found so far in island 2: Weight left: 6.0 Value: 10828
+Best solution found so far in island 3: Weight left: 1.0 Value: 10803
+Best solution found so far in island 4: Weight left: 42.0 Value: 10581
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 6.0 Value: 10828
+Best solution found so far in island 2: Weight left: 6.0 Value: 10828
+Best solution found so far in island 3: Weight left: 1.0 Value: 10803
+Best solution found so far in island 4: Weight left: 70.0 Value: 10689
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 6.0 Value: 10828
+Best solution found so far in island 2: Weight left: 6.0 Value: 10828
+Best solution found so far in island 3: Weight left: 1.0 Value: 10803
+Best solution found so far in island 4: Weight left: 70.0 Value: 10689
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 6.0 Value: 10828
+Best solution found so far in island 2: Weight left: 6.0 Value: 10828
+Best solution found so far in island 3: Weight left: 1.0 Value: 10803
+Best solution found so far in island 4: Weight left: 70.0 Value: 10689
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 6.0 Value: 10828
+Best solution found so far in island 2: Weight left: 6.0 Value: 10828
+Best solution found so far in island 3: Weight left: 1.0 Value: 10803
+Best solution found so far in island 4: Weight left: 70.0 Value: 10689
+
+Solution found in island 1:
+Weight left: 6.0
+Value: 10828
+Backpack configuration: [3, 10, 13, 14, 16, 19, 31, 33, 37, 44]
+
+Solution found in island 2:
+Weight left: 6.0
+Value: 10828
+Backpack configuration: [3, 10, 13, 14, 16, 19, 31, 33, 37, 44]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 10803
+Backpack configuration: [2, 3, 4, 14, 19, 20, 24, 37]
+
+Solution found in island 4:
+Weight left: 70.0
+Value: 10689
+Backpack configuration: [3, 4, 10, 11, 12, 15, 20, 37, 71, 80]
+
+Run number: 8
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 18.0 Value: 10957
+Best solution found so far in island 2: Weight left: 2.0 Value: 10926
+Best solution found so far in island 3: Weight left: 1.0 Value: 10955
+Best solution found so far in island 4: Weight left: 1.0 Value: 10641
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 18.0 Value: 10957
+Best solution found so far in island 2: Weight left: 1.0 Value: 10955
+Best solution found so far in island 3: Weight left: 1.0 Value: 10955
+Best solution found so far in island 4: Weight left: 62.0 Value: 10703
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 18.0 Value: 10957
+Best solution found so far in island 2: Weight left: 1.0 Value: 10955
+Best solution found so far in island 3: Weight left: 1.0 Value: 10955
+Best solution found so far in island 4: Weight left: 62.0 Value: 10703
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 18.0 Value: 10957
+Best solution found so far in island 2: Weight left: 1.0 Value: 10955
+Best solution found so far in island 3: Weight left: 1.0 Value: 10955
+Best solution found so far in island 4: Weight left: 62.0 Value: 10703
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 18.0 Value: 10957
+Best solution found so far in island 2: Weight left: 1.0 Value: 10955
+Best solution found so far in island 3: Weight left: 1.0 Value: 10955
+Best solution found so far in island 4: Weight left: 62.0 Value: 10703
+
+Solution found in island 1:
+Weight left: 18.0
+Value: 10957
+Backpack configuration: [4, 24, 37, 44, 49, 54, 58, 66, 68, 71]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10955
+Backpack configuration: [3, 4, 14, 20, 24, 43, 44, 49]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 10955
+Backpack configuration: [3, 4, 14, 20, 24, 43, 44, 49]
+
+Solution found in island 4:
+Weight left: 62.0
+Value: 10703
+Backpack configuration: [0, 3, 4, 5, 11, 12, 14, 15, 43, 82, 88]
+
+Run number: 9
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 11.0 Value: 10744
+Best solution found so far in island 2: Weight left: 8.0 Value: 10830
+Best solution found so far in island 3: Weight left: 30.0 Value: 10877
+Best solution found so far in island 4: Weight left: 8.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 35.0 Value: 10865
+Best solution found so far in island 2: Weight left: 17.0 Value: 10878
+Best solution found so far in island 3: Weight left: 9.0 Value: 10895
+Best solution found so far in island 4: Weight left: 8.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 12.0 Value: 10881
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 8.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 8.0 Value: 10459
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10931
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 8.0 Value: 10459
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 2:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 4:
+Weight left: 8.0
+Value: 10459
+Backpack configuration: [0, 3, 4, 6, 8, 10, 11, 14, 15, 37]
+
+Run number: 10
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 3.0 Value: 10824
+Best solution found so far in island 2: Weight left: 4.0 Value: 10880
+Best solution found so far in island 3: Weight left: 6.0 Value: 10906
+Best solution found so far in island 4: Weight left: 60.0 Value: 10256
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 4.0 Value: 10880
+Best solution found so far in island 2: Weight left: 10.0 Value: 10908
+Best solution found so far in island 3: Weight left: 10.0 Value: 10908
+Best solution found so far in island 4: Weight left: 77.0 Value: 10380
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 10.0 Value: 10908
+Best solution found so far in island 2: Weight left: 10.0 Value: 10908
+Best solution found so far in island 3: Weight left: 10.0 Value: 10908
+Best solution found so far in island 4: Weight left: 157.0 Value: 10423
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 10.0 Value: 10908
+Best solution found so far in island 2: Weight left: 10.0 Value: 10908
+Best solution found so far in island 3: Weight left: 10.0 Value: 10908
+Best solution found so far in island 4: Weight left: 8.0 Value: 10453
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 10.0 Value: 10908
+Best solution found so far in island 2: Weight left: 10.0 Value: 10908
+Best solution found so far in island 3: Weight left: 10.0 Value: 10908
+Best solution found so far in island 4: Weight left: 8.0 Value: 10453
+
+Solution found in island 1:
+Weight left: 10.0
+Value: 10908
+Backpack configuration: [3, 4, 14, 16, 20, 24, 26, 29, 31, 33, 37]
+
+Solution found in island 2:
+Weight left: 10.0
+Value: 10908
+Backpack configuration: [3, 4, 14, 16, 20, 24, 26, 29, 31, 33, 37]
+
+Solution found in island 3:
+Weight left: 10.0
+Value: 10908
+Backpack configuration: [3, 4, 14, 16, 20, 24, 26, 29, 31, 33, 37]
+
+Solution found in island 4:
+Weight left: 8.0
+Value: 10453
+Backpack configuration: [4, 5, 6, 8, 12, 14, 37, 44]
+
+Run number: 11
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 25.0 Value: 10810
+Best solution found so far in island 2: Weight left: 25.0 Value: 10911
+Best solution found so far in island 3: Weight left: 5.0 Value: 10831
+Best solution found so far in island 4: Weight left: 204.0 Value: 10452
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 4.0 Value: 10931
+Best solution found so far in island 2: Weight left: 9.0 Value: 10981
+Best solution found so far in island 3: Weight left: 5.0 Value: 10831
+Best solution found so far in island 4: Weight left: 9.0 Value: 10489
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 4.0 Value: 10984
+Best solution found so far in island 2: Weight left: 9.0 Value: 10981
+Best solution found so far in island 3: Weight left: 34.0 Value: 10850
+Best solution found so far in island 4: Weight left: 9.0 Value: 10489
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 4.0 Value: 10984
+Best solution found so far in island 2: Weight left: 4.0 Value: 10984
+Best solution found so far in island 3: Weight left: 0.0 Value: 10887
+Best solution found so far in island 4: Weight left: 210.0 Value: 10505
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 4.0 Value: 10984
+Best solution found so far in island 2: Weight left: 1.0 Value: 10995
+Best solution found so far in island 3: Weight left: 0.0 Value: 10887
+Best solution found so far in island 4: Weight left: 210.0 Value: 10505
+
+Solution found in island 1:
+Weight left: 4.0
+Value: 10984
+Backpack configuration: [3, 4, 14, 16, 26, 31, 37, 49, 54, 58, 71, 75]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10995
+Backpack configuration: [3, 4, 14, 16, 24, 26, 31, 37, 44, 49, 54]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10887
+Backpack configuration: [3, 4, 5, 15, 19, 20, 24, 31, 44]
+
+Solution found in island 4:
+Weight left: 210.0
+Value: 10505
+Backpack configuration: [3, 4, 5, 8, 10, 11, 14, 20, 37, 54]
+
+Run number: 12
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 4.0 Value: 10793
+Best solution found so far in island 2: Weight left: 12.0 Value: 10865
+Best solution found so far in island 3: Weight left: 0.0 Value: 10846
+Best solution found so far in island 4: Weight left: 1.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 2.0 Value: 10877
+Best solution found so far in island 2: Weight left: 31.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10846
+Best solution found so far in island 4: Weight left: 264.0 Value: 10471
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 31.0 Value: 10896
+Best solution found so far in island 2: Weight left: 1.0 Value: 10905
+Best solution found so far in island 3: Weight left: 0.0 Value: 10846
+Best solution found so far in island 4: Weight left: 186.0 Value: 10479
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 1.0 Value: 10905
+Best solution found so far in island 2: Weight left: 1.0 Value: 10905
+Best solution found so far in island 3: Weight left: 0.0 Value: 10846
+Best solution found so far in island 4: Weight left: 186.0 Value: 10479
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 1.0 Value: 10905
+Best solution found so far in island 2: Weight left: 1.0 Value: 10905
+Best solution found so far in island 3: Weight left: 0.0 Value: 10846
+Best solution found so far in island 4: Weight left: 5.0 Value: 10527
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 10905
+Backpack configuration: [3, 4, 15, 16, 19, 24, 29, 31, 37, 44, 68]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10905
+Backpack configuration: [3, 4, 15, 16, 19, 24, 29, 31, 37, 44, 68]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10846
+Backpack configuration: [2, 3, 4, 14, 16, 19, 24, 49]
+
+Solution found in island 4:
+Weight left: 5.0
+Value: 10527
+Backpack configuration: [0, 3, 4, 5, 9, 11, 14, 15, 19, 37]
+
+Run number: 13
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 4.0 Value: 10906
+Best solution found so far in island 2: Weight left: 6.0 Value: 10866
+Best solution found so far in island 3: Weight left: 4.0 Value: 10859
+Best solution found so far in island 4: Weight left: 8.0 Value: 10593
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 0.0 Value: 10921
+Best solution found so far in island 2: Weight left: 4.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10879
+Best solution found so far in island 4: Weight left: 6.0 Value: 10622
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 0.0 Value: 10921
+Best solution found so far in island 2: Weight left: 4.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10879
+Best solution found so far in island 4: Weight left: 4.0 Value: 10644
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 0.0 Value: 10921
+Best solution found so far in island 2: Weight left: 4.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10879
+Best solution found so far in island 4: Weight left: 48.0 Value: 10647
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10921
+Best solution found so far in island 2: Weight left: 4.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10879
+Best solution found so far in island 4: Weight left: 48.0 Value: 10647
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10921
+Backpack configuration: [3, 15, 24, 33, 35, 37, 43, 49, 52, 58, 68, 71]
+
+Solution found in island 2:
+Weight left: 4.0
+Value: 10895
+Backpack configuration: [3, 4, 10, 11, 14, 16, 20, 24, 31, 37]
+
+Solution found in island 3:
+Weight left: 11.0
+Value: 10879
+Backpack configuration: [3, 4, 10, 11, 14, 15, 20, 24, 26, 37, 58]
+
+Solution found in island 4:
+Weight left: 48.0
+Value: 10647
+Backpack configuration: [3, 4, 10, 11, 12, 13, 15, 16, 19, 37]
+
+Run number: 14
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 13.0 Value: 10847
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10800
+Best solution found so far in island 4: Weight left: 195.0 Value: 10272
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10800
+Best solution found so far in island 4: Weight left: 229.0 Value: 10551
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10800
+Best solution found so far in island 4: Weight left: 229.0 Value: 10551
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10800
+Best solution found so far in island 4: Weight left: 104.0 Value: 10671
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 0.0 Value: 10800
+Best solution found so far in island 4: Weight left: 104.0 Value: 10671
+
+Solution found in island 1:
+Weight left: 12.0
+Value: 10896
+Backpack configuration: [3, 4, 11, 14, 15, 20, 24, 37, 44]
+
+Solution found in island 2:
+Weight left: 12.0
+Value: 10896
+Backpack configuration: [3, 4, 11, 14, 15, 20, 24, 37, 44]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10800
+Backpack configuration: [2, 3, 4, 14, 15, 19, 24, 29, 33]
+
+Solution found in island 4:
+Weight left: 104.0
+Value: 10671
+Backpack configuration: [3, 4, 10, 11, 14, 16, 19, 26, 28, 37]
+
+Run number: 15
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 0.0 Value: 10838
+Best solution found so far in island 2: Weight left: 7.0 Value: 10833
+Best solution found so far in island 3: Weight left: 22.0 Value: 10815
+Best solution found so far in island 4: Weight left: 1.0 Value: 10397
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 2.0 Value: 10841
+Best solution found so far in island 2: Weight left: 2.0 Value: 10841
+Best solution found so far in island 3: Weight left: 7.0 Value: 10843
+Best solution found so far in island 4: Weight left: 193.0 Value: 10453
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 5.0 Value: 10862
+Best solution found so far in island 2: Weight left: 7.0 Value: 10843
+Best solution found so far in island 3: Weight left: 7.0 Value: 10843
+Best solution found so far in island 4: Weight left: 193.0 Value: 10453
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 21.0 Value: 10891
+Best solution found so far in island 2: Weight left: 0.0 Value: 10902
+Best solution found so far in island 3: Weight left: 0.0 Value: 10902
+Best solution found so far in island 4: Weight left: 1.0 Value: 10641
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10902
+Best solution found so far in island 2: Weight left: 0.0 Value: 10902
+Best solution found so far in island 3: Weight left: 0.0 Value: 10902
+Best solution found so far in island 4: Weight left: 62.0 Value: 10703
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10902
+Backpack configuration: [3, 4, 5, 14, 16, 19, 26, 29, 31, 37, 44, 58]
+
+Solution found in island 2:
+Weight left: 0.0
+Value: 10902
+Backpack configuration: [3, 4, 5, 14, 16, 19, 26, 29, 31, 37, 44, 58]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10902
+Backpack configuration: [3, 4, 5, 14, 16, 19, 26, 29, 31, 37, 44, 58]
+
+Solution found in island 4:
+Weight left: 62.0
+Value: 10703
+Backpack configuration: [0, 3, 4, 5, 11, 12, 14, 15, 43, 82, 88]
+
+Run number: 16
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 1.0 Value: 10874
+Best solution found so far in island 2: Weight left: 15.0 Value: 10884
+Best solution found so far in island 3: Weight left: 13.0 Value: 10878
+Best solution found so far in island 4: Weight left: 12.0 Value: 10278
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 0.0 Value: 10910
+Best solution found so far in island 2: Weight left: 15.0 Value: 10884
+Best solution found so far in island 3: Weight left: 13.0 Value: 10878
+Best solution found so far in island 4: Weight left: 12.0 Value: 10278
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 0.0 Value: 10910
+Best solution found so far in island 2: Weight left: 15.0 Value: 10884
+Best solution found so far in island 3: Weight left: 13.0 Value: 10878
+Best solution found so far in island 4: Weight left: 31.0 Value: 10327
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 0.0 Value: 10910
+Best solution found so far in island 2: Weight left: 15.0 Value: 10884
+Best solution found so far in island 3: Weight left: 13.0 Value: 10878
+Best solution found so far in island 4: Weight left: 0.0 Value: 10543
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10910
+Best solution found so far in island 2: Weight left: 15.0 Value: 10884
+Best solution found so far in island 3: Weight left: 13.0 Value: 10878
+Best solution found so far in island 4: Weight left: 20.0 Value: 10552
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10910
+Backpack configuration: [3, 14, 15, 16, 20, 24, 31, 33, 37, 47, 49]
+
+Solution found in island 2:
+Weight left: 15.0
+Value: 10884
+Backpack configuration: [3, 14, 16, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 3:
+Weight left: 13.0
+Value: 10878
+Backpack configuration: [3, 4, 14, 16, 24, 26, 32, 33, 37, 58]
+
+Solution found in island 4:
+Weight left: 20.0
+Value: 10552
+Backpack configuration: [0, 3, 4, 5, 7, 8, 12, 14, 15, 26, 35, 37]
+
+Run number: 17
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 2.0 Value: 10855
+Best solution found so far in island 2: Weight left: 3.0 Value: 10835
+Best solution found so far in island 3: Weight left: 11.0 Value: 10820
+Best solution found so far in island 4: Weight left: 79.0 Value: 10351
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 2.0 Value: 10855
+Best solution found so far in island 2: Weight left: 5.0 Value: 10873
+Best solution found so far in island 3: Weight left: 11.0 Value: 10820
+Best solution found so far in island 4: Weight left: 0.0 Value: 10543
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 5.0 Value: 10873
+Best solution found so far in island 2: Weight left: 5.0 Value: 10873
+Best solution found so far in island 3: Weight left: 6.0 Value: 10841
+Best solution found so far in island 4: Weight left: 61.0 Value: 10554
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 5.0 Value: 10873
+Best solution found so far in island 2: Weight left: 5.0 Value: 10873
+Best solution found so far in island 3: Weight left: 10.0 Value: 10843
+Best solution found so far in island 4: Weight left: 61.0 Value: 10554
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 5.0 Value: 10873
+Best solution found so far in island 2: Weight left: 5.0 Value: 10873
+Best solution found so far in island 3: Weight left: 10.0 Value: 10843
+Best solution found so far in island 4: Weight left: 61.0 Value: 10554
+
+Solution found in island 1:
+Weight left: 5.0
+Value: 10873
+Backpack configuration: [3, 4, 5, 10, 14, 15, 16, 19, 24, 26, 37, 43, 49, 75]
+
+Solution found in island 2:
+Weight left: 5.0
+Value: 10873
+Backpack configuration: [3, 4, 5, 10, 14, 15, 16, 19, 24, 26, 37, 43, 49, 75]
+
+Solution found in island 3:
+Weight left: 10.0
+Value: 10843
+Backpack configuration: [3, 4, 5, 14, 16, 19, 20, 24, 26, 29, 37]
+
+Solution found in island 4:
+Weight left: 61.0
+Value: 10554
+Backpack configuration: [0, 2, 3, 4, 5, 7, 12, 14, 15, 19, 26, 37]
+
+Run number: 18
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 18.0 Value: 10788
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 20.0 Value: 10773
+Best solution found so far in island 4: Weight left: 19.0 Value: 10604
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 3.0 Value: 10822
+Best solution found so far in island 4: Weight left: 19.0 Value: 10604
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 13.0 Value: 10832
+Best solution found so far in island 4: Weight left: 19.0 Value: 10604
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 13.0 Value: 10832
+Best solution found so far in island 4: Weight left: 19.0 Value: 10604
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 13.0 Value: 10832
+Best solution found so far in island 4: Weight left: 19.0 Value: 10633
+
+Solution found in island 1:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 2:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 3:
+Weight left: 13.0
+Value: 10832
+Backpack configuration: [3, 4, 10, 11, 16, 19, 24, 26, 31, 33, 37]
+
+Solution found in island 4:
+Weight left: 19.0
+Value: 10633
+Backpack configuration: [3, 4, 5, 8, 10, 11, 13, 19, 26, 37, 54]
+
+Run number: 19
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 16.0 Value: 10778
+Best solution found so far in island 2: Weight left: 13.0 Value: 10858
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 3.0 Value: 10399
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 11.0 Value: 10887
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 1.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 11.0 Value: 10887
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 1.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 11.0 Value: 10887
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 1.0 Value: 10459
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 11.0 Value: 10887
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 1.0 Value: 10459
+
+Solution found in island 1:
+Weight left: 11.0
+Value: 10887
+Backpack configuration: [4, 5, 10, 11, 15, 16, 24, 26, 37, 52, 58, 68, 71, 72, 75]
+
+Solution found in island 2:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 3:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 4:
+Weight left: 1.0
+Value: 10459
+Backpack configuration: [0, 3, 4, 8, 9, 11, 14, 15, 26]
+
+Run number: 20
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 15.0 Value: 10884
+Best solution found so far in island 2: Weight left: 9.0 Value: 10848
+Best solution found so far in island 3: Weight left: 0.0 Value: 10897
+Best solution found so far in island 4: Weight left: 96.0 Value: 10492
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 15.0 Value: 10884
+Best solution found so far in island 2: Weight left: 0.0 Value: 10897
+Best solution found so far in island 3: Weight left: 0.0 Value: 10897
+Best solution found so far in island 4: Weight left: 96.0 Value: 10492
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 0.0 Value: 10897
+Best solution found so far in island 2: Weight left: 0.0 Value: 10897
+Best solution found so far in island 3: Weight left: 0.0 Value: 10897
+Best solution found so far in island 4: Weight left: 96.0 Value: 10492
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 0.0 Value: 10897
+Best solution found so far in island 2: Weight left: 0.0 Value: 10897
+Best solution found so far in island 3: Weight left: 0.0 Value: 10897
+Best solution found so far in island 4: Weight left: 96.0 Value: 10492
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10897
+Best solution found so far in island 2: Weight left: 0.0 Value: 10897
+Best solution found so far in island 3: Weight left: 0.0 Value: 10897
+Best solution found so far in island 4: Weight left: 48.0 Value: 10654
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10897
+Backpack configuration: [3, 4, 14, 20, 24, 26, 28, 31, 37, 43]
+
+Solution found in island 2:
+Weight left: 0.0
+Value: 10897
+Backpack configuration: [3, 4, 14, 20, 24, 26, 28, 31, 37, 43]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10897
+Backpack configuration: [3, 4, 14, 20, 24, 26, 28, 31, 37, 43]
+
+Solution found in island 4:
+Weight left: 48.0
+Value: 10654
+Backpack configuration: [0, 3, 4, 5, 8, 12, 14, 15, 43, 49]
+
+Run number: 21
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 2.0 Value: 10851
+Best solution found so far in island 2: Weight left: 1.0 Value: 10734
+Best solution found so far in island 3: Weight left: 0.0 Value: 10848
+Best solution found so far in island 4: Weight left: 41.0 Value: 10449
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 2.0 Value: 10851
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 12.0 Value: 10896
+Best solution found so far in island 4: Weight left: 41.0 Value: 10449
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 12.0 Value: 10896
+Best solution found so far in island 4: Weight left: 41.0 Value: 10449
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 12.0 Value: 10896
+Best solution found so far in island 4: Weight left: 41.0 Value: 10449
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 12.0 Value: 10896
+Best solution found so far in island 2: Weight left: 12.0 Value: 10896
+Best solution found so far in island 3: Weight left: 12.0 Value: 10896
+Best solution found so far in island 4: Weight left: 31.0 Value: 10698
+
+Solution found in island 1:
+Weight left: 12.0
+Value: 10896
+Backpack configuration: [3, 4, 11, 14, 15, 20, 24, 37, 44]
+
+Solution found in island 2:
+Weight left: 12.0
+Value: 10896
+Backpack configuration: [3, 4, 11, 14, 15, 20, 24, 37, 44]
+
+Solution found in island 3:
+Weight left: 12.0
+Value: 10896
+Backpack configuration: [3, 4, 11, 14, 15, 20, 24, 37, 44]
+
+Solution found in island 4:
+Weight left: 31.0
+Value: 10698
+Backpack configuration: [0, 2, 3, 4, 5, 7, 14, 16, 26, 28, 37, 71, 93]
+
+Run number: 22
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 0.0 Value: 10829
+Best solution found so far in island 2: Weight left: 0.0 Value: 10942
+Best solution found so far in island 3: Weight left: 10.0 Value: 10881
+Best solution found so far in island 4: Weight left: 176.0 Value: 10158
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 0.0 Value: 10942
+Best solution found so far in island 2: Weight left: 14.0 Value: 10952
+Best solution found so far in island 3: Weight left: 10.0 Value: 10881
+Best solution found so far in island 4: Weight left: 96.0 Value: 10243
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 14.0 Value: 10952
+Best solution found so far in island 2: Weight left: 14.0 Value: 10952
+Best solution found so far in island 3: Weight left: 10.0 Value: 10881
+Best solution found so far in island 4: Weight left: 96.0 Value: 10243
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 14.0 Value: 10952
+Best solution found so far in island 2: Weight left: 7.0 Value: 10965
+Best solution found so far in island 3: Weight left: 10.0 Value: 10881
+Best solution found so far in island 4: Weight left: 10.0 Value: 10395
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 7.0 Value: 10965
+Best solution found so far in island 2: Weight left: 7.0 Value: 10965
+Best solution found so far in island 3: Weight left: 10.0 Value: 10881
+Best solution found so far in island 4: Weight left: 8.0 Value: 10399
+
+Solution found in island 1:
+Weight left: 7.0
+Value: 10965
+Backpack configuration: [3, 4, 5, 14, 16, 24, 26, 33, 37, 44, 49]
+
+Solution found in island 2:
+Weight left: 7.0
+Value: 10965
+Backpack configuration: [3, 4, 5, 14, 16, 24, 26, 33, 37, 44, 49]
+
+Solution found in island 3:
+Weight left: 10.0
+Value: 10881
+Backpack configuration: [3, 4, 11, 14, 15, 16, 24, 26, 28, 31, 37]
+
+Solution found in island 4:
+Weight left: 8.0
+Value: 10399
+Backpack configuration: [0, 2, 3, 4, 5, 8, 9, 10, 14, 15, 26, 37]
+
+Run number: 23
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 0.0 Value: 10803
+Best solution found so far in island 2: Weight left: 0.0 Value: 10892
+Best solution found so far in island 3: Weight left: 4.0 Value: 10830
+Best solution found so far in island 4: Weight left: 149.0 Value: 10245
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 0.0 Value: 10892
+Best solution found so far in island 2: Weight left: 0.0 Value: 10892
+Best solution found so far in island 3: Weight left: 4.0 Value: 10830
+Best solution found so far in island 4: Weight left: 149.0 Value: 10245
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 0.0 Value: 10892
+Best solution found so far in island 2: Weight left: 0.0 Value: 10892
+Best solution found so far in island 3: Weight left: 4.0 Value: 10830
+Best solution found so far in island 4: Weight left: 8.0 Value: 10459
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 0.0 Value: 10892
+Best solution found so far in island 2: Weight left: 4.0 Value: 10949
+Best solution found so far in island 3: Weight left: 4.0 Value: 10830
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 4.0 Value: 10949
+Best solution found so far in island 2: Weight left: 4.0 Value: 10949
+Best solution found so far in island 3: Weight left: 4.0 Value: 10830
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Solution found in island 1:
+Weight left: 4.0
+Value: 10949
+Backpack configuration: [3, 4, 14, 20, 24, 26, 31, 37, 44, 54]
+
+Solution found in island 2:
+Weight left: 4.0
+Value: 10949
+Backpack configuration: [3, 4, 14, 20, 24, 26, 31, 37, 44, 54]
+
+Solution found in island 3:
+Weight left: 4.0
+Value: 10830
+Backpack configuration: [4, 10, 14, 19, 20, 24, 26, 29, 37, 44]
+
+Solution found in island 4:
+Weight left: 75.0
+Value: 10532
+Backpack configuration: [0, 3, 4, 6, 10, 11, 14, 15, 37, 71]
+
+Run number: 24
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 12.0 Value: 10872
+Best solution found so far in island 2: Weight left: 0.0 Value: 10833
+Best solution found so far in island 3: Weight left: 1.0 Value: 10904
+Best solution found so far in island 4: Weight left: 0.0 Value: 10603
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 12.0 Value: 10872
+Best solution found so far in island 2: Weight left: 1.0 Value: 10904
+Best solution found so far in island 3: Weight left: 1.0 Value: 10904
+Best solution found so far in island 4: Weight left: 0.0 Value: 10647
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 1.0 Value: 10904
+Best solution found so far in island 2: Weight left: 1.0 Value: 10904
+Best solution found so far in island 3: Weight left: 1.0 Value: 10904
+Best solution found so far in island 4: Weight left: 67.0 Value: 10720
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 1.0 Value: 10904
+Best solution found so far in island 2: Weight left: 1.0 Value: 10904
+Best solution found so far in island 3: Weight left: 1.0 Value: 10904
+Best solution found so far in island 4: Weight left: 67.0 Value: 10720
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 1.0 Value: 10904
+Best solution found so far in island 2: Weight left: 1.0 Value: 10904
+Best solution found so far in island 3: Weight left: 1.0 Value: 10904
+Best solution found so far in island 4: Weight left: 11.0 Value: 10775
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 10904
+Backpack configuration: [3, 4, 5, 11, 14, 15, 20, 24, 26, 31, 37, 43, 54]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10904
+Backpack configuration: [3, 4, 5, 11, 14, 15, 20, 24, 26, 31, 37, 43, 54]
+
+Solution found in island 3:
+Weight left: 1.0
+Value: 10904
+Backpack configuration: [3, 4, 5, 11, 14, 15, 20, 24, 26, 31, 37, 43, 54]
+
+Solution found in island 4:
+Weight left: 11.0
+Value: 10775
+Backpack configuration: [0, 3, 4, 5, 10, 11, 12, 15, 26, 37, 43, 49, 71, 75, 93]
+
+Run number: 25
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 16.0 Value: 10859
+Best solution found so far in island 2: Weight left: 1.0 Value: 10849
+Best solution found so far in island 3: Weight left: 11.0 Value: 10853
+Best solution found so far in island 4: Weight left: 41.0 Value: 10588
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 16.0 Value: 10859
+Best solution found so far in island 2: Weight left: 11.0 Value: 10853
+Best solution found so far in island 3: Weight left: 11.0 Value: 10853
+Best solution found so far in island 4: Weight left: 41.0 Value: 10588
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 16.0 Value: 10859
+Best solution found so far in island 2: Weight left: 11.0 Value: 10853
+Best solution found so far in island 3: Weight left: 11.0 Value: 10853
+Best solution found so far in island 4: Weight left: 1.0 Value: 10650
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 16.0 Value: 10859
+Best solution found so far in island 2: Weight left: 11.0 Value: 10853
+Best solution found so far in island 3: Weight left: 11.0 Value: 10853
+Best solution found so far in island 4: Weight left: 1.0 Value: 10650
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 16.0 Value: 10859
+Best solution found so far in island 2: Weight left: 11.0 Value: 10853
+Best solution found so far in island 3: Weight left: 11.0 Value: 10853
+Best solution found so far in island 4: Weight left: 30.0 Value: 10669
+
+Solution found in island 1:
+Weight left: 16.0
+Value: 10859
+Backpack configuration: [3, 5, 14, 24, 27, 29, 37, 43, 47, 49, 68, 71, 93]
+
+Solution found in island 2:
+Weight left: 11.0
+Value: 10853
+Backpack configuration: [3, 4, 10, 11, 14, 19, 24, 31, 37]
+
+Solution found in island 3:
+Weight left: 11.0
+Value: 10853
+Backpack configuration: [3, 4, 10, 11, 14, 19, 24, 31, 37]
+
+Solution found in island 4:
+Weight left: 30.0
+Value: 10669
+Backpack configuration: [2, 3, 4, 11, 12, 15, 19, 26, 37, 44]
+
+Run number: 26
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 3.0 Value: 10856
+Best solution found so far in island 2: Weight left: 5.0 Value: 10842
+Best solution found so far in island 3: Weight left: 8.0 Value: 10847
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 3.0 Value: 10856
+Best solution found so far in island 2: Weight left: 1.0 Value: 10906
+Best solution found so far in island 3: Weight left: 8.0 Value: 10847
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 1.0 Value: 10906
+Best solution found so far in island 2: Weight left: 1.0 Value: 10906
+Best solution found so far in island 3: Weight left: 8.0 Value: 10847
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 1.0 Value: 10906
+Best solution found so far in island 2: Weight left: 1.0 Value: 10906
+Best solution found so far in island 3: Weight left: 8.0 Value: 10847
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 1.0 Value: 10906
+Best solution found so far in island 2: Weight left: 1.0 Value: 10906
+Best solution found so far in island 3: Weight left: 8.0 Value: 10847
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 10906
+Backpack configuration: [3, 4, 5, 10, 11, 14, 15, 24, 33, 37, 44]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10906
+Backpack configuration: [3, 4, 5, 10, 11, 14, 15, 24, 33, 37, 44]
+
+Solution found in island 3:
+Weight left: 8.0
+Value: 10847
+Backpack configuration: [3, 4, 10, 11, 13, 14, 15, 24, 33, 37]
+
+Solution found in island 4:
+Weight left: 75.0
+Value: 10532
+Backpack configuration: [0, 3, 4, 6, 10, 11, 14, 15, 37, 71]
+
+Run number: 27
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 4.0 Value: 10685
+Best solution found so far in island 2: Weight left: 4.0 Value: 10832
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 40.0 Value: 10289
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 4.0 Value: 10832
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 38.0 Value: 10321
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 38.0 Value: 10321
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 2.0 Value: 10469
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 6.0 Value: 10882
+Best solution found so far in island 2: Weight left: 6.0 Value: 10882
+Best solution found so far in island 3: Weight left: 6.0 Value: 10882
+Best solution found so far in island 4: Weight left: 57.0 Value: 10556
+
+Solution found in island 1:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 2:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 3:
+Weight left: 6.0
+Value: 10882
+Backpack configuration: [4, 5, 14, 19, 20, 24, 31, 37, 49]
+
+Solution found in island 4:
+Weight left: 57.0
+Value: 10556
+Backpack configuration: [3, 4, 5, 7, 8, 11, 12, 14, 15, 37]
+
+Run number: 28
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 3.0 Value: 10923
+Best solution found so far in island 2: Weight left: 1.0 Value: 10863
+Best solution found so far in island 3: Weight left: 5.0 Value: 10881
+Best solution found so far in island 4: Weight left: 4.0 Value: 10444
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 3.0 Value: 10923
+Best solution found so far in island 2: Weight left: 5.0 Value: 10881
+Best solution found so far in island 3: Weight left: 5.0 Value: 10881
+Best solution found so far in island 4: Weight left: 99.0 Value: 10539
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 3.0 Value: 10923
+Best solution found so far in island 2: Weight left: 5.0 Value: 10881
+Best solution found so far in island 3: Weight left: 5.0 Value: 10881
+Best solution found so far in island 4: Weight left: 99.0 Value: 10539
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 3.0 Value: 10923
+Best solution found so far in island 2: Weight left: 5.0 Value: 10881
+Best solution found so far in island 3: Weight left: 5.0 Value: 10881
+Best solution found so far in island 4: Weight left: 99.0 Value: 10539
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 3.0 Value: 10923
+Best solution found so far in island 2: Weight left: 5.0 Value: 10881
+Best solution found so far in island 3: Weight left: 5.0 Value: 10881
+Best solution found so far in island 4: Weight left: 1.0 Value: 10651
+
+Solution found in island 1:
+Weight left: 3.0
+Value: 10923
+Backpack configuration: [3, 4, 14, 24, 26, 28, 37, 43, 44, 68]
+
+Solution found in island 2:
+Weight left: 5.0
+Value: 10881
+Backpack configuration: [3, 14, 20, 24, 28, 33, 37, 44]
+
+Solution found in island 3:
+Weight left: 5.0
+Value: 10881
+Backpack configuration: [3, 14, 20, 24, 28, 33, 37, 44]
+
+Solution found in island 4:
+Weight left: 1.0
+Value: 10651
+Backpack configuration: [2, 3, 4, 5, 8, 11, 14, 20, 25]
+
+Run number: 29
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 16.0 Value: 10888
+Best solution found so far in island 2: Weight left: 1.0 Value: 10895
+Best solution found so far in island 3: Weight left: 22.0 Value: 10828
+Best solution found so far in island 4: Weight left: 52.0 Value: 10358
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 1.0 Value: 10895
+Best solution found so far in island 2: Weight left: 1.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10857
+Best solution found so far in island 4: Weight left: 33.0 Value: 10384
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 1.0 Value: 10895
+Best solution found so far in island 2: Weight left: 1.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10857
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 1.0 Value: 10895
+Best solution found so far in island 2: Weight left: 1.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10857
+Best solution found so far in island 4: Weight left: 75.0 Value: 10532
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 1.0 Value: 10895
+Best solution found so far in island 2: Weight left: 1.0 Value: 10895
+Best solution found so far in island 3: Weight left: 11.0 Value: 10857
+Best solution found so far in island 4: Weight left: 103.0 Value: 10554
+
+Solution found in island 1:
+Weight left: 1.0
+Value: 10895
+Backpack configuration: [3, 5, 10, 14, 20, 24, 28, 31, 44]
+
+Solution found in island 2:
+Weight left: 1.0
+Value: 10895
+Backpack configuration: [3, 5, 10, 14, 20, 24, 28, 31, 44]
+
+Solution found in island 3:
+Weight left: 11.0
+Value: 10857
+Backpack configuration: [3, 14, 16, 19, 20, 24, 26, 31, 33, 37]
+
+Solution found in island 4:
+Weight left: 103.0
+Value: 10554
+Backpack configuration: [0, 3, 4, 8, 10, 11, 14, 15, 32, 37]
+
+Run number: 30
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 8.0 Value: 10810
+Best solution found so far in island 2: Weight left: 2.0 Value: 10862
+Best solution found so far in island 3: Weight left: 1.0 Value: 10905
+Best solution found so far in island 4: Weight left: 1.0 Value: 10397
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 2.0 Value: 10862
+Best solution found so far in island 2: Weight left: 10.0 Value: 10919
+Best solution found so far in island 3: Weight left: 10.0 Value: 10919
+Best solution found so far in island 4: Weight left: 14.0 Value: 10597
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 10.0 Value: 10919
+Best solution found so far in island 2: Weight left: 10.0 Value: 10919
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 14.0 Value: 10597
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 10.0 Value: 10919
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 20.0 Value: 10635
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 0.0 Value: 10931
+Best solution found so far in island 2: Weight left: 0.0 Value: 10931
+Best solution found so far in island 3: Weight left: 0.0 Value: 10931
+Best solution found so far in island 4: Weight left: 20.0 Value: 10635
+
+Solution found in island 1:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 2:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 3:
+Weight left: 0.0
+Value: 10931
+Backpack configuration: [3, 4, 5, 14, 15, 20, 24, 26, 33, 37, 49]
+
+Solution found in island 4:
+Weight left: 20.0
+Value: 10635
+Backpack configuration: [0, 3, 4, 8, 11, 12, 15, 24, 37, 52]
