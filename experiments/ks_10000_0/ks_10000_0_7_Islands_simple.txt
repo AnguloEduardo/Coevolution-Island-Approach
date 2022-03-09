@@ -1,0 +1,19 @@
+
+
+Run number: 1
+Best general solution:
+Weight left: 11.0
+Value: 1095557
+Backpack configuration: [260, 349, 746, 757, 862, 970, 1251, 1448, 1727, 2603]
+
+Run number: 2
+Best general solution:
+Weight left: 1.0
+Value: 1100409
+Backpack configuration: [963, 1064, 2373, 2739, 3039, 3176, 3952, 4585, 6113, 6630]
+
+Run number: 3
+Best general solution:
+Weight left: 7.0
+Value: 1101568
+Backpack configuration: [32, 251, 541, 757, 1839, 1914, 2362, 2381, 2406, 4585, 4669, 6113, 7662, 8268, 8720, 9117]

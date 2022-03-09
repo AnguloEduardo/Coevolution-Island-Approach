@@ -7,23 +7,23 @@ from numpy import concatenate
 from items import Items
 from knapsack import Knapsack
 
-# List with the items of the problem
-list_items = []
-# Creates a list of lists to save the different populations from the islands
-population = [[], [], [], []]
 # Variables
 num_tournament = 3
 num_parents_to_select = 2
 individuals_to_exchange = 5
-number_islands = 4
+number_islands = 0
 file_name = 'ks_500_0'
 run_times = 30
+# List with the items of the problem
+list_items = []
+# Creates a list of lists to save the different populations from the islands
+population = [[]] * number_islands
 # Initialization of population size, generations, crossover and mutation probabilities
 # for the four different islands
-population_size = 2000 // 4
+population_size = 500
 generations = 500
-crossover_probability = [0.3, 0.5, 0.7, 1.0]
-mutation_probability = [0.05, 0.10, 0.15, 0.20]
+crossover_probability = [0.3, 0.5, 0.7, 1.0, 0.1, 0.2, 0.4, 0.6, 0.8, 0.9]
+mutation_probability = [0.05, 0.10, 0.15, 0.20, 0.01, 0.07, 0.08, 0.12, 0.18, 0.11]
 
 
 # Generate population
@@ -96,11 +96,11 @@ def crossover_island_4(parentA, parentB):
 # Crossover operator
 # =======================
 def combine(parentA, parentB, island):
-    if island == 0:
+    if island == 0 or island == 4 or island == 8:
         offspring_a, offspring_b = crossover_island_1(parentA, parentB)
-    elif island == 1:
+    elif island == 1 or island == 5 or island == 9:
         offspring_a, offspring_b = crossover_island_2(parentA, parentB)
-    elif island == 2:
+    elif island == 2 or island == 6:
         offspring_a, offspring_b = crossover_island_3(parentA, parentB)
     else:
         offspring_a, offspring_b = crossover_island_4(parentA, parentB)
@@ -246,20 +246,13 @@ def geneticAlgorithm():
         data_simple.write('\nBackpack configuration: {}'.format(best_Knapsack[best].getChromosome()))
 
         # Creates four empty Knapsacks to later store the best Knapsack of each island
-        best_Knapsack = [Knapsack(max_weight, backpack_capacity),
-                         Knapsack(max_weight, backpack_capacity),
-                         Knapsack(max_weight, backpack_capacity),
-                         Knapsack(max_weight, backpack_capacity)]
+        best_Knapsack = [Knapsack(max_weight, backpack_capacity)] * number_islands
 
 if __name__ == '__main__':
     # Reading files with the instance problem
     instance = open('Instances KP\\' + file_name + '.txt', 'r')
     problemCharacteristics = instance.readline().rstrip("\n")
     problemCharacteristics = problemCharacteristics.split(", ")
-
-    # Opening text file to save the data of each run
-    data = open('experiments\\' + file_name + '\\' + file_name + '_4_Islands.txt', 'a')
-    data_simple = open('experiments\\' + file_name + '\\' + file_name + '_4_Islands_simple.txt', 'a')
 
     # This information needs to be taken from the .txt files
     # First element in the first row indicates the number of items
@@ -276,23 +269,30 @@ if __name__ == '__main__':
         list_items.append(Items(idx, int(instanceItem[0]), float(instanceItem[1])))
     instance.close()
 
-    # Creates four empty Knapsacks to later store the best Knapsack of each island
-    best_Knapsack = [Knapsack(max_weight, backpack_capacity),
-                     Knapsack(max_weight, backpack_capacity),
-                     Knapsack(max_weight, backpack_capacity),
-                     Knapsack(max_weight, backpack_capacity)]
+    for i in range(9):
+        number_islands = i + 2
+        # Creates a list of lists to save the different populations from the islands
+        population = [[]] * number_islands
+        if number_islands != 4:
+            # Creates four empty Knapsacks to later store the best Knapsack of each island
+            best_Knapsack = [Knapsack(max_weight, backpack_capacity)] * number_islands
 
-    data.write('\n\n-------------------------------------------------------')
-    data.write('\n-------------------------------------------------------')
-    data.write('\n\n---Generated Parameters---')
-    data.write('\nPopulation size per island: {}'.format(population_size))
-    data.write('\nNumber of generations: {}'.format(generations))
-    data.write('\nCrossover probability: {}'.format(crossover_probability))
-    data.write('\nMutation probability: {}'.format(mutation_probability))
-    data.write('\nBackpack capacity: {}'.format(backpack_capacity))
-    data.write('\nMax backpack weight: {}'.format(max_weight))
-    data.write('\nInstance used: {}'.format(file_name))
-    data.write('\nNumber of islands: {}'.format(number_islands))
-    geneticAlgorithm()
-    data.close()
-    data_simple.close()
+            # Opening text file to save the data of each run
+            data = open('experiments\\' + file_name + '\\' + file_name + '_' + str(number_islands) + '_Islands.txt', 'a')
+            data_simple = open(
+                'experiments\\' + file_name + '\\' + file_name + '_' + str(number_islands) + '_Islands_simple.txt', 'a')
+
+            data.write('\n\n-------------------------------------------------------')
+            data.write('\n-------------------------------------------------------')
+            data.write('\n\n---Generated Parameters---')
+            data.write('\nPopulation size per island: {}'.format(population_size))
+            data.write('\nNumber of generations: {}'.format(generations))
+            data.write('\nCrossover probability: {}'.format(crossover_probability))
+            data.write('\nMutation probability: {}'.format(mutation_probability))
+            data.write('\nBackpack capacity: {}'.format(backpack_capacity))
+            data.write('\nMax backpack weight: {}'.format(max_weight))
+            data.write('\nInstance used: {}'.format(file_name))
+            data.write('\nNumber of islands: {}'.format(number_islands))
+            geneticAlgorithm()
+            data.close()
+            data_simple.close()

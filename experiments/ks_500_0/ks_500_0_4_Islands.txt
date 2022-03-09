@@ -1812,18 +1812,3 @@ Solution found in island 4:
 Weight left: 21.0
 Value: 52370
 Backpack configuration: [1, 4, 5, 8, 11, 31, 41, 51, 53, 63, 98, 120]
-
--------------------------------------------------------
--------------------------------------------------------
-
----Generated Parameters---
-Population size per island: 500
-Number of generations: 500
-Crossover probability: [0.3, 0.5, 0.7, 1.0]
-Mutation probability: [0.05, 0.1, 0.15, 0.2]
-Backpack capacity: 500
-Max backpack weight: 50000
-Instance used: ks_500_0
-Number of islands: 4
-
-Run number: 1
