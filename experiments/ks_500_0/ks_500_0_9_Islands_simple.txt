@@ -1,0 +1,181 @@
+
+
+Run number: 1
+Best general solution:
+Weight left: 3.0
+Value: 54961
+Backpack configuration: [51, 63, 65, 78, 110, 128, 137, 175, 181, 185, 243]
+
+Run number: 2
+Best general solution:
+Weight left: 13.0
+Value: 55072
+Backpack configuration: [31, 37, 51, 73, 98, 110, 164, 175, 185, 186, 264]
+
+Run number: 3
+Best general solution:
+Weight left: 6.0
+Value: 54739
+Backpack configuration: [15, 37, 51, 73, 98, 107, 110, 166, 175, 345, 349]
+
+Run number: 4
+Best general solution:
+Weight left: 18.0
+Value: 55039
+Backpack configuration: [31, 37, 51, 53, 93, 110, 129, 140, 162, 180, 185, 187, 223, 237, 286]
+
+Run number: 5
+Best general solution:
+Weight left: 7.0
+Value: 54716
+Backpack configuration: [0, 31, 47, 51, 53, 63, 70, 73, 93, 120, 180, 181, 185]
+
+Run number: 6
+Best general solution:
+Weight left: 7.0
+Value: 54773
+Backpack configuration: [8, 39, 51, 63, 73, 106, 120, 137, 140, 142, 181, 185, 326]
+
+Run number: 7
+Best general solution:
+Weight left: 32.0
+Value: 54665
+Backpack configuration: [8, 15, 31, 37, 51, 73, 81, 98, 106, 110, 120, 129, 164]
+
+Run number: 8
+Best general solution:
+Weight left: 5.0
+Value: 54978
+Backpack configuration: [8, 31, 37, 51, 63, 73, 110, 128, 180, 464]
+
+Run number: 9
+Best general solution:
+Weight left: 1.0
+Value: 54881
+Backpack configuration: [31, 37, 51, 63, 65, 66, 110, 133, 175, 181, 185]
+
+Run number: 10
+Best general solution:
+Weight left: 17.0
+Value: 55072
+Backpack configuration: [31, 37, 51, 63, 68, 80, 110, 120, 133, 230, 243, 247, 264]
+
+Run number: 11
+Best general solution:
+Weight left: 9.0
+Value: 54647
+Backpack configuration: [31, 37, 51, 53, 77, 92, 95, 110, 128, 162, 175, 185, 219]
+
+Run number: 12
+Best general solution:
+Weight left: 5.0
+Value: 54814
+Backpack configuration: [7, 51, 73, 80, 83, 95, 101, 110, 112, 120, 129, 162, 185]
+
+Run number: 13
+Best general solution:
+Weight left: 8.0
+Value: 54771
+Backpack configuration: [31, 37, 51, 66, 80, 87, 110, 128, 180, 185, 186, 187]
+
+Run number: 14
+Best general solution:
+Weight left: 22.0
+Value: 54817
+Backpack configuration: [8, 15, 31, 37, 51, 53, 93, 112, 120, 180, 181, 185, 237]
+
+Run number: 15
+Best general solution:
+Weight left: 2.0
+Value: 54661
+Backpack configuration: [51, 63, 80, 129, 137, 142, 154, 157, 162, 164, 183, 185, 230, 264]
+
+Run number: 16
+Best general solution:
+Weight left: 0.0
+Value: 55230
+Backpack configuration: [31, 37, 51, 63, 73, 87, 95, 110, 129, 162, 185, 187]
+
+Run number: 17
+Best general solution:
+Weight left: 89.0
+Value: 54841
+Backpack configuration: [31, 42, 51, 63, 73, 110, 133, 162, 181, 185]
+
+Run number: 18
+Best general solution:
+Weight left: 1.0
+Value: 54787
+Backpack configuration: [8, 15, 31, 37, 42, 51, 63, 73, 96, 110, 175, 325]
+
+Run number: 19
+Best general solution:
+Weight left: 27.0
+Value: 54825
+Backpack configuration: [8, 15, 31, 37, 51, 68, 87, 93, 110, 128, 137, 162, 303]
+
+Run number: 20
+Best general solution:
+Weight left: 14.0
+Value: 55126
+Backpack configuration: [15, 31, 37, 51, 63, 73, 95, 110, 129, 181, 185]
+
+Run number: 21
+Best general solution:
+Weight left: 4.0
+Value: 54891
+Backpack configuration: [31, 51, 53, 63, 73, 96, 101, 106, 110, 264]
+
+Run number: 22
+Best general solution:
+Weight left: 1.0
+Value: 55050
+Backpack configuration: [15, 31, 37, 51, 53, 63, 78, 83, 110, 118, 129, 158, 175, 180, 185, 325]
+
+Run number: 23
+Best general solution:
+Weight left: 7.0
+Value: 54699
+Backpack configuration: [8, 31, 37, 42, 51, 63, 73, 83, 98, 129, 187]
+
+Run number: 24
+Best general solution:
+Weight left: 12.0
+Value: 55007
+Backpack configuration: [0, 8, 31, 37, 47, 51, 63, 73, 110, 120, 133, 158, 180, 464, 466]
+
+Run number: 25
+Best general solution:
+Weight left: 8.0
+Value: 54872
+Backpack configuration: [8, 31, 51, 53, 87, 110, 138, 185, 230, 237, 243, 303, 340]
+
+Run number: 26
+Best general solution:
+Weight left: 35.0
+Value: 54433
+Backpack configuration: [0, 12, 31, 47, 51, 63, 65, 73, 95, 98, 110, 164, 247, 309, 321]
+
+Run number: 27
+Best general solution:
+Weight left: 7.0
+Value: 55130
+Backpack configuration: [31, 51, 63, 65, 73, 106, 110, 129, 175, 185, 186, 230]
+
+Run number: 28
+Best general solution:
+Weight left: 12.0
+Value: 55069
+Backpack configuration: [15, 31, 37, 51, 63, 65, 73, 95, 181, 185, 345, 371]
+
+Run number: 29
+Best general solution:
+Weight left: 13.0
+Value: 54909
+Backpack configuration: [8, 15, 31, 37, 51, 63, 73, 101, 110, 118, 140, 283]
+
+Run number: 30
+Best general solution:
+Weight left: 17.0
+Value: 54919
+Backpack configuration: [0, 8, 31, 51, 63, 73, 110, 128, 180, 198]

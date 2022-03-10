@@ -12,7 +12,7 @@ num_tournament = 3
 num_parents_to_select = 2
 individuals_to_exchange = 5
 number_islands = 0
-file_name = 'ks_500_0'
+file_name = 'ks_300_0'
 run_times = 30
 # List with the items of the problem
 list_items = []
