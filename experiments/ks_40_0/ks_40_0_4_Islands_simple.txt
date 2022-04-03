@@ -179,3 +179,39 @@ Best general solution:
 Weight left: 87.0
 Value: 99896
 Backpack configuration: [32, 39]
+
+Run number: 1
+Best general solution:
+Weight left: 99913.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Run number: 1
+Best general solution:
+Weight: 99924.0
+Value: 99837
+Backpack configuration: [2, 4, 16, 24, 28, 30, 34, 36]
+
+Run number: 1
+Best general solution:
+Weight: 99783.0
+Value: 99766
+Backpack configuration: [31, 32]
+
+Run number: 1
+Best general solution:
+Weight: 99924.0
+Value: 99837
+Backpack configuration: [6, 12, 16, 20, 22, 24, 36, 38, 39]
+
+Run number: 1
+Best general solution:
+Weight: 99924.0
+Value: 99837
+Backpack configuration: [12, 14, 16, 18, 22, 26, 32, 34]
+
+Run number: 1
+Best general solution:
+Weight: 99924.0
+Value: 99837
+Backpack configuration: [6, 8, 14, 20, 26, 30, 32, 38, 39]

@@ -1,0 +1,64 @@
+
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+---Generated Parameters---
+Population size per island: 500
+Number of generations: 500
+Crossover probability: [0.3, 0.5, 0.7, 1.0, 0.1, 0.2, 0.4, 0.6, 0.8, 0.9]
+Mutation probability: [0.05, 0.1, 0.15, 0.2, 0.01, 0.07, 0.08, 0.12, 0.18, 0.11]
+Backpack capacity: 40
+Max backpack weight: 100000
+Instance used: ks_40_0
+Number of islands: 3
+
+Run number: 1
+
+Migrating individuals to other islands
+
+Current generation...: 100
+Best solution found so far in island 1: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 2: Weight left: 99785.0 Value: 99767
+Best solution found so far in island 3: Weight left: 99789.0 Value: 99769
+
+Migrating individuals to other islands
+
+Current generation...: 200
+Best solution found so far in island 1: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 2: Weight left: 99789.0 Value: 99769
+Best solution found so far in island 3: Weight left: 99913.0 Value: 99896
+
+Migrating individuals to other islands
+
+Current generation...: 300
+Best solution found so far in island 1: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 2: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 3: Weight left: 99913.0 Value: 99896
+
+Migrating individuals to other islands
+
+Current generation...: 400
+Best solution found so far in island 1: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 2: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 3: Weight left: 99913.0 Value: 99896
+
+Current generation...: 499
+Best solution found so far in island 1: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 2: Weight left: 99913.0 Value: 99896
+Best solution found so far in island 3: Weight left: 99913.0 Value: 99896
+
+Solution found in island 1:
+Weight left: 99913.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Solution found in island 2:
+Weight left: 99913.0
+Value: 99896
+Backpack configuration: [32, 39]
+
+Solution found in island 3:
+Weight left: 99913.0
+Value: 99896
+Backpack configuration: [32, 39]
