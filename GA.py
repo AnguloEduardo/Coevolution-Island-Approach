@@ -149,17 +149,18 @@ def sort_population(islands, population, best):
 
 
 def migrate(exchange, population, sorted_population, islands):
-    if islands > 1:
-        # Exchanging the best 'exchange' Knapsacks solutions of each island to another
-        temp_knapsack = []
-        for index_1 in range(exchange):
-            temp_knapsack.append(sorted_population[0][index_1])
-        for index_1 in range(islands - 1):
-            for index_2 in range(exchange):
-                population[index_1][index_2] = sorted_population[index_1 + 1][index_2]
-        for index_1 in range(exchange):
-            population[islands - 1][index_1] = temp_knapsack[index_1]
-        return population
+    # Exchanging the best 'exchange' Knapsacks solutions of each island to another
+    temp_knapsack = []
+    for index_1 in range(exchange):
+        temp_knapsack.append(sorted_population[0][index_1])
+    for index_1 in range(islands - 1):
+        index = random.sample(range(len(population[0])), exchange)
+        for index_2 in range(exchange):
+            population[index_1][index[index_2]] = sorted_population[index_1 + 1][index_2]
+    index = random.sample(range(len(population[0])), exchange)
+    for index_1 in range(exchange):
+        population[islands - 1][index[index_1]] = temp_knapsack[index_1]
+    return population
 
 
 # Genetic algorithm
@@ -167,7 +168,7 @@ def migrate(exchange, population, sorted_population, islands):
 # (num_tournament, num_parents_to_select, individuals_to_exchange, number_islands,
 # run_times, list_items, population, population_size, generations, crossover_probability,
 # mutation_probability, backpack_capacity, max_weight, best_Knapsack, table, data)
-def geneticAlgorithm(tournament, parents, exchange, islands, run_times, list_items, population, size, generations, crossover,
+def geneticAlgorithm(tournament, parents, exchange, islands, list_items, population, size, generations, crossover,
                      mutation, migration, capacity, max_weight, best, table, data):
     # Random generating the populations of the islands
     for x in range(islands):
@@ -222,7 +223,3 @@ def geneticAlgorithm(tournament, parents, exchange, islands, run_times, list_ite
             table.write('{} '.format(best[z].getValue()))
     else:
         table.write('{} '.format(best[solution].getValue()))
-
-    # Creates four empty Knapsacks to later store the best Knapsack of each island
-    best = [Knapsack(max_weight, capacity)] * islands
-    table.write('\n')
