@@ -4,6 +4,7 @@ import os
 import GA as ga
 from items import Items
 from knapsack import Knapsack
+import multiprocessing as mp
 
 # Variables
 num_tournament = 5
@@ -29,10 +30,10 @@ folder_name = str(population_size) + '-' + str(generations) + '-' + str(number_i
               '-' + str(mutation_probability) + '\\'
 folder_path = os.path.join(path_solution, folder_name)
 try:
+    os.mkdir(path_solution)
     os.mkdir(folder_path)
 except OSError as error:
     print(error)
-    print('Experiment already done')
 os.chdir(path)
 file_path = []
 # Iterate over all the files in the directory
@@ -42,7 +43,7 @@ for file in os.listdir():
 
 if __name__ == '__main__':
     table = open(path_solution + folder_name + 'table.txt', 'a')
-    for kp in range(len(file_path)-400):
+    for kp in range(len(file_path)):
         # Creates a list of lists to save the different populations from the islands
         population = [[]] * number_islands
         # List with the items of the problem
