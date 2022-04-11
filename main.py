@@ -4,7 +4,6 @@ import os
 import GA as ga
 from items import Items
 from knapsack import Knapsack
-import multiprocessing as mp
 
 # Variables
 num_tournament = 5
@@ -14,35 +13,56 @@ number_islands = 4
 run_times = 30
 population_size = 300
 generations = 50
-folder_instance = '\\Instances KP\\ga\\Test set A\\'
-folder_solution = '\\experiments\\ga\\'
 # [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 crossover_probability = [0.1, 0.2, 0.3, 0.4]
 # [0.01, 0.05, 0.07, 0.08, 0.10, 0.11, 0.12, 0.15, 0.18, 0.20]
 mutation_probability = [0.01, 0.05, 0.07, 0.08]
 migration_probability = [0.0, 0.1, 0.2, 0.4, 0.8, 1.0]
 
-# Path to instances
-path = os.getcwd() + folder_instance
-path_solution = os.getcwd() + folder_solution
-folder_name = str(population_size) + '-' + str(generations) + '-' + str(number_islands) + \
-              '-' + str(crossover_probability) + \
-              '-' + str(mutation_probability) + '\\'
-folder_path = os.path.join(path_solution, folder_name)
-try:
-    os.mkdir(path_solution)
-    os.mkdir(folder_path)
-except OSError as error:
-    print(error)
-os.chdir(path)
+# Paths to the problem instance and to the solution folder
+experiment = 'ga\\Test set (reduced)\\'
+folder_instance = os.getcwd() + '\\Instances KP\\' + experiment
+folder_solution = os.getcwd() + '\\experiments\\' + experiment
+folder_name = str(population_size) + '-' + str(generations) + '-' + str(number_islands) + '-' + str(run_times)
+folder_path = os.path.join(folder_solution, folder_name)
+
+if not os.path.isdir(folder_path):
+    os.makedirs(folder_path)
+
+os.chdir(folder_path)
+sub_folders = []
+for folder in os.listdir():
+    sub_folders.append(f"folder")
+
+num_experiment = len(sub_folders)
+if not os.path.isdir(str(num_experiment)):
+    os.mkdir(str(num_experiment))
+folder_path = os.path.join(folder_path, str(num_experiment))
+
+os.chdir(folder_instance)
 file_path = []
 # Iterate over all the files in the directory
 for file in os.listdir():
     # Create the filepath of particular file
-    file_path.append(f"{path}\\{file}")
+    file_path.append(f"{folder_instance}\\{file}")
+
+parameters = open(folder_path + '\\' + 'General Parameters.txt', 'a')
+parameters.write('Population per island: {}\n'
+                 'Generations: {}\n'
+                 'Number of islands: {}\n'
+                 'Crossover probabilities: {}\n'
+                 'Mutation probabilities: {}\n'
+                 'Migration probabilities: {}\n'
+                 'Run times: {}\n'
+                 'Number of tournaments: {}\n'
+                 'Number of individuals to exchange: {}\n'
+                 'Number of parents for crossover: {}'
+                 .format(population_size, generations, number_islands, crossover_probability, mutation_probability,
+                         migration_probability, run_times, num_tournament, individuals_to_exchange, num_parents_to_select))
+parameters.close()
 
 if __name__ == '__main__':
-    table = open(path_solution + folder_name + 'table.txt', 'a')
+    table = open(folder_path + '\\' + 'table.txt', 'a')
     for kp in range(len(file_path)):
         # Creates a list of lists to save the different populations from the islands
         population = [[]] * number_islands
@@ -59,7 +79,7 @@ if __name__ == '__main__':
         # from the second row and forth, the first element represent the weight
         # the second element represent the profit
         backpack_capacity = int(problemCharacteristics[0])  # Number of items in the problem
-        max_weight = int(problemCharacteristics[1])         # Maximum weight for the backpack to carry
+        max_weight = float(problemCharacteristics[1])       # Maximum weight for the backpack to carry
 
         # Creation of item's characteristics with the information from the .txt file
         for idx in range(backpack_capacity):
@@ -71,8 +91,7 @@ if __name__ == '__main__':
         # Opening text file to save the data of each run
         problem = file_path[kp].split("\\")
         problem = problem[len(problem)-1].split('.')
-        data = open(path_solution + folder_name + problem[0] +'_' +
-                    str(number_islands) + '_Islands.txt', 'a')
+        data = open(folder_path + '//' + problem[0] + '_' + str(number_islands) + '_Islands.txt', 'a')
 
         data.write('{} {} {} {} {} {} {} {} {}'.format(
             population_size, generations, backpack_capacity,

@@ -12,15 +12,15 @@ def generate_population(size, list_items, max_weight, capacity):
         # Initialize Random population
         items = list_items.copy()
         individual = Knapsack(max_weight, capacity)
-        index = randint(len(items))
+        index = randint(len(items) - 1)
         while individual.canPack(items[index]):
             individual.pack(items.pop(index))
-            index = randint(len(items))
+            index = randint(len(items) - 1)
         new_population.append(individual)
     return new_population
 
 
-def crossover_island_1(parentA, parentB, crossover, islands, capacity):
+def crossover_1(parentA, parentB, crossover, islands, capacity):
     if random.random() <= crossover[islands - 4]:
         offspring_a = concatenate((parentA[:capacity // 2], parentB[capacity // 2:])).tolist()
         offspring_b = concatenate((parentA[capacity // 2:], parentB[:capacity // 2])).tolist()
@@ -30,9 +30,9 @@ def crossover_island_1(parentA, parentB, crossover, islands, capacity):
     return offspring_a, offspring_b
 
 
-def crossover_island_2(parentA, parentB, crossover, islands):
+def crossover_2(parentA, parentB, crossover, islands):
     if random.random() <= crossover[islands - 3]:
-        index = randint(1, len(parentA)-1)
+        index = randint(1, len(parentA) - 1)
         offspring_a = concatenate((parentA[:index], parentB[index:])).tolist()
         offspring_b = concatenate((parentB[:index], parentA[index:])).tolist()
     else:
@@ -41,7 +41,7 @@ def crossover_island_2(parentA, parentB, crossover, islands):
     return offspring_a, offspring_b
 
 
-def crossover_island_3(parentA, parentB, crossover, islands):
+def crossover_3(parentA, parentB, crossover, islands):
     if random.random() <= crossover[islands - 2]:
         index_1, index_2 = randint(1, len(parentA)-2, 2)
         if index_1 > index_2:
@@ -56,14 +56,14 @@ def crossover_island_3(parentA, parentB, crossover, islands):
     return offspring_a, offspring_b
 
 
-def crossover_island_4(parentA, parentB, crossover, islands):
+def crossover_4(parentA, parentB, crossover, islands):
     if random.random() <= crossover[islands - 1]:
-        for x in range(len(parentA)-1):
+        for x in range(len(parentA)):
             if parentA[x] != parentB[x]:
                 if random.random() <= 0.5:
-                    temp = parentA[x]
-                    parentA[x] = parentB[x]
-                    parentB[x] = temp
+                    temp = int(parentA[x])
+                    parentA[x] = int(parentB[x])
+                    parentB[x] = int(temp)
         offspring_a = parentA.copy()
         offspring_b = parentB.copy()
     else:
@@ -76,13 +76,15 @@ def crossover_island_4(parentA, parentB, crossover, islands):
 # =======================
 def combine(parentA, parentB, island, crossover, islands, capacity):
     if island == 0:
-        offspring_a, offspring_b = crossover_island_1(parentA.getChromosome(), parentB.getChromosome(), crossover, islands, capacity)
+        offspring_a, offspring_b = crossover_1(parentA.getChromosome(), parentB.getChromosome(), crossover, islands, capacity)
     elif island == 1:
-        offspring_a, offspring_b = crossover_island_2(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
+        offspring_a, offspring_b = crossover_2(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
     elif island == 2:
-        offspring_a, offspring_b = crossover_island_3(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
+        offspring_a, offspring_b = crossover_3(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
     else:
-        offspring_a, offspring_b = crossover_island_4(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
+        offspring_a, offspring_b = crossover_4(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
+    offspring_a = [int(x) for x in offspring_a]
+    offspring_b = [int(x) for x in offspring_a]
     return offspring_a, offspring_b
 
 
@@ -91,8 +93,8 @@ def combine(parentA, parentB, island, crossover, islands, capacity):
 def mutate(individual, mRate, capacity):
     if random.random() <= mRate:
         i, j = random.sample(range(capacity), 2)
-        individual.chromosome[i] = 0 if individual.chromosome[i] == 1 else 1
-        individual.chromosome[j] = 0 if individual.chromosome[j] == 1 else 1
+        individual.chromosome[i] = int(0) if individual.chromosome[i] == 1 else int(1)
+        individual.chromosome[j] = int(0) if individual.chromosome[j] == 1 else int(1)
         return individual, True
     return individual, False
 
@@ -100,7 +102,7 @@ def mutate(individual, mRate, capacity):
 def fitness(chromosome_a, chromosome_b, list_items, max_weight):
     weight_a, value_a = 0.0, 0
     weight_b, value_b = 0.0, 0
-    for x in range(len(chromosome_a) - 1):
+    for x in range(len(chromosome_a)):
         if chromosome_a[x] == 1:
             value_a += list_items[x].getValue()
             weight_a += list_items[x].getWeight()
@@ -121,8 +123,8 @@ def select(island, tSize, numParents, max_weight, capacity,population):
     parent_b = Knapsack(max_weight, capacity)
     for x in range(numParents):
         island_population = population[island].copy()
-        winner = randint(len(island_population)-1)
-        rival = randint(len(island_population)-1)
+        winner = randint(len(island_population) - 1)
+        rival = randint(len(island_population) - 1)
         individualWinner = island_population.pop(winner)
         individualRival = island_population.pop(rival)
         for i in range(tSize):
@@ -171,10 +173,12 @@ def migrate(exchange, population, sorted_population, islands):
 def geneticAlgorithm(tournament, parents, exchange, islands, list_items, population, size, generations, crossover,
                      mutation, migration, capacity, max_weight, best, table, data):
     # Random generating the populations of the islands
+    # Need to parallelize this loop
     for x in range(islands):
         population[x] = generate_population(size, list_items, max_weight, capacity)
     # Runs the evolutionary process
     for i in tqdm(range(generations)):
+        # Need to parallelize this loop
         for island in range(islands):
             # Crossover
             new_population = []
@@ -191,12 +195,11 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
             for index in range(size):
                 individual, boolean = mutate(population[island][index], mutation[island], capacity)
                 if boolean:
-                    weight, value, _, _ = fitness(individual.chromosome, individual.chromosome, list_items, max_weight)
-                    population[island][index].chromosome = individual.chromosome.copy()
+                    weight, value, _, _ = fitness(individual.getChromosome(), individual.getChromosome(), list_items, max_weight)
+                    population[island][index].chromosome = individual.getChromosome().copy()
                     population[island][index].value = value
                     population[island][index].totalWeight = weight
 
-        # Printing useful information
         sorted_population, best = sort_population(islands, population, best)
         rate = random.random() <= migration
         if islands > 1 and i != generations - 1 and rate:
@@ -204,22 +207,26 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
         data.write('\n1') if rate else data.write('\n0')
         data.write(' {}'.format(i))
         for y in range(islands):
-            data.write(' {} {}'.format(best[y].getTotalWeight(), best[y].getValue()))
+            data.write(' {} {} {}'.format(best[y].getValue(), best[y].getTotalWeight(), best[y].getChromosome()))
     solution = 0
     backpack = []
     data.write('\n')
     for z in range(islands):
         if best[z].getValue() > best[solution].getValue(): solution = z
-        for x, gen in enumerate(best[z].getChromosome()):
-            if gen == 1:
-                backpack.append(x)
-        best[z].chromosome = backpack
-        backpack = []
-        data.write('{} {} {} '.format(best[z].getTotalWeight(), best[z].getValue(), best[z].getChromosome()))
-    data.write('\n{} {} {}'.format(best[solution].getTotalWeight(), best[solution].getValue(), best[solution].getChromosome()))
+        # for x, gen in enumerate(best[z].getChromosome()):
+        #     if gen == 1:
+        #         backpack.append(x)
+        # best[z].chromosome = backpack
+        # backpack = []
+        data.write('{} {} {} '.format(best[z].getValue(), best[z].getTotalWeight(), best[z].getChromosome()))
+    data.write('\n{} {} {}'.format(best[solution].getValue(), best[solution].getTotalWeight(), best[solution].getChromosome()))
 
     if migration == 0.0:
         for z in range(islands):
-            table.write('{} '.format(best[z].getValue()))
+            table.write('{} {} '.format(best[z].getValue(), best[z].getTotalWeight()))
+            for _, gene in enumerate(best[z].getChromosome()):
+                table.write('{} '.format(gene))
     else:
-        table.write('{} '.format(best[solution].getValue()))
+        table.write('{} {} '.format(best[solution].getValue(), best[solution].getTotalWeight()))
+        for _, gene in enumerate(best[solution].getChromosome()):
+            table.write('{} '.format(gene))
