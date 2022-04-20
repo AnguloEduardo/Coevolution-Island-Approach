@@ -76,8 +76,8 @@ if __name__ == '__main__':
         # This information needs to be taken from the .txt files
         # First element in the first row indicates the number of items
         # second element of the first row indicates the backpack capacity
-        # from the second row and forth, the first element represent the weight
-        # the second element represent the profit
+        # from the second row and forth, the first element represent the profit
+        # the second element represent the weight
         backpack_capacity = int(problemCharacteristics[0])  # Number of items in the problem
         max_weight = float(problemCharacteristics[1])       # Maximum weight for the backpack to carry
 
@@ -85,7 +85,7 @@ if __name__ == '__main__':
         for idx in range(backpack_capacity):
             instanceItem = instance.readline().rstrip("\n")
             instanceItem = instanceItem.split(", ")
-            list_items.append(Items(idx, int(instanceItem[0]), float(instanceItem[1])))
+            list_items.append(Items(idx, float(instanceItem[1]), int(instanceItem[0])))
         instance.close()
 
         # Opening text file to save the data of each run

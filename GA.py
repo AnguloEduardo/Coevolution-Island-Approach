@@ -213,20 +213,22 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
     data.write('\n')
     for z in range(islands):
         if best[z].getValue() > best[solution].getValue(): solution = z
-        # for x, gen in enumerate(best[z].getChromosome()):
-        #     if gen == 1:
-        #         backpack.append(x)
-        # best[z].chromosome = backpack
-        # backpack = []
+        for x, gen in enumerate(best[z].getChromosome()):
+            if gen == 1:
+                backpack.append(x)
+        best[z].chromosome = backpack
+        backpack = []
         data.write('{} {} {} '.format(best[z].getValue(), best[z].getTotalWeight(), best[z].getChromosome()))
     data.write('\n{} {} {}'.format(best[solution].getValue(), best[solution].getTotalWeight(), best[solution].getChromosome()))
 
     if migration == 0.0:
         for z in range(islands):
-            table.write('{} {} '.format(best[z].getValue(), best[z].getTotalWeight()))
-            for _, gene in enumerate(best[z].getChromosome()):
-                table.write('{} '.format(gene))
+            table.write('{} '.format(best[z].getValue()))
+            # table.write('{} {} '.format(best[z].getValue(), best[z].getTotalWeight()))
+            # for _, gene in enumerate(best[z].getChromosome()):
+            #     table.write('{} '.format(gene))
     else:
-        table.write('{} {} '.format(best[solution].getValue(), best[solution].getTotalWeight()))
-        for _, gene in enumerate(best[solution].getChromosome()):
-            table.write('{} '.format(gene))
+        table.write('{} '.format(best[solution].getValue()))
+        # table.write('{} {} '.format(best[solution].getValue(), best[solution].getTotalWeight()))
+        # for _, gene in enumerate(best[solution].getChromosome()):
+        #     table.write('{} '.format(gene))

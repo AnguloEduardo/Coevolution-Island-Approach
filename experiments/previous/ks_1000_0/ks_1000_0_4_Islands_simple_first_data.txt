@@ -1,4 +1,0 @@
-Best general solution:
-Weight left: 1.0
-Value: 110569
-Backpack configuration: [12, 30, 64, 66, 69, 85, 125, 168, 201, 929]

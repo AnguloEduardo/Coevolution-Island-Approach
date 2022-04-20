@@ -1,7 +1,0 @@
-
-
-Run number: 1
-Best general solution:
-Weight left: 99913.0
-Value: 99896
-Backpack configuration: [32, 39]
