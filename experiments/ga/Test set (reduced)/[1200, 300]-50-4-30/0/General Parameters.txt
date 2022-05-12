@@ -1,0 +1,10 @@
+Population per island: [1200, 300]
+Generations: 50
+Number of islands: 4
+Crossover probabilities: [0.9, 0.9, 0.9, 0.9]
+Mutation probabilities: [0.01, 0.05, 0.07, 0.08]
+Migration probabilities: [0.0, 0.1, 0.2, 0.4, 0.8, 1.0]
+Run times: 30
+Number of tournaments: 5
+Number of individuals to exchange: 5
+Number of parents for crossover: 2

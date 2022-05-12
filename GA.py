@@ -209,15 +209,9 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
         for y in range(islands):
             data.write(' {} {} {}'.format(best[y].getValue(), best[y].getTotalWeight(), best[y].getChromosome()))
     solution = 0
-    backpack = []
     data.write('\n')
     for z in range(islands):
         if best[z].getValue() > best[solution].getValue(): solution = z
-        for x, gen in enumerate(best[z].getChromosome()):
-            if gen == 1:
-                backpack.append(x)
-        best[z].chromosome = backpack
-        backpack = []
         data.write('{} {} {} '.format(best[z].getValue(), best[z].getTotalWeight(), best[z].getChromosome()))
     data.write('\n{} {} {}'.format(best[solution].getValue(), best[solution].getTotalWeight(), best[solution].getChromosome()))
 

@@ -11,10 +11,10 @@ num_parents_to_select = 2
 individuals_to_exchange = 5
 number_islands = 4
 run_times = 30
-population_size = 300
+population_size = [1200, 300]
 generations = 50
 # [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-crossover_probability = [0.1, 0.2, 0.3, 0.4]
+crossover_probability = [0.9, 0.9, 0.9, 0.9]
 # [0.01, 0.05, 0.07, 0.08, 0.10, 0.11, 0.12, 0.15, 0.18, 0.20]
 mutation_probability = [0.01, 0.05, 0.07, 0.08]
 migration_probability = [0.0, 0.1, 0.2, 0.4, 0.8, 1.0]
@@ -99,12 +99,16 @@ if __name__ == '__main__':
             mutation_probability, migration_probability, file_path[kp]))
         print(file_path[kp])
         for Rmigration in range(len(migration_probability)):
+            if Rmigration == 0:
+                size  = population_size[0]
+            else:
+                size = population_size[1]
             for run in range(run_times):
                 # Creates four empty Knapsacks to later store the best Knapsack of each island
                 best_Knapsack = [Knapsack(max_weight, backpack_capacity)] * number_islands
                 data.write('\n{} {}'.format(run + 1, migration_probability[Rmigration]))
                 ga.geneticAlgorithm(num_tournament, num_parents_to_select, individuals_to_exchange,
-                                    number_islands, list_items, population, population_size,
+                                    number_islands, list_items, population, size,
                                     generations, crossover_probability,mutation_probability,
                                     migration_probability[Rmigration], backpack_capacity, max_weight,
                                     best_Knapsack, table, data)
