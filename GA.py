@@ -5,6 +5,7 @@ from numpy import concatenate
 from knapsack import Knapsack
 import random
 
+
 # Generate population
 def generate_population(size, list_items, max_weight, capacity):
     new_population = []
@@ -43,7 +44,7 @@ def crossover_2(parentA, parentB, crossover, islands):
 
 def crossover_3(parentA, parentB, crossover, islands):
     if random.random() <= crossover[islands - 2]:
-        index_1, index_2 = randint(1, len(parentA)-2, 2)
+        index_1, index_2 = randint(1, len(parentA) - 2, 2)
         if index_1 > index_2:
             temp = index_1
             index_1 = index_2
@@ -76,7 +77,8 @@ def crossover_4(parentA, parentB, crossover, islands):
 # =======================
 def combine(parentA, parentB, island, crossover, islands, capacity):
     if island == 0:
-        offspring_a, offspring_b = crossover_1(parentA.getChromosome(), parentB.getChromosome(), crossover, islands, capacity)
+        offspring_a, offspring_b = crossover_1(parentA.getChromosome(), parentB.getChromosome(), crossover, islands,
+                                               capacity)
     elif island == 1:
         offspring_a, offspring_b = crossover_2(parentA.getChromosome(), parentB.getChromosome(), crossover, islands)
     elif island == 2:
@@ -118,7 +120,7 @@ def fitness(chromosome_a, chromosome_b, list_items, max_weight):
 
 # Tournament selection
 # =======================
-def select(island, tSize, numParents, max_weight, capacity,population):
+def select(island, tSize, numParents, max_weight, capacity, population):
     parent_a = Knapsack(max_weight, capacity)
     parent_b = Knapsack(max_weight, capacity)
     for x in range(numParents):
@@ -129,8 +131,8 @@ def select(island, tSize, numParents, max_weight, capacity,population):
         individualRival = island_population.pop(rival)
         for i in range(tSize):
             if individualRival.getValue() > individualWinner.getValue():  # It is searching for the Knapsack
-                winner = rival                                            # with the highest value
-            rival = randint(len(island_population)-1)
+                winner = rival  # with the highest value
+            rival = randint(len(island_population) - 1)
             individualRival = island_population.pop(rival)
         if x == 0:
             parent_a = population[island][winner]
@@ -185,7 +187,7 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
             for _ in range(size // 2):
                 parent_a, parent_b = select(island, tournament, parents, max_weight, capacity, population)
                 offspring_a, offspring_b = combine(parent_a, parent_b, island, crossover, islands, capacity)
-                weight_a, value_a, weight_b, value_b  = fitness(offspring_a, offspring_b, list_items, max_weight)
+                weight_a, value_a, weight_b, value_b = fitness(offspring_a, offspring_b, list_items, max_weight)
                 child_a = Knapsack(weight_a, value_a, offspring_a)
                 child_b = Knapsack(weight_b, value_b, offspring_b)
                 new_population.extend([child_a, child_b])
@@ -195,7 +197,8 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
             for index in range(size):
                 individual, boolean = mutate(population[island][index], mutation[island], capacity)
                 if boolean:
-                    weight, value, _, _ = fitness(individual.getChromosome(), individual.getChromosome(), list_items, max_weight)
+                    weight, value, _, _ = fitness(individual.getChromosome(), individual.getChromosome(), list_items,
+                                                  max_weight)
                     population[island][index].chromosome = individual.getChromosome().copy()
                     population[island][index].value = value
                     population[island][index].totalWeight = weight
@@ -213,7 +216,8 @@ def geneticAlgorithm(tournament, parents, exchange, islands, list_items, populat
     for z in range(islands):
         if best[z].getValue() > best[solution].getValue(): solution = z
         data.write('{} {} {} '.format(best[z].getValue(), best[z].getTotalWeight(), best[z].getChromosome()))
-    data.write('\n{} {} {}'.format(best[solution].getValue(), best[solution].getTotalWeight(), best[solution].getChromosome()))
+    data.write(
+        '\n{} {} {}'.format(best[solution].getValue(), best[solution].getTotalWeight(), best[solution].getChromosome()))
 
     if migration == 0.0:
         for z in range(islands):

@@ -14,7 +14,7 @@ run_times = 30
 population_size = [1200, 300]
 generations = 50
 # [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-crossover_probability = [0.9, 0.9, 0.9, 0.9]
+crossover_probability = [0.8, 0.9, 1.0, 0.9]
 # [0.01, 0.05, 0.07, 0.08, 0.10, 0.11, 0.12, 0.15, 0.18, 0.20]
 mutation_probability = [0.01, 0.05, 0.07, 0.08]
 migration_probability = [0.0, 0.1, 0.2, 0.4, 0.8, 1.0]
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         print(file_path[kp])
         for Rmigration in range(len(migration_probability)):
             if Rmigration == 0:
-                size  = population_size[0]
+                size = population_size[0]
             else:
                 size = population_size[1]
             for run in range(run_times):
