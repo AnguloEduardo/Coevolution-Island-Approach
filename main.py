@@ -8,13 +8,13 @@ from knapsack import Knapsack
 # Variables
 num_tournament = 5
 num_parents_to_select = 2
-individuals_to_exchange = 5
+individuals_to_exchange = 10
 number_islands = 4
 run_times = 30
-population_size = [1200, 300]
-generations = 50
+population_size = [2000, 500]
+generations = 100
 # [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-crossover_probability = [0.8, 0.9, 1.0, 0.9]
+crossover_probability = [0.9, 0.9, 0.9, 0.9]
 # [0.01, 0.05, 0.07, 0.08, 0.10, 0.11, 0.12, 0.15, 0.18, 0.20]
 mutation_probability = [0.01, 0.05, 0.07, 0.08]
 migration_probability = [0.0, 0.1, 0.2, 0.4, 0.8, 1.0]
