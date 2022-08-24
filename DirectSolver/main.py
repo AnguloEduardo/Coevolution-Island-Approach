@@ -1,7 +1,7 @@
 # Libraries
 # =======================
 import os
-from DirectSolver import GA as ga
+from DirectSolver import GA_DirectSolver as GA
 from items import Items
 from knapsack import Knapsack
 
