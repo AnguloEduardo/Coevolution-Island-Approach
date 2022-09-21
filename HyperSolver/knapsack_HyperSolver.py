@@ -12,6 +12,10 @@ class Knapsack:
             self.totalWeight = float(args[0])   # Third argument: Chromosome
             self.value = args[1]
             self.chromosome = args[2]
+        elif len(args) == 0:
+            self.totalWeight = float(0)
+            self.value = int(0)
+            self.chromosome = []
 
     # Creates a new instance of Knapsack with predefined parameters
     def knapsack(self, value, weight, chromosome):

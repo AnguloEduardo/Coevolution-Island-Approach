@@ -64,12 +64,19 @@ class HyperHeuristic:
                     self.actions.append(args[1][2])
                 else:
                     self.actions.append(args[1][3])
-        else:
+        elif len(args) == 6:
             self.features = args[0].copy()
             self.heuristics = args[1].copy()
             self.actions = args[2].copy()
             self.conditions = args[3].copy()
             self.individual = Knapsack(args[4], args[5])
+
+        elif len(args) == 4:
+            self.features = args[0].copy()
+            self.heuristics = args[1].copy()
+            self.actions = args[2].copy()
+            self.conditions = args[3].copy()
+            self.individual = None
 
     def get_conditions(self):
         return self.conditions
