@@ -79,6 +79,7 @@ class Knapsack:
 
     def solve(self, heuristic, list_items):
         selected = None
+        # Max Profit
         if heuristic == 'MAXP':
             value = -sys.float_info.max
             for idx, item in enumerate(list_items):
@@ -86,6 +87,7 @@ class Knapsack:
                     selected = item
                     value = selected.getValue()
             return selected
+        # Max Profit/Weight
         elif heuristic == 'MAXPW':
             value = -sys.float_info.max
             for idx, item in enumerate(list_items):
@@ -93,6 +95,7 @@ class Knapsack:
                     selected = item
                     value = selected.getvaluePerWeight()
             return selected
+        # Min Weight
         elif heuristic == 'MINW':
             value = sys.float_info.max
             for idx, item in enumerate(list_items):
@@ -100,6 +103,7 @@ class Knapsack:
                     selected = item
                     value = selected.getWeight()
             return selected
+        # Mark
         elif heuristic == 'MARK':
             value = -sys.float_info.max
             for idx, item in enumerate(list_items):

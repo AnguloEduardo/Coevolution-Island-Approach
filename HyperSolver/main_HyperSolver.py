@@ -22,8 +22,8 @@ mutation_probability = [0.01, 0.05, 0.07, 0.08]
 # [0.0, 0.1, 0.2, 0.4, 0.8, 1.0]
 migration_probability = [0.4]
 
-training = False
-solver = True
+training = True
+solver = False
 
 # Variables for the Hyper Heuristics
 features = ['WEIGHT', 'ITEMS_IN_KNAPSACK', 'ITEMS_OUT_KNAPSACK', 'TOTAL_WEIGHT_LEFT', 'TOTAL_VALUE_LEFT']
@@ -32,7 +32,7 @@ number_rules = 8
 
 if training:
     # Paths to the problem instance and to the solution folder
-    experiment = 'ga\\Test set (reduced)\\Training Set\\'
+    experiment = 'ga\\Test set A\\Training\\'
     folder_instance = os.getcwd() + '\\Instances KP\\' + experiment
     folder_solution = os.getcwd() + '\\experiments\\' + experiment
     folder_name = str(population_size) + '-' + str(generations) + '-' + str(number_islands) + '-' + str(run_times)
@@ -81,8 +81,8 @@ if training:
 if solver:
     # Paths to the problem instance and to the solution folder
     root = os.getcwd()
-    instance = '\\Instances KP\\ga\\Test set (reduced)\\Test Set'
-    folder_solution = '\\experiments\\ga\\Test set (reduced)\\Test Set\\'
+    instance = '\\Instances KP\\ga\\Test set A\\Test'
+    folder_solution = '\\experiments\\ga\\Test set A\\Test\\'
     folder_instance = root + instance
     os.chdir(folder_instance)
     file_path, file_names = [], []
