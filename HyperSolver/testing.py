@@ -3,53 +3,36 @@
 import os
 from read_hh import read_hh
 from knapsack_HyperSolver import Knapsack
-from items_HyperSolver import Items
+from knapsack_HyperSolver import read_instance
 from tqdm import tqdm
+from problem import ProblemCharacteristics
 
-# Paths to the problem instance and to the solution folder
-root = os.getcwd()
-instance = '\\Instances KP\\ga\\Test set A\\30-70\\Test'
-folder_solution = '\\experiments\\ga\\Test set A\\30-70\\'
-folder_instance = root + instance
-os.chdir(folder_instance)
-file_path, file_names = [], []
-results = open(root + folder_solution + 'hh_results' + '.txt', 'a')
 
-# Iterate over all the files in the directory
-for file in os.listdir():
-    # Create the filepath of particular file
-    file_names.append(f"{file}")
-    file_path.append(f"{folder_instance}\\{file}")
+def test(features, heuristics, number_rules, number_hh, training_split, population_size, generations, number_of_islands,
+         run_times, num_exp):
+    problem_pool = []
+    # Paths to the problem instance and to the solution folder
+    root = os.getcwd()
+    hh_path = root + '\\experiments\\ga\\Test set A\\' + training_split + '\\Training\\' + str(population_size) + '-' \
+              + str(generations) + '-' + str(number_of_islands) + '-' + str(run_times) + '\\' + str(num_exp) + '\\'
+    folder_instance = root + '\\Instances KP\\ga\\Test set A\\' + training_split + '\\Test'
+    os.chdir(folder_instance)
+    file_path, file_names = [], []
+    results = open(hh_path + 'results' + '.txt', 'a')
 
-for kp in range(len(file_path)):
-    os.chdir(root)
-    # List with the items of the problem
-    list_items = []
-    # Reading files with the instance problem
-    kp_instance = open(file_path[kp], 'r')
-    problemCharacteristics = kp_instance.readline().rstrip("\n")
-    problemCharacteristics = problemCharacteristics.split(", ")
+    # Iterate over all the files in the directory
+    for file in os.listdir():
+        # Create the filepath of particular file
+        file_names.append(f"{file}")
+        file_path.append(f"{folder_instance}\\{file}")
 
-    # This information needs to be taken from the .txt files
-    # First element in the first row indicates the number of items
-    # second element of the first row indicates the backpack capacity
-    # from the second row and forth, the first element represent the profit
-    # the second element represent the weight
-    backpack_capacity = int(problemCharacteristics[0])  # Number of items in the problem
-    max_weight = float(problemCharacteristics[1])  # Maximum weight for the backpack to carry
+    for file in file_path:
+        problem_pool.append(ProblemCharacteristics(read_instance(file)))
 
-    # Creation of item's characteristics with the information from the .txt file
-    for idx in range(backpack_capacity):
-        instanceItem = kp_instance.readline().rstrip("\n")
-        instanceItem = instanceItem.split(", ")
-        list_items.append(Items(idx, float(instanceItem[1]), int(instanceItem[0])))
-    kp_instance.close()
-
-    HHs = read_hh(len(features), len(heuristics), number_rules, 30)
+    HHs = read_hh(len(features), len(heuristics), number_rules, number_hh, hh_path)
 
     for x in tqdm(range(len(HHs))):
-        HHs[x].individual = Knapsack(max_weight, backpack_capacity)
-        HHs[x].evaluate(list_items, max_weight)
-        results.write(str(HHs[x].individual.getValue()) + " ")
-    results.write("\n")
-results.close()
+        results = HHs[x].evaluate_testing(problem_pool, results)
+        results.write("\n")
+
+    results.close()

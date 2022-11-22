@@ -4,14 +4,14 @@ class Items:
         self.value = int(value)
         self.weight = float(weight)
 
-    def getID(self):
+    def get_id(self):
         return self.ID
 
-    def getValue(self):
+    def get_value(self):
         return self.value
 
-    def getWeight(self):
+    def get_weight(self):
         return self.weight
 
-    def getvaluePerWeight(self):
+    def get_value_per_weight(self):
         return self.value / self.weight
