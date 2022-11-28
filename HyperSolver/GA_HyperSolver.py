@@ -72,7 +72,7 @@ def mutate(population, mRate, nrules, len_features, size):
                 else:
                     rule_i[x], rule_j[x] = rule_i[x] - 0.015, rule_j[x] - 0.015
             population[index].get_conditions()[i], population[index].get_conditions()[j] = rule_i, rule_j
-    return populatio
+    return population
 
 
 # Tournament selection
