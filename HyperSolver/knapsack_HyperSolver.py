@@ -3,6 +3,8 @@ from items_HyperSolver import Items
 
 
 def read_instance(file_path):
+    total_value = 0
+    total_weight = 0
     # List with the items of the problem
     list_items = []
     # Reading files with the instance problem
@@ -24,7 +26,12 @@ def read_instance(file_path):
         instanceItem = instanceItem.split(", ")
         list_items.append(Items(idx, float(instanceItem[1]), int(instanceItem[0])))
     instance.close()
-    return list_items, max_weight, backpack_capacity
+
+    for item in list_items:
+        total_value += item.get_value()
+        total_weight += item.get_weight()
+
+    return list_items, max_weight, backpack_capacity, total_value, total_weight
 
 
 class Knapsack:
@@ -81,34 +88,34 @@ class Knapsack:
 
     # Returns the value of the feature provided as argument
     # feature = A string with the name of one available feature
-    def get_feature(self, feature, weight, list_items):
+    def get_feature(self, feature, total_weight, total_value, list_items):
         value = 0
         if feature == 'WEIGHT':
-            value = self.totalWeight * weight / 100
+            value = self.totalWeight / total_weight
         elif feature == 'ITEMS_IN_KNAPSACK':
             count = 0
             for _, gene in enumerate(self.chromosome):
                 if gene == 1:
                     count += 1
-            value = count * len(list_items) / 100
+            value = count / len(list_items)
         elif feature == 'ITEMS_OUT_KNAPSACK':
             count = 0
             for _, gene in enumerate(self.chromosome):
                 if gene == 0:
                     count += 1
-            value = count * len(list_items) / 100
+            value = count / len(list_items)
         elif feature == 'TOTAL_WEIGHT_LEFT':
             weight_left = 0
             for x, gene in enumerate(self.chromosome):
                 if gene == 0:
                     weight_left += list_items[x].get_weight()
-            value = weight_left
+            value = weight_left / total_weight
         elif feature == 'TOTAL_VALUE_LEFT':
             value_left = 0
             for x, gene in enumerate(self.chromosome):
                 if gene == 0:
                     value_left += list_items[x].get_value()
-            value = value_left
+            value = value_left / total_value
         return value
 
     def solve(self, heuristic, problem):

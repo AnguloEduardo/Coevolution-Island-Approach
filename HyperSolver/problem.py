@@ -8,6 +8,8 @@ class ProblemCharacteristics:
         self.backpack_capacity = int(args[0][2])
         self.fitness = int(0)
         self.individual = Knapsack(self.get_max_weight(), len(self.get_items()))
+        self.total_weight = float(args[0][3])
+        self.total_value = int(args[0][4])
 
     def get_items(self):
         return self.items
@@ -17,6 +19,12 @@ class ProblemCharacteristics:
 
     def get_backpack_capacity(self):
         return self.backpack_capacity
+
+    def get_total_weight(self):
+        return self.total_weight
+
+    def get_total_value(self):
+        return self.total_value
 
     def update_fitness(self):
         if self.individual.get_value() >= self.fitness:

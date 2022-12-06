@@ -1,18 +1,5 @@
-import random
-from numpy.random import randint
+import numpy as np
 import math
-from knapsack_HyperSolver import Knapsack
-
-
-def random_generate_individual(list_items, max_weight, capacity):
-    # Initialize Random population
-    items = list_items.copy()
-    individual = Knapsack(max_weight, capacity)
-    index = randint(len(items) - 1)
-    while individual.can_pack(items[index]):
-        individual.pack(items.pop(index))
-        index = randint(len(items) - 1)
-    return individual
 
 
 def split(a, n):
@@ -29,6 +16,8 @@ class HyperHeuristic:
     #   1. heuristics = A list with the names of the heuristics to be used by this hyper-heuristic
     #   2. nbRules = The number of rules to be contained in this hyper-heuristic
     #   3. length of problem pool = The number of problems to train the model
+    #   4. lower bound of the rules
+    #   5. upper bound of the rules
 
     # Constructor second case
     #   0. features = A list with the names of the features to be used by this hyper-heuristic
@@ -39,43 +28,42 @@ class HyperHeuristic:
     #   5. capacity
 
     def __init__(self, *args):
-        if len(args) == 4:
-            if not isinstance(args[3], list):
-                self.features = args[0].copy()
-                self.heuristics = args[1].copy()
-                self.problems_solved = [0] * args[3]  # number of problems to solve
-                self.fitness = int(0)
-                self.actions = []
-                self.conditions = []
-                for i in range(args[2]):
-                    # Initializing conditions randomly
-                    self.conditions.append([0] * len(args[0]))
-                    for x in range(len(args[0])):
-                        self.conditions[i][x] = random.random()
+        if len(args) == 6:
+            self.features = args[0].copy()
+            self.heuristics = args[1].copy()
+            self.problems_solved = [0] * args[3]  # number of problems to solve
+            self.fitness = int(0)
+            self.actions = []
+            self.conditions = []
+            for i in range(args[2]):
+                # Initializing conditions randomly
+                self.conditions.append([0] * len(args[0]))
+                self.conditions[i] = np.random.uniform(args[4], args[5], (len(args[0]),))
 
-                    # Adding the heuristics to use (in this case we use 5 heuristics)
-                    # MAX_PROFIT, MAX_PROFIT/WEIGHT, MIN_WEIGHT, MARKOVITZ, DEFAULT
-                    # We divide the number of rules into five spaces. If the number of rules
-                    # is a multiple of five, the spaces will have the same length. In the case
-                    # of an odd number, some spaces will be smaller than the others.
-                    ranges = split(args[2], 5)
-                    if i < ranges[1]:
-                        self.actions.append(args[1][0])
-                    elif i < ranges[2]:
-                        self.actions.append(args[1][1])
-                    elif i < ranges[3]:
-                        self.actions.append(args[1][2])
-                    elif i < ranges[4]:
-                        self.actions.append(args[1][3])
-                    else:
-                        self.actions.append(args[1][4])
-            else:
-                self.features = args[0].copy()
-                self.heuristics = args[1].copy()
-                self.actions = args[2].copy()
-                self.conditions = args[3].copy()
+                # Adding the heuristics to use (in this case we use 5 heuristics)
+                # MAX_PROFIT, MAX_PROFIT/WEIGHT, MIN_WEIGHT, MARKOVITZ, DEFAULT
+                # We divide the number of rules into five spaces. If the number of rules
+                # is a multiple of five, the spaces will have the same length. In the case
+                # of an odd number, some spaces will be smaller than the others.
+                ranges = split(args[2], 5)
+                if i < ranges[1]:
+                    self.actions.append(args[1][0])
+                elif i < ranges[2]:
+                    self.actions.append(args[1][1])
+                elif i < ranges[3]:
+                    self.actions.append(args[1][2])
+                elif i < ranges[4]:
+                    self.actions.append(args[1][3])
+                else:
+                    self.actions.append(args[1][4])
 
-        elif len(args) == 5:
+        elif len(args) == 4:
+            self.features = args[0].copy()
+            self.heuristics = args[1].copy()
+            self.actions = args[2].copy()
+            self.conditions = args[3].copy()
+
+        else:
             self.features = args[0].copy()
             self.heuristics = args[1].copy()
             self.actions = args[2].copy()
@@ -90,7 +78,8 @@ class HyperHeuristic:
         state = []
         for i in range(len(self.features)):
             state.append(
-                problem.individual.get_feature(self.features[i], problem.get_max_weight(), problem.get_items()))
+                problem.individual.get_feature(self.features[i], problem.get_total_weight(), problem.get_total_value(),
+                                               problem.get_items()))
         for i in range(len(self.conditions)):
             distance = self.__distance(self.conditions[i], state)
             if distance < min_distance:
@@ -127,7 +116,8 @@ class HyperHeuristic:
             problem.reset()
         self.fitness = sum(self.problems_solved)
 
-    def evaluate_testing(self, problem_pool, results):
+    def evaluate_testing(self, problem_pool, hh_path):
+        results = open(hh_path + 'results' + '.txt', 'a')
         for idx, problem in enumerate(problem_pool):
             item = problem.individual.solve(self.next_heuristic(problem), problem)
             while item is not None:
@@ -135,7 +125,8 @@ class HyperHeuristic:
                 item = problem.individual.solve(self.next_heuristic(problem), problem)
             results.write(str(problem.individual.get_value()) + " ")
             problem.reset()
-        return results
+        results.write('\n')
+        results.close()
 
     def get_fitness(self):
         return self.fitness

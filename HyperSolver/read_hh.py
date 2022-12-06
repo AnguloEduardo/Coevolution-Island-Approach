@@ -3,7 +3,7 @@ from HyperHeuristic import HyperHeuristic
 
 def read_hh(len_features, len_heuristics, nRules, len_hheuristics, hh_path):
     feature, heuristic, conditions, actions, rules, hh = [], [], [], [], [], []
-    results = open(hh_path + 'hh_results.txt', 'r')
+    results = open(hh_path + 'hh.txt', 'r')
     text = results.read()
     tokens = text.split()
     for _ in range(len_hheuristics):
