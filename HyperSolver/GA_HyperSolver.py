@@ -156,3 +156,16 @@ def genetic_algorithm(tournament, num_parents, exchange, number_islands, size, g
         for y in range(size):
             hh.write("{}".format(population[x][y]))
     hh.close()
+
+    best_hh_candidates = list()
+    best_fitness, index = 0, 0
+    sort_final_population = sort_population(number_islands, population)
+    best_hh_candidates.append(sort_final_population[0][0])
+    best_hh_candidates.append(sort_final_population[1][0])
+    best_hh_candidates.append(sort_final_population[2][0])
+    best_hh_candidates.append(sort_final_population[3][0])
+    for x in range(4):
+        if best_hh_candidates[x].get_fitness() > best_fitness:
+            index = x
+    best_hh = open(folder_path + '\\best_hh.txt', 'a')
+    best_hh.write("{}".format(best_hh_candidates[index]))

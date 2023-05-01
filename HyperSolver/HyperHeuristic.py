@@ -31,10 +31,13 @@ class HyperHeuristic:
         if len(args) == 6:
             self.features = args[0].copy()
             self.heuristics = args[1].copy()
-            self.problems_solved = [0] * args[3]  # number of problems to solve
+            self.fitness_array = [0] * args[3]  # number of problems to solve
+            self.fitness_matrix = np.zeros((10, args[3]), dtype=float)
             self.fitness = int(0)
             self.actions = []
             self.conditions = []
+            self.cont = int(0)
+            self.rows = int(0)
             for i in range(args[2]):
                 # Initializing conditions randomly
                 self.conditions.append([0] * len(args[0]))
@@ -62,14 +65,19 @@ class HyperHeuristic:
             self.heuristics = args[1].copy()
             self.actions = args[2].copy()
             self.conditions = args[3].copy()
+            self.cont = int(0)
+            self.rows = int(0)
 
         else:
             self.features = args[0].copy()
             self.heuristics = args[1].copy()
             self.actions = args[2].copy()
             self.conditions = args[3].copy()
-            self.problems_solved = [0] * args[4]  # number of problems to solve
+            self.fitness_array = [0] * args[4]  # number of problems to solve
+            self.fitness_matrix = np.zeros((10, args[4]), dtype=float)
             self.fitness = int(0)
+            self.cont = int(0)
+            self.rows = int(0)
 
     # Returns the next heuristic to use
     def next_heuristic(self, problem):
@@ -78,8 +86,7 @@ class HyperHeuristic:
         state = []
         for i in range(len(self.features)):
             state.append(
-                problem.individual.get_feature(self.features[i], problem.get_total_weight(), problem.get_total_value(),
-                                               problem.get_items()))
+                problem.individual.get_feature(self.features[i], problem.get_items()))
         for i in range(len(self.conditions)):
             distance = self.__distance(self.conditions[i], state)
             if distance < min_distance:
@@ -88,11 +95,12 @@ class HyperHeuristic:
         heuristic = self.actions[index]
         return heuristic
 
-    # Returns the string representation of this dummy hyper-heuristic
+    # Returns the string representation of this hyper-heuristic
     def __str__(self):
         text = "Features:\n\t" + str(self.features) + "\nHeuristics:\n\t" + str(self.heuristics) + "\nRules:\n"
         for i in range(len(self.conditions)):
             text += "\t" + str(self.conditions[i]) + " => " + self.actions[i] + "\n"
+        text += "Fitness:\t" + str(self.fitness) + "\n"
         return text
 
     # Returns the Euclidean distance between two vectors
@@ -109,12 +117,18 @@ class HyperHeuristic:
             while item is not None:
                 problem.individual.pack(item)
                 item = problem.individual.solve(self.next_heuristic(problem), problem)
-            if problem.update_fitness():
-                self.problems_solved[idx] = int(1)
-            else:
-                self.problems_solved[idx] = int(0)
+            percentage_fitness = problem.update_fitness()
+            self.fitness_matrix[self.cont][idx] = percentage_fitness
             problem.reset()
-        self.fitness = sum(self.problems_solved)
+        if self.cont == 9:
+            self.cont = 0
+        else:
+            self.cont = self.cont + 1
+        if self.rows < 10:
+            self.rows = self.rows + 1
+        for x in range(len(problem_pool)):
+            self.fitness_array[x] = np.mean(self.fitness_matrix[:self.rows, x], dtype=float)
+        self.fitness = np.mean(self.fitness_array)
 
     def evaluate_testing(self, problem_pool, hh_path):
         results = open(hh_path + 'results' + '.txt', 'a')
@@ -123,7 +137,7 @@ class HyperHeuristic:
             while item is not None:
                 problem.individual.pack(item)
                 item = problem.individual.solve(self.next_heuristic(problem), problem)
-            results.write(str(problem.individual.get_value()) + " ")
+            results.write(str(problem.individual.get_value()) + "\n")
             problem.reset()
         results.write('\n')
         results.close()

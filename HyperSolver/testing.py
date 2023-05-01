@@ -11,10 +11,10 @@ def test(number_of_islands, run_times, population_size, generations, features, h
          number_hh, num_exp):
     # Paths to the problem instance and to the solution folder
     root = os.getcwd()
-    hh_path = root + '\\experiments\\ga\\Test set A\\' + training_split + '\\Training\\' + str(population_size) + '-' \
+    hh_path = root + '\\experiments\\ga\\Test set C\\' + training_split + '\\Training\\' + str(population_size) + '-' \
               + str(generations) + '-' + str(number_of_islands) + '-' + str(run_times) + '\\' + str(num_exp) + '\\'
 
-    folder_instance = root + '\\Instances KP\\ga\\Test set A\\' + training_split + '\\Test'
+    folder_instance = root + '\\Instances KP\\ga\\Test set C\\' + training_split + '\\Test'
     os.chdir(folder_instance)
 
     # Iterate over all the files in the directory

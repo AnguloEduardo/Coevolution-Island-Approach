@@ -27,11 +27,11 @@ class ProblemCharacteristics:
         return self.total_value
 
     def update_fitness(self):
-        if self.individual.get_value() >= self.fitness:
-            self.fitness = self.individual.get_value()
-            return True
+        if self.individual.get_value() < self.fitness:
+            return self.individual.get_value() / self.fitness
         else:
-            return False
+            self.fitness = self.individual.get_value()
+            return float(1)
 
     def reset(self):
         self.individual.totalWeight = self.max_weight
