@@ -1,77 +1,54 @@
 # Libraries
 from tqdm import tqdm
 from numpy.random import randint
-from numpy import concatenate
-from knapsack_HyperSolver import Knapsack
-from knapsack_HyperSolver import read_instance
 from HyperHeuristic import HyperHeuristic
-from HyperHeuristic import random_generate_individual
+import numpy as np
 import random
 
 
 # Crossover operator
 # =======================
-def crossover(parents, crossover_prob, features, heuristics, n_rules, len_pool):
-    if random.random() <= crossover_prob:
-        conditions_A = []
-        conditions_B = []
-        child_a_temp = []
-        child_b_temp = []
-        for x in range(len(features)):
-            lst_A = []
-            lst_B = []
-            for parameter in parents[0].get_conditions():
-                lst_A.append(parameter[x])
-            for parameter in parents[1].get_conditions():
-                lst_B.append(parameter[x])
-            conditions_A.append(list(lst_A))
-            conditions_B.append(list(lst_B))
-        for x in range(len(features)):
-            param_feature_a = conditions_A[x]
-            param_feature_b = conditions_B[x]
-            for y in range(len(heuristics)):
-                split = len(param_feature_a) // len(heuristics)
-                index = split // 2
-                if y == 0:
-                    rule_a = param_feature_a[:split]
-                    rule_b = param_feature_b[:split]
-                else:
-                    rule_a = param_feature_a[split:]
-                    rule_b = param_feature_b[split:]
-                child_a = concatenate((rule_a[:index], rule_b[index:])).tolist()
-                child_b = concatenate((rule_b[index:], rule_a[:index])).tolist()
-                child_a_temp = concatenate((child_a_temp, child_a)).tolist()
-                child_b_temp = concatenate((child_b_temp, child_b)).tolist()
-        conditions_A, conditions_B = [], []
-        for x in range(n_rules):
-            temp_a = []
-            temp_b = []
-            for y in range(len(features)):
-                temp_a.append(child_a_temp[3 * x + y])
-                temp_b.append(child_b_temp[3 * x + y])
-            conditions_A.append(temp_a)
-            conditions_B.append(temp_b)
-        offspring_a = HyperHeuristic(features, heuristics, parents[0].get_actions(), conditions_A, len_pool)
-        offspring_b = HyperHeuristic(features, heuristics, parents[1].get_actions(), conditions_B, len_pool)
+def simulated_binary_crossover(parents, lb, ub, pc, nc, crossover_prob, features, heuristics, len_pool):
+    if np.random.random() <= crossover_prob:
+        parentA = np.array(parents[0].get_conditions())
+        parentB = np.array(parents[1].get_conditions())
+        n = len(parentA)
+        beta = np.zeros((n, len(parentA[0])))
+        mu = np.random.rand(n, len(parentA[0]))
+        beta[mu <= 0.5] = (2 * mu[mu <= 0.5]) ** (1 / (nc + 1))
+        beta[mu > 0.5] = (2 - 2 * mu[mu > 0.5]) ** (-1 / (nc + 1))
+        beta *= ((-1) ** randint(0, 2, (n, len(parentA[0]))))
+        beta[np.random.rand(n, len(parentA[0])) <= 0.5] = 1
+        beta[np.tile(np.random.rand() > pc, (len(parentA[0]), n))[0]] = 1
+        offspringA_temp = (parentA + parentB) / 2 + beta * (parentA - parentB) / 2
+        offspringB_temp = (parentA + parentB) / 2 - beta * (parentA - parentB) / 2
+        offspringA_temp = np.minimum(np.maximum(offspringA_temp, lb), ub)
+        offspringB_temp = np.minimum(np.maximum(offspringB_temp, lb), ub)
+        offspringA = HyperHeuristic(features, heuristics, parents[0].get_actions(), offspringA_temp.tolist(), len_pool)
+        offspringB = HyperHeuristic(features, heuristics, parents[0].get_actions(), offspringB_temp.tolist(), len_pool)
     else:
-        offspring_a = parents[0]
-        offspring_b = parents[1]
-    return offspring_a, offspring_b
+        offspringA = parents[0]
+        offspringB = parents[1]
+    return offspringA, offspringB
 
 
-# Mutation operator
-# =======================
-def mutate(population, mRate, nrules, len_features, size):
-    if random.random() <= mRate:
+def polynomial_mutation(population, lb, ub, nm, mRate, size, len_rules):
+    if np.random.random() <= mRate:
         for index in range(size):
-            i, j = random.sample(range(nrules), 2)
-            rule_i, rule_j = population[index].get_conditions()[i], population[index].get_conditions()[j]
-            for x in range(len_features):
-                if random.random() <= 0.50:
-                    rule_i[x], rule_j[x] = rule_i[x] + 0.015, rule_j[x] + 0.015
-                else:
-                    rule_i[x], rule_j[x] = rule_i[x] - 0.015, rule_j[x] - 0.015
-            population[index].get_conditions()[i], population[index].get_conditions()[j] = rule_i, rule_j
+            for x in range(len_rules):
+                rule = np.array(population[index].get_conditions()[x])
+                n = len(rule)
+                pm = 1 / n
+                mutate = np.random.rand(n) <= pm
+                mu = np.random.rand(n)
+                temp = mutate & (mu <= 0.5)
+                rule[temp] += (ub[temp] - lb[temp]) * ((2 * mu[temp] + (1 - 2 * mu[temp]) * (
+                        1 - (rule[temp] - lb[temp]) / (ub[temp] - lb[temp])) ** (nm + 1)) ** (1 / (nm + 1)) - 1)
+                temp = mutate & (mu > 0.5)
+                rule[temp] += (ub[temp] - lb[temp]) * (1 - (2 * (1 - mu[temp]) + 2 * (mu[temp] - 0.5) * (
+                        1 - (ub[temp] - rule[temp]) / (ub[temp] - lb[temp])) ** (nm + 1)) ** (1 / (nm + 1)))
+                rule = np.minimum(np.maximum(rule, lb), ub)
+                population[index].get_conditions()[x] = rule.tolist()
     return population
 
 
@@ -134,18 +111,17 @@ def fitness(population, num_islands, problem_pool):
 # run_times, list_items, population, population_size, generations, crossover_probability,
 # mutation_probability, backpack_capacity, max_weight, best_Knapsack, table, data)
 def genetic_algorithm(tournament, num_parents, exchange, number_islands, size, generations,
-                      crossover_prob, mutation, migration, features, heuristics,
-                      nbRules, problem_pool, folder_path, run_times):
+                      crossover_prob, pm, migration, features, heuristics,
+                      nbRules, problem_pool, folder_path, run_times, lb_num, ub_num, nm, pc, nc):
     # Creates a list of lists to save the different populations from the islands
     population = [[]] * number_islands
-    sub_population = []
+    # Upper and Lower bounds for polynomial mutation
+    lb = np.array([lb_num] * len(features))
+    ub = np.array([ub_num] * len(features))
 
-    # Creation of the population
+    # Creation of the initial population
     for x in range(number_islands):
-        for y in range(size):
-            sub_population.append(HyperHeuristic(features, heuristics, nbRules, len(problem_pool)))
-        population[x] = sub_population.copy()
-        sub_population = []
+        population[x] = [HyperHeuristic(features, heuristics, nbRules, len(problem_pool), lb_num, ub_num) for _ in range(size)]
 
     # Fitness
     population = fitness(population, number_islands, problem_pool)
@@ -158,25 +134,38 @@ def genetic_algorithm(tournament, num_parents, exchange, number_islands, size, g
                 new_population = []
                 for _ in range(size // 2):
                     parents = select(island, tournament, num_parents, population)
-                    offspring_a, offspring_b = crossover(parents, crossover_prob[island], features, heuristics, nbRules,
-                                                         len(problem_pool))
+                    offspring_a, offspring_b = simulated_binary_crossover(parents, lb, ub, pc, nc, crossover_prob[island],
+                                                                          features, heuristics, len(problem_pool))
                     new_population.extend([offspring_a, offspring_b])
                 population[island] = new_population
 
                 # Mutation
-                population[island] = mutate(population[island], mutation[island], nbRules, len(features), size)
+                population[island] = polynomial_mutation(population[island], lb, ub, nm, pm[island], size, nbRules)
 
             # Fitness
             population = fitness(population, number_islands, problem_pool)
 
             # Migration
             sorted_population = sort_population(number_islands, population)
-            rate = random.random() <= migration[0]
+            rate = np.random.random() <= migration[0]
             if number_islands > 1 and i != generations - 1 and rate:
                 population = migrate(exchange, population, sorted_population, number_islands)
 
-    best_hh = open(folder_path + '\\hh_results.txt', 'a')
+    hh = open(folder_path + '\\hh.txt', 'a')
     for x in range(number_islands):
         for y in range(size):
-            best_hh.write("{}".format(population[x][y]))
-    best_hh.close()
+            hh.write("{}".format(population[x][y]))
+    hh.close()
+
+    best_hh_candidates = list()
+    best_fitness, index = 0, 0
+    sort_final_population = sort_population(number_islands, population)
+    best_hh_candidates.append(sort_final_population[0][0])
+    best_hh_candidates.append(sort_final_population[1][0])
+    best_hh_candidates.append(sort_final_population[2][0])
+    best_hh_candidates.append(sort_final_population[3][0])
+    for x in range(4):
+        if best_hh_candidates[x].get_fitness() > best_fitness:
+            index = x
+    best_hh = open(folder_path + '\\best_hh.txt', 'a')
+    best_hh.write("{}".format(best_hh_candidates[index]))

@@ -1,0 +1,26 @@
+Population per island: 10
+Generations: 1000
+Number of islands: 4
+Crossover probabilities: [0.9, 0.9, 0.9, 0.9]
+Mutation probabilities: [0.01, 0.05, 0.07, 0.08]
+Migration probabilities: [0.4]
+Run times: 1
+Number of tournaments: 4
+Number of individuals to exchange: 2
+Number of parents for crossover: 2
+Number of rules: 30
+Heuristics: ['DEF', 'MAXP', 'MAXPW', 'MINW', 'MARK']
+Features: ['WEIGHT', 'ITEMS_IN_KNAPSACK', 'ITEMS_OUT_KNAPSACK', 'TOTAL_WEIGHT_LEFT', 'TOTAL_VALUE_LEFT']
+Training split: 10-90
+
+### Polynomial mutation parameters ###
+nm: 150
+pm: 1/n
+lb: 0
+ub: 1
+
+### Simulated binary crossover parameters ###
+pc: 1
+nc: 30
+lb: 0
+ub: 1

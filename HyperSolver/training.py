@@ -8,12 +8,7 @@ from problem import ProblemCharacteristics
 
 def train(num_tournament, num_parents_to_select, individuals_to_exchange, number_islands, run_times,
           population_size, generations, crossover_probability, mutation_probability, migration_probability,
-          features, heuristics, number_rules, training_split):
-    # Variables
-    problem_pool = []
-    file_path = []
-    sub_folders = []
-
+          features, heuristics, number_rules, training_split, lb, ub, nm, pc, nc):
     # Paths to the problem instance and to the solution folder
     experiment = 'ga\\Test set A\\' + training_split + '\\Training\\'
     folder_instance = os.getcwd() + '\\Instances KP\\' + experiment
@@ -25,8 +20,7 @@ def train(num_tournament, num_parents_to_select, individuals_to_exchange, number
         os.makedirs(folder_path)
 
     os.chdir(folder_path)
-    for folder in os.listdir():
-        sub_folders.append(f"folder")
+    sub_folders = [f"{folder}" for folder in os.listdir()]
 
     num_experiment = len(sub_folders)
     if not os.path.isdir(str(num_experiment)):
@@ -35,9 +29,8 @@ def train(num_tournament, num_parents_to_select, individuals_to_exchange, number
 
     os.chdir(folder_instance)
     # Iterate over all the files in the directory
-    for file in os.listdir():
-        # Create the filepath of particular file
-        file_path.append(f"{folder_instance}\\{file}")
+    # Create the filepath of particular file
+    file_path = [f"{folder_instance}\\{file}" for file in os.listdir()]
 
     parameters = open(folder_path + '\\' + 'General Parameters.txt', 'a')
     parameters.write('Population per island: {}\n'
@@ -51,15 +44,28 @@ def train(num_tournament, num_parents_to_select, individuals_to_exchange, number
                      'Number of individuals to exchange: {}\n'
                      'Number of parents for crossover: {}\n'
                      'Number of rules: {}\n'
-                     'Training split: {}'
+                     'Heuristics: {}\n'
+                     'Features: {}\n'
+                     'Training split: {}\n'
+                     '\n### Polynomial mutation parameters ###\n'
+                     'nm: {}\n'  # 100
+                     'pm: {}\n'  # 1/n
+                     'lb: {}\n'  # 0
+                     'ub: {}\n'  # 1
+                     '\n### Simulated binary crossover parameters ###\n'
+                     'pc: {}\n'  # 1
+                     'nc: {}\n'  # 30
+                     'lb: {}\n'  # 0
+                     'ub: {}\n'  # 1
                      .format(population_size, generations, number_islands, crossover_probability, mutation_probability,
                              migration_probability, run_times, num_tournament, individuals_to_exchange,
-                             num_parents_to_select, number_rules, training_split))
+                             num_parents_to_select, number_rules, heuristics, features, training_split, str(150), '1/n',
+                             lb, ub, str(1), str(30), lb, ub))
     parameters.close()
 
-    for file in file_path:
-        problem_pool.append(ProblemCharacteristics(read_instance(file)))
+    problem_pool = [ProblemCharacteristics(read_instance(file)) for file in file_path]
 
     ga(num_tournament, num_parents_to_select, individuals_to_exchange,
        number_islands, population_size, generations, crossover_probability, mutation_probability,
-       migration_probability, features, heuristics, number_rules, problem_pool, folder_path, run_times)
+       migration_probability, features, heuristics, number_rules, problem_pool, folder_path, run_times, lb, ub, nm, pc,
+       nc)

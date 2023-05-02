@@ -1,14 +1,16 @@
-import sys
 from items_HyperSolver import Items
+import numpy as np
 
 
 def read_instance(file_path):
+    total_value = 0
+    total_weight = 0
     # List with the items of the problem
     list_items = []
     # Reading files with the instance problem
     instance = open(file_path, 'r')
     problemCharacteristics = instance.readline().rstrip("\n")
-    problemCharacteristics = problemCharacteristics.split(", ")
+    problemCharacteristics = problemCharacteristics.split(" ")
 
     # This information needs to be taken from the .kp files
     # First element in the first row indicates the number of items
@@ -21,10 +23,15 @@ def read_instance(file_path):
     # Creation of item's characteristics with the information from the .txt file
     for idx in range(backpack_capacity):
         instanceItem = instance.readline().rstrip("\n")
-        instanceItem = instanceItem.split(", ")
+        instanceItem = instanceItem.split(" ")
         list_items.append(Items(idx, float(instanceItem[1]), int(instanceItem[0])))
     instance.close()
-    return list_items, max_weight, backpack_capacity
+
+    for item in list_items:
+        total_value += item.get_value()
+        total_weight += item.get_weight()
+
+    return list_items, max_weight, backpack_capacity, total_value, total_weight
 
 
 class Knapsack:
@@ -79,36 +86,33 @@ class Knapsack:
         self.totalWeight -= float(item.get_weight())
         self.value += int(item.get_value())
 
+    # Returns two lists, one containing the weights and the other the profits
+    def get_list_weight_profit(self, list_items):
+        list_weight, list_profit = list(), list()
+        for item in list_items:
+            if self.chromosome[item.get_id()] == 0:
+                list_weight.append(item.get_weight())
+                list_profit.append(item.get_value())
+        return list_weight, list_profit
+
     # Returns the value of the feature provided as argument
     # feature = A string with the name of one available feature
-    def get_feature(self, feature, weight, list_items):
+    def get_feature(self, feature, list_items):
         value = 0
-        if feature == 'WEIGHT':
-            value = self.totalWeight * weight / 100
-        elif feature == 'ITEMS_IN_KNAPSACK':
-            count = 0
-            for _, gene in enumerate(self.chromosome):
-                if gene == 1:
-                    count += 1
-            value = count * len(list_items) / 100
-        elif feature == 'ITEMS_OUT_KNAPSACK':
-            count = 0
-            for _, gene in enumerate(self.chromosome):
-                if gene == 0:
-                    count += 1
-            value = count * len(list_items) / 100
-        elif feature == 'TOTAL_WEIGHT_LEFT':
-            weight_left = 0
-            for x, gene in enumerate(self.chromosome):
-                if gene == 0:
-                    weight_left += list_items[x].get_weight()
-            value = weight_left
-        elif feature == 'TOTAL_VALUE_LEFT':
-            value_left = 0
-            for x, gene in enumerate(self.chromosome):
-                if gene == 0:
-                    value_left += list_items[x].get_value()
-            value = value_left
+        list_weight, list_profit = self.get_list_weight_profit(list_items)
+        highest_weight, highest_profit = max(list_weight), max(list_profit)
+        if feature == 'MEAN_WEIGHT':
+            value = np.mean(list_weight) / highest_weight
+        elif feature == 'MEDIAN_WEIGHT':
+            value = np.median(list_weight) / highest_weight
+        elif feature == 'SD_WEIGHT':
+            value = np.std(list_weight, ddof=1) / highest_weight
+        elif feature == 'MEAN_PROFIT':
+            value = np.mean(list_profit) / highest_profit
+        elif feature == 'MEDIAN_PROFIT':
+            value = np.median(list_profit) / highest_profit
+        elif feature == 'SD_PROFIT':
+            value = np.std(list_profit, ddof=1) / highest_profit
         return value
 
     def solve(self, heuristic, problem):
@@ -140,7 +144,7 @@ class Knapsack:
                     break
             return selected
 
-        # Mark
+        # Markovitz
         elif heuristic == 'MARK':
             problem.get_items().sort(key=lambda x: x.get_value() * x.get_weight(), reverse=False)
             for idx, item in enumerate(problem.get_items()):

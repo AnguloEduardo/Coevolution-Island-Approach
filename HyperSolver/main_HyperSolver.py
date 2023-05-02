@@ -1,70 +1,34 @@
 import sys
 from training import train
 from testing import test
+from configuration import read
 
-
-def to_float(lst):
-    for index, item in enumerate(lst):
-        lst[index] = float(item)
-    return lst
-
-
-# Control variables
-config_file = open('parameters.conf', 'r')
-
-line = config_file.readline().rstrip("\n").split(' = ')
-number_of_tournaments = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-number_of_parents_to_select = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-individuals_to_exchange = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-number_of_islands = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-run_times = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-population_size = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-generations = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-crossover_probability = to_float(line[1].split())
-
-line = config_file.readline().rstrip("\n").split(' = ')
-mutation_probability = to_float(line[1].split())
-
-line = config_file.readline().rstrip("\n").split(' = ')
-migration_probability = to_float(line[1].split())
-
-line = config_file.readline().rstrip("\n").split(' = ')
-features = line[1].split()
-
-line = config_file.readline().rstrip("\n").split(' = ')
-heuristics = line[1].split()
-
-line = config_file.readline().rstrip("\n").split(' = ')
-number_rules = int(line[1])
-
-line = config_file.readline().rstrip("\n").split(' = ')
-training_split = line[1]
-
-number_hh = number_of_islands * population_size
 
 if __name__ == "__main__":
+    '''
+    parameters = [number_of_tournaments, number_of_parents_to_select, individuals_to_exchange, number_of_islands, 
+                  run_times, population_size, generations, crossover_probability, mutation_probability,
+                  migration_probability, features, heuristics, number_rules, training_split, number_hh, lb, up]
+    '''
+    parameters = read()
     if sys.argv[1] == 'train':
         print('Training')
-        train(number_of_tournaments, number_of_parents_to_select, individuals_to_exchange, number_of_islands, run_times,
-              population_size, generations, crossover_probability, mutation_probability, migration_probability,
-              features, heuristics, number_rules, training_split)
+        '''
+        num_tournament, num_parents_to_select, individuals_to_exchange, number_islands, run_times, population_size, generations
+        crossover_probability, mutation_probability, migration_probability, features, heuristics, number_rules, training_split
+        lower_bound, upper_bound, nm, pc, nc
+        '''
+        train(parameters[0], parameters[1], parameters[2], parameters[3], parameters[4], parameters[5], parameters[6],
+              parameters[7], parameters[8], parameters[9], parameters[10], parameters[11], parameters[12], parameters[13],
+              parameters[15], parameters[16], parameters[17], parameters[18], parameters[19])
     elif sys.argv[1] == 'test':
+        experiment_num = sys.argv[2]
         print('Testing')
-        test(features, heuristics, number_rules, number_hh, training_split, population_size, generations,
-             number_of_islands, run_times, sys.argv[2])
+        '''
+        number_of_islands, run_times, population_size, generations,features, heuristics, number_rules,
+        training_split, number_hh, experiment_num
+        '''
+        test(parameters[3], parameters[4], parameters[5], parameters[6], parameters[10], parameters[11], parameters[12],
+             parameters[13], parameters[14], experiment_num)
     else:
         print('Neither train nor test were selected')
