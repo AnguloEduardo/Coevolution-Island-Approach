@@ -33,9 +33,9 @@ def simulated_binary_crossover(parents, lb, ub, pc, nc, crossover_prob, features
 
 
 def polynomial_mutation(population, lb, ub, nm, mRate, size, len_rules):
-    if np.random.random() <= mRate:
-        for index in range(size):
-            for x in range(len_rules):
+    for index in range(size):
+        for x in range(len_rules):
+            if np.random.random() <= mRate:
                 rule = np.array(population[index].get_conditions()[x])
                 n = len(rule)
                 pm = 1 / n
