@@ -1,5 +1,6 @@
 from items_HyperSolver import Items
 import numpy as np
+import re
 
 
 def read_instance(file_path):
@@ -8,28 +9,28 @@ def read_instance(file_path):
     # List with the items of the problem
     list_items = []
     # Reading files with the instance problem
-    instance = open(file_path, 'r')
-    problemCharacteristics = instance.readline().rstrip("\n")
-    problemCharacteristics = problemCharacteristics.split(" ")
+    with open(file_path, 'r') as instance:
+        problemCharacteristics = instance.readline().rstrip("\n")
+        problemCharacteristics = re.split(", | ", problemCharacteristics)
 
-    # This information needs to be taken from the .kp files
-    # First element in the first row indicates the number of items
-    # second element of the first row indicates the backpack capacity
-    # from the second row and forth, the first element represent the profit
-    # the second element represent the weight
-    backpack_capacity = int(problemCharacteristics[0])  # Number of items in the problem
-    max_weight = float(problemCharacteristics[1])  # Maximum weight for the backpack to carry
+        # This information needs to be taken from the .kp files
+        # First element in the first row indicates the number of items
+        # second element of the first row indicates the backpack capacity
+        # from the second row and forth, the first element represent the profit
+        # the second element represent the weight
+        backpack_capacity = int(problemCharacteristics[0])  # Number of items in the problem
+        max_weight = float(problemCharacteristics[1])  # Maximum weight for the backpack to carry
 
-    # Creation of item's characteristics with the information from the .txt file
-    for idx in range(backpack_capacity):
-        instanceItem = instance.readline().rstrip("\n")
-        instanceItem = instanceItem.split(" ")
-        list_items.append(Items(idx, float(instanceItem[1]), int(instanceItem[0])))
-    instance.close()
+        # Creation of item's characteristics with the information from the .txt file
+        for idx in range(backpack_capacity):
+            instanceItem = instance.readline().rstrip("\n")
+            instanceItem = re.split(", | ", instanceItem)
+            list_items.append(Items(idx, float(instanceItem[1]), int(instanceItem[0])))
+        instance.close()
 
-    for item in list_items:
-        total_value += item.get_value()
-        total_weight += item.get_weight()
+        for item in list_items:
+            total_value += item.get_value()
+            total_weight += item.get_weight()
 
     return list_items, max_weight, backpack_capacity, total_value, total_weight
 

@@ -1,26 +1,28 @@
 from HyperHeuristic import HyperHeuristic
+from ast import literal_eval
 
 
-def read_hh(len_features, len_heuristics, nRules, len_hheuristics, hh_path):
+def read_hh(len_features, len_heuristics, nRules, hh_path):
     feature, heuristic, conditions, actions, rules, hh = [], [], [], [], [], []
-    results = open(hh_path + 'best_hh.txt', 'r')
-    text = results.read()
-    tokens = text.split()
-    if tokens.pop(0).rstrip(",:") == 'Features':
+    with open(hh_path + 'best_hh.txt', 'r') as results:
+        text = results.read()
+    tokens = iter(text.split())
+
+    if next(tokens).rstrip(",:") == 'Features':
         for _ in range(len_features):
-            feature.append(tokens.pop(0).lstrip("[',").rstrip("',]"))
-    if tokens.pop(0).rstrip(",:") == 'Heuristics':
+            feature.append(literal_eval(next(tokens)))
+    if next(tokens).rstrip(",:") == 'Heuristics':
         for _ in range(len_heuristics):
-            heuristic.append(tokens.pop(0).lstrip("[',").rstrip("',]"))
-    if tokens.pop(0).rstrip(",:") == 'Rules':
+            heuristic.append(literal_eval(next(tokens)))
+    if next(tokens).rstrip(",:") == 'Rules':
         for _ in range(nRules):
             for _ in range(len_features):
-                rules.append(float(tokens.pop(0).lstrip("[',").rstrip(",]")))
-            tokens.pop(0)  # Token ignored
-            actions.append(tokens.pop(0))
+                rules.append(float(literal_eval(next(tokens))))
+            next(tokens)  # Token ignored
+            actions.append(literal_eval(next(tokens)))
             conditions.append(list(rules))
             rules = []
         hh.append(HyperHeuristic(feature, heuristic, actions, conditions))
-        tokens.pop(0)
-        tokens.pop(0)
+        next(tokens)
+        next(tokens)
     return hh

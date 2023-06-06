@@ -2,8 +2,10 @@
 from tqdm import tqdm
 from numpy.random import randint
 from HyperHeuristic import HyperHeuristic
+from multiprocessing import Pool
 import numpy as np
 import random
+import os
 
 
 # Crossover operator
@@ -84,7 +86,7 @@ def sort_population(islands, population):
 
 
 def migrate(exchange, population, sorted_population, islands):
-    # Exchanging the best 'exchange' hyper heuristics of each island to another
+    # Exchanging the best hyper heuristics of each island to another
     temp_hh = []
     for index_1 in range(exchange):
         temp_hh.append(sorted_population[0][index_1])
@@ -98,11 +100,32 @@ def migrate(exchange, population, sorted_population, islands):
     return population
 
 
-def fitness(population, num_islands, problem_pool):
-    for island in range(num_islands):
-        for individuals in population[island]:
-            individuals.evaluate(problem_pool)
+def fitness_island(population, problem_pool):
+    for individuals in population:
+        individuals.evaluate(problem_pool)
     return population
+
+
+def process_island(args):
+    island, tournament, num_parents, size, lb, ub, pc, nc, crossover_prob, nm, pm, nbRules, population, features, \
+    heuristics, problem_pool = args
+
+    # Crossover
+    new_population = []
+    for _ in range(size // 2):
+        parents = select(island, tournament, num_parents, population)
+        offspring_a, offspring_b = simulated_binary_crossover(parents, lb, ub, pc, nc, crossover_prob[island],
+                                                              features, heuristics, len(problem_pool))
+        new_population.extend([offspring_a, offspring_b])
+    population[island] = new_population
+
+    # Mutation
+    population[island] = polynomial_mutation(population[island], lb, ub, nm, pm[island], size, nbRules)
+
+    # Fitness
+    population[island] = fitness_island(population[island], problem_pool)
+
+    return population[island]
 
 
 # Genetic algorithm
@@ -112,7 +135,7 @@ def fitness(population, num_islands, problem_pool):
 # mutation_probability, backpack_capacity, max_weight, best_Knapsack, table, data)
 def genetic_algorithm(tournament, num_parents, exchange, number_islands, size, generations,
                       crossover_prob, pm, migration, features, heuristics,
-                      nbRules, problem_pool, folder_path, run_times, lb_num, ub_num, nm, pc, nc):
+                      nbRules, problem_pool, folder_path, lb_num, ub_num, nm, pc, nc):
     # Creates a list of lists to save the different populations from the islands
     population = [[]] * number_islands
     # Upper and Lower bounds for polynomial mutation
@@ -121,35 +144,21 @@ def genetic_algorithm(tournament, num_parents, exchange, number_islands, size, g
 
     # Creation of the initial population
     for x in range(number_islands):
-        population[x] = [HyperHeuristic(features, heuristics, nbRules, len(problem_pool), lb_num, ub_num) for _ in range(size)]
-
-    # Fitness
-    population = fitness(population, number_islands, problem_pool)
+        population[x] = [HyperHeuristic(features, heuristics, nbRules, len(problem_pool), lb_num, ub_num) for _ in
+                         range(size)]
 
     # Runs the evolutionary process
     for i in tqdm(range(generations)):
-        for _ in range(run_times):
-            for island in range(number_islands):
-                # Crossover
-                new_population = []
-                for _ in range(size // 2):
-                    parents = select(island, tournament, num_parents, population)
-                    offspring_a, offspring_b = simulated_binary_crossover(parents, lb, ub, pc, nc, crossover_prob[island],
-                                                                          features, heuristics, len(problem_pool))
-                    new_population.extend([offspring_a, offspring_b])
-                population[island] = new_population
+        with Pool() as pool:
+            population = pool.map(process_island, [(island, tournament, num_parents, size, lb, ub, pc, nc,
+                                                    crossover_prob, nm, pm, nbRules, population, features,
+                                                    heuristics, problem_pool) for island in range(number_islands)])
 
-                # Mutation
-                population[island] = polynomial_mutation(population[island], lb, ub, nm, pm[island], size, nbRules)
-
-            # Fitness
-            population = fitness(population, number_islands, problem_pool)
-
-            # Migration
-            sorted_population = sort_population(number_islands, population)
-            rate = np.random.random() <= migration[0]
-            if number_islands > 1 and i != generations - 1 and rate:
-                population = migrate(exchange, population, sorted_population, number_islands)
+        # Migration
+        sorted_population = sort_population(number_islands, population)
+        rate = np.random.random() <= migration[0]
+        if number_islands > 1 and i != generations - 1 and rate:
+            population = migrate(exchange, population, sorted_population, number_islands)
 
     hh = open(folder_path + '\\hh.txt', 'a')
     for x in range(number_islands):

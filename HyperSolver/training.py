@@ -6,66 +6,55 @@ from knapsack_HyperSolver import read_instance
 from problem import ProblemCharacteristics
 
 
-def train(num_tournament, num_parents_to_select, individuals_to_exchange, number_islands, run_times,
+def train(num_tournament, num_parents_to_select, individuals_to_exchange, number_islands,
           population_size, generations, crossover_probability, mutation_probability, migration_probability,
-          features, heuristics, number_rules, training_split, lb, ub, nm, pc, nc):
+          features, heuristics, number_rules, training_split, training_set, lb, ub, nm, pc, nc):
     # Paths to the problem instance and to the solution folder
-    experiment = 'ga\\Test set A\\' + training_split + '\\Training\\'
-    folder_instance = os.getcwd() + '\\Instances KP\\' + experiment
-    folder_solution = os.getcwd() + '\\experiments\\' + experiment
-    folder_name = str(population_size) + '-' + str(generations) + '-' + str(number_islands) + '-' + str(run_times)
+    root = os.getcwd()
+    experiment = os.path.join('ga', training_set, training_split)
+    folder_instance = os.path.join(root, 'Instances KP', experiment)
+    folder_solution = os.path.join(root, 'experiments', experiment)
+    folder_name = f"{population_size}-{generations}-{number_islands}"
     folder_path = os.path.join(folder_solution, folder_name)
 
-    if not os.path.isdir(folder_path):
-        os.makedirs(folder_path)
+    os.makedirs(folder_path, exist_ok=True)
 
-    os.chdir(folder_path)
-    sub_folders = [f"{folder}" for folder in os.listdir()]
+    num_experiment = len(os.listdir(folder_path))
+    experiment_folder_path = os.path.join(folder_path, str(num_experiment))
+    os.makedirs(experiment_folder_path, exist_ok=True)
 
-    num_experiment = len(sub_folders)
-    if not os.path.isdir(str(num_experiment)):
-        os.mkdir(str(num_experiment))
-    folder_path = os.path.join(folder_path, str(num_experiment))
+    file_paths = [os.path.join(folder_instance, file) for file in os.listdir(folder_instance)]
 
-    os.chdir(folder_instance)
-    # Iterate over all the files in the directory
-    # Create the filepath of particular file
-    file_path = [f"{folder_instance}\\{file}" for file in os.listdir()]
+    parameters_filepath = os.path.join(experiment_folder_path, 'General Parameters.txt')
+    with open(parameters_filepath, 'a') as parameters:
+        parameters.write(f'Population per island: {population_size}\n'
+                         f'Generations: {generations}\n'
+                         f'Number of islands: {number_islands}\n'
+                         f'Crossover probabilities: {crossover_probability}\n'
+                         f'Mutation probabilities: {mutation_probability}\n'
+                         f'Migration probabilities: {migration_probability}\n'
+                         f'Number of tournaments: {num_tournament}\n'
+                         f'Number of individuals to exchange: {individuals_to_exchange}\n'
+                         f'Number of parents for crossover: {num_parents_to_select}\n'
+                         f'Number of rules: {number_rules}\n'
+                         f'Heuristics: {heuristics}\n'
+                         f'Features: {features}\n'
+                         f'Training split: {training_split}\n'
+                         f'Training Set: {training_set}\n'
+                         '\n### Polynomial mutation parameters ###\n'
+                         f'nm: {100}\n'
+                         f'pm: {"1/n"}\n'
+                         f'lb: {lb}\n'
+                         f'ub: {ub}\n'
+                         '\n### Simulated binary crossover parameters ###\n'
+                         f'pc: {1}\n'
+                         f'nc: {30}\n'
+                         f'lb: {lb}\n'
+                         f'ub: {ub}\n')
 
-    parameters = open(folder_path + '\\' + 'General Parameters.txt', 'a')
-    parameters.write('Population per island: {}\n'
-                     'Generations: {}\n'
-                     'Number of islands: {}\n'
-                     'Crossover probabilities: {}\n'
-                     'Mutation probabilities: {}\n'
-                     'Migration probabilities: {}\n'
-                     'Run times: {}\n'
-                     'Number of tournaments: {}\n'
-                     'Number of individuals to exchange: {}\n'
-                     'Number of parents for crossover: {}\n'
-                     'Number of rules: {}\n'
-                     'Heuristics: {}\n'
-                     'Features: {}\n'
-                     'Training split: {}\n'
-                     '\n### Polynomial mutation parameters ###\n'
-                     'nm: {}\n'  # 100
-                     'pm: {}\n'  # 1/n
-                     'lb: {}\n'  # 0
-                     'ub: {}\n'  # 1
-                     '\n### Simulated binary crossover parameters ###\n'
-                     'pc: {}\n'  # 1
-                     'nc: {}\n'  # 30
-                     'lb: {}\n'  # 0
-                     'ub: {}\n'  # 1
-                     .format(population_size, generations, number_islands, crossover_probability, mutation_probability,
-                             migration_probability, run_times, num_tournament, individuals_to_exchange,
-                             num_parents_to_select, number_rules, heuristics, features, training_split, str(150), '1/n',
-                             lb, ub, str(1), str(30), lb, ub))
-    parameters.close()
-
-    problem_pool = [ProblemCharacteristics(read_instance(file)) for file in file_path]
+    problem_pool = [ProblemCharacteristics(read_instance(file)) for file in file_paths]
 
     ga(num_tournament, num_parents_to_select, individuals_to_exchange,
        number_islands, population_size, generations, crossover_probability, mutation_probability,
-       migration_probability, features, heuristics, number_rules, problem_pool, folder_path, run_times, lb, ub, nm, pc,
+       migration_probability, features, heuristics, number_rules, problem_pool, experiment_folder_path, lb, ub, nm, pc,
        nc)
